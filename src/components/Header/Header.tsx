@@ -1,6 +1,7 @@
-import Navbar from '../common/Navbar/Navbar'
-import Logo from '../Logo/Logo'
-import UtilitySection from '../UtilitySection/UtilitySection'
+import Navbar from "../common/Navbar/Navbar";
+import Logo from "../Logo/Logo";
+import UtilitySection from "../UtilitySection/UtilitySection";
+import "./Header.scss";
 
 const Header = () => {
   return (
@@ -9,8 +10,7 @@ const Header = () => {
         <Navbar/>
         <UtilitySection/>
     </div>
-    
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
