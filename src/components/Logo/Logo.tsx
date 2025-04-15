@@ -2,7 +2,7 @@ import React from 'react'
 
 const Logo = () => {
   return (
-    <div>Logo</div>
+    <div className="text-5xl font-bold" style={{ fontFamily: 'Katari' }}>Kira</div>
   )
 }
 

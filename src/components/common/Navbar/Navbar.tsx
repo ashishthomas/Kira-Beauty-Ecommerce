@@ -1,28 +1,52 @@
-import React from "react";
+import { NavLink } from "react-router";
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
-      <ul className="nav-links flex flex-row gap-5 items-center justify-center">
-        <li>
-          <a href="#">Demos</a>
-        </li>
-        <li>
-          <a href="#">About Us</a>
-        </li>
-        <li>
-          <a href="#">Service</a>
-        </li>
-        <li>
-          <a href="#">Blog</a>
-        </li>
-        <li>
-          <a href="#">Pages</a>
-        </li>
-        <li>
-          <a href="#">Contact Us</a>
-        </li>
-      </ul>
+    <nav className="flex space-x-16 text-sm font-medium">
+      <NavLink
+        to="/home"
+        className={({ isActive }) =>
+          isActive
+            ? "text-[#677E53] font-bold"
+            : "text-gray-800 hover:text-[#677E53]"
+        }
+        style={{ fontSize: 18 }}
+      >
+        HOME
+      </NavLink>
+      <NavLink
+        to="/shop"
+        className={({ isActive }) =>
+          isActive
+            ? "text-[#677E53] font-bold"
+            : "text-gray-800 hover:text-[#677E53]"
+        }
+        style={{ fontSize: 18 }}
+      >
+        SHOP
+      </NavLink>
+      <NavLink
+        to="/about"
+        className={({ isActive }) =>
+          isActive
+            ? "text-[#677E53] font-bold"
+            : "text-gray-800 hover:text-[#677E53]"
+        }
+        style={{ fontSize: 18 }}
+      >
+        ABOUT US
+      </NavLink>
+      <NavLink
+        to="/contact"
+        className={({ isActive }) =>
+          isActive
+            ? "text-[#677E53] font-bold"
+            : "text-gray-800 hover:text-[#677E53]"
+        }
+        style={{ fontSize: 18 }}
+      >
+        CONTACT US
+      </NavLink>
     </nav>
   );
 };
