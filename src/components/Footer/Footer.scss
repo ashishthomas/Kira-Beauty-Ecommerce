@@ -1,0 +1,99 @@
+@import "@src/styles/styleVariables.scss";
+
+.footer {
+  width: 100%;
+  background-color: $primary-color;
+  color: $text-white;
+  padding: 3rem 5rem;
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 60px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .section {
+    min-width: 280px;
+    margin-bottom: 2rem;
+    padding-bottom: 80px;
+
+    h4 {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      font-weight: bold;
+      font-size: 1.5rem;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 70px;
+        height: 2px;
+        background-color: $text-white;
+        left: 0;
+        bottom: 0;
+      }
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+
+    ul {
+      list-style: disc;
+      padding: 0;
+
+      li {
+        margin-bottom: 1rem;
+
+        a {
+          color: $text-white;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .logo {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    padding-top: 40px;
+    color: $text-white;
+  }
+
+  .social-icons {
+    margin-top: 1rem;
+    display: flex;
+
+    a {
+      color: $text-white;
+      margin-right: 1rem;
+      font-size: 1.7rem;
+
+      &:hover {
+        color: $icon-hover;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .section {
+    width: 100%;
+  }
+}

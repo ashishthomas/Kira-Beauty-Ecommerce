@@ -1,4 +1,10 @@
+@import "@src/styles/styleVariables.scss";
+
+.app-layout {
+  background-color: $bg-color;
+}
+
 .content-section {
-    margin-top:4rem;
-    padding: 20px 0px;
+  margin-top: 4rem;
+  padding: 20px 0px;
 }

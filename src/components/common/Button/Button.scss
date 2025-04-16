@@ -1,0 +1,109 @@
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    white-space: nowrap;
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+  
+    // Variants
+    &--primary {
+      background-color: #4f6a47;
+      color: white;
+  
+      &:hover:not(:disabled) {
+        background-color: darken(#4f6a47, 10%);
+      }
+    }
+  
+    &--secondary {
+      background-color: white;
+      color: #4f6a47;
+      font-weight: bold;
+  
+      &:hover:not(:disabled) {
+        background-color: darken(#4f6a47, 10%);
+      }
+    }
+  
+    &--outline {
+      background-color: transparent;
+      color: #4f6a47;
+      border: 2px solid #4f6a47;
+  
+      &:hover:not(:disabled) {
+        background-color: rgba(#4f6a47, 0.1);
+      }
+    }
+  
+    &--text {
+      background-color: transparent;
+      color: #4f6a47;
+      padding: 0;
+      border-radius: 0;
+  
+      &:hover:not(:disabled) {
+        text-decoration: underline;
+      }
+    }
+  
+    // Sizes
+    &--small {
+      padding: 8px 16px;
+      font-size: 0.8rem;
+    }
+  
+    &--medium {
+      padding: 12px 24px;
+      font-size: 0.95rem;
+    }
+  
+    &--large {
+      padding: 16px 32px;
+      font-size: 1.1rem;
+    }
+  
+    // Disabled state
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+  
+    // Loading state
+    &.loading {
+      pointer-events: none;
+      opacity: 0.7;
+  
+      &::after {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        border: 3px solid transparent;
+        border-top-color: white;
+        border-radius: 50%;
+        animation: button-loading-spinner 1s linear infinite;
+      }
+    }
+  
+    @keyframes button-loading-spinner {
+      from {
+        transform: rotate(0turn);
+      }
+      to {
+        transform: rotate(1turn);
+      }
+    }
+  }

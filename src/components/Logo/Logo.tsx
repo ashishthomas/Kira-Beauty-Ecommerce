@@ -1,9 +1,7 @@
-import React from 'react'
+import "./Logo.scss";
 
 const Logo = () => {
-  return (
-    <div>Logo</div>
-  )
-}
+  return <div className="logo">Kira</div>;
+};
 
-export default Logo
+export default Logo;
