@@ -5,12 +5,12 @@ import Footer from "../Footer/Footer";
 
 const AppLayout: React.FC = () => {
   return (
-    <div className="flex flex-col items-center" style={{ backgroundColor: '#FDF9EE' }}>
+    <div className="app-layout flex flex-col items-center">
       <Header />
       <div className="content-section w-full">
         <Outlet />
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

@@ -1,0 +1,9 @@
+@import "@src/styles/styleVariables.scss";
+
+.logo {
+  font-size: 2.9rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-family: "Katari", serif;
+  color: $logo-color;
+}

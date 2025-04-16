@@ -1,13 +1,12 @@
-import React from "react";
-import { FiSearch, FiUser, FiShoppingCart } from "react-icons/fi"; 
+import { FiSearch, FiUser, FiShoppingCart } from "react-icons/fi";
 
 const UtilitySection = () => {
   return (
-    <div className="utility-section flex gap-7 items-center"> 
-    <FiSearch size={30} /> 
-    <FiUser size={30} /> 
-    <FiShoppingCart size={30} /> 
-  </div>
+    <div className="utility-section flex gap-7 items-center">
+      <FiSearch size={30} />
+      <FiUser size={30} />
+      <FiShoppingCart size={30} />
+    </div>
   );
 };
 

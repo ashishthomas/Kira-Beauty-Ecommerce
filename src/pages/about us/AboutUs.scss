@@ -1,0 +1,37 @@
+@import "@src/styles/styleVariables.scss";
+
+.welcome {
+  padding: 40px 20px;
+
+  h1 {
+    font-size: 3.2em;
+    color: $primary-color;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+
+    span {
+      display: block;
+    }
+  }
+
+  p {
+    padding-left: 20rem;
+    padding-right: 20rem;
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .welcome-image {
+    display: flex;
+    justify-content: center;
+
+    img {
+      margin: 30px 10px;
+      width: 440px;
+      height: 680px;
+      border-radius: 60px;
+    }
+  }
+}

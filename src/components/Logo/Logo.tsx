@@ -1,9 +1,7 @@
-import React from 'react'
+import "./Logo.scss";
 
 const Logo = () => {
-  return (
-    <div className="text-5xl font-bold" style={{ fontFamily: 'Katari' }}>Kira</div>
-  )
-}
+  return <div className="logo">Kira</div>;
+};
 
-export default Logo
+export default Logo;

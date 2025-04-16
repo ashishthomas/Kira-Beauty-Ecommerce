@@ -6,8 +6,8 @@ const Footer: React.FC = () => {
   return (
     <footer className="footer">
       <h1 className="logo">Kira</h1>
-      <div className="footer__container">
-        <div className="footer__section about">
+      <div className="footer--container">
+        <div className="footer--section about">
           <h4>About Kira</h4>
           <p>
             Welcome to Kira, where beauty meets innovation. Our mission is to
@@ -29,8 +29,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Middle Column - Explore */}
-        <div className="footer__section explore">
+        <div className="footer--section explore">
           <h4>Explore</h4>
           <ul>
             <li>
@@ -48,8 +47,7 @@ const Footer: React.FC = () => {
           </ul>
         </div>
 
-        {/* Right Column - Customer Service */}
-        <div className="footer__section customer-service">
+        <div className="footer--section customer-service">
           <h4>Customer Service</h4>
           <p>
             Have questions or need assistance? Our dedicated customer service

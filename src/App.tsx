@@ -6,7 +6,9 @@ import { createTheme, ThemeProvider } from "@mui/material";
 const App = () => {
   const router = createBrowserRouter([...RootRoutes]);
   const theme = createTheme({
-    palette: {},
+    typography: {
+      fontFamily: `'Arial', sans-serif`,
+    },
   });
 
   return (
