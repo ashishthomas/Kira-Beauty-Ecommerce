@@ -1,6 +1,7 @@
 import { Outlet } from "react-router";
 import Header from "../Header/Header";
 import "./AppLayout.scss";
+import Footer from "../Footer/Footer";
 
 const AppLayout: React.FC = () => {
   return (
@@ -9,6 +10,7 @@ const AppLayout: React.FC = () => {
       <div className="content-section w-full">
         <Outlet />
       </div>
+      <Footer/>
     </div>
   );
 };

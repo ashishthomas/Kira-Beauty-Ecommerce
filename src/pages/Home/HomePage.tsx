@@ -1,73 +1,74 @@
 import "./HomePage.scss";
+import Button from "../../components/common/Button/Button.tsx";
 
 const HomePage = () => {
   const categories = [
     {
       name: "Fragrance",
-      image: "src/assets/carousel_fragrance.jpeg",
+      image: "src/assets/Carousel/carousel_fragrance.jpeg",
       price: "$25.00",
       description:
         "Explore our exquisite collection of perfumes and scents, crafted with the finest aromatic ingredients to evoke your unique personality.",
     },
     {
       name: "Makeup",
-      image: "src/assets/carousel_makeup.jpeg",
+      image: "src/assets/Carousel/carousel_makeup.jpeg",
       price: "$30.00",
       description:
         "Discover a wide range of high-quality makeup products for every look, from everyday essentials to glamorous statement pieces. ",
     },
     {
       name: "Skincare",
-      image: "src/assets/carousel_skincare.jpeg",
+      image: "src/assets/Carousel/carousel_skincare.jpeg",
       price: "$40.00",
       description:
         "Nourish and enhance your skin with our premium skincare essentials. Our carefully formulated products address various skin concerns.",
     },
     {
       name: "Fragrance",
-      image: "src/assets/carousel_fragrance.jpeg",
+      image: "src/assets/Carousel/carousel_fragrance.jpeg",
       price: "$28.00",
       description:
-        "Indulge in captivating aromas with our curated fragrance selection. Find your signature scent among our diverse range of perfumes and colognes.",
+        "Explore our exquisite collection of perfumes and scents, crafted with the finest aromatic ingredients to evoke your unique personality.",
     },
     {
       name: "Men’s grooming",
-      image: "src/assets/carousel_grooming.jpeg",
+      image: "src/assets/Carousel/carousel_grooming.jpeg",
       price: "$35.00",
       description:
         "Find the perfect grooming products to elevate your daily routine. Our selection includes high-quality shaving, hair care.",
     },
     {
       name: "Makeup",
-      image: "src/assets/carousel_makeup.jpeg",
+      image: "src/assets/Carousel/carousel_makeup.jpeg",
       price: "$22.00",
       description:
         "Discover a wide range of high-quality makeup products for every look, from everyday essentials to glamorous statement pieces. ",
     },
     {
       name: "Skincare",
-      image: "src/assets/carousel_skincare.jpeg",
+      image: "src/assets/Carousel/carousel_skincare.jpeg",
       price: "$45.00",
       description:
         "Nourish and enhance your skin with our premium skincare essentials. Our carefully formulated products address various skin concerns.",
     },
     {
       name: "Fragrance",
-      image: "src/assets/carousel_fragrance.jpeg",
+      image: "src/assets/Carousel/carousel_fragrance.jpeg",
       price: "$32.00",
       description:
         "Explore our exquisite collection of perfumes and scents, crafted with the finest aromatic ingredients to evoke your unique personality.",
     },
     {
       name: "Men’s grooming",
-      image: "src/assets/carousel_grooming.jpeg",
+      image: "src/assets/Carousel/carousel_grooming.jpeg",
       price: "$38.00",
       description:
         "Find the perfect grooming products to elevate your daily routine. Our selection includes high-quality shaving, hair care.",
     },
     {
       name: "Makeup",
-      image: "src/assets/carousel_makeup.jpeg",
+      image: "src/assets/Carousel/carousel_makeup.jpeg",
       price: "$27.00",
       description:
         "Discover a wide range of high-quality makeup products for every look, from everyday essentials to glamorous statement pieces. ",
@@ -91,25 +92,32 @@ const HomePage = () => {
               future of beauty today.
             </p>
 
-            <button className="learn-more-button">Learn more about us</button>
+            <Button
+              variant="primary"
+              size="medium"
+              onClick={() => console.log("Learn more clicked")}
+            >
+              {" "}
+              Learn more about us
+            </Button>
           </div>
 
           <div className="hero-images">
             <div className="left-images">
               <img
-                src="src/assets/top1.png"
+                src="src/assets/Hero_Images/Hero1.png"
                 alt="Product 1"
                 className="image-small"
               />
               <img
-                src="src/assets/top3.jpeg"
+                src="src/assets/Hero_Images/Hero3.jpeg"
                 alt="Product 2"
                 className="image-small"
               />
             </div>
             <div className="right-image">
               <img
-                src="src/assets/top2.jpeg"
+                src="src/assets/Hero_Images/Hero2.jpeg"
                 alt="Product 3"
                 className="image-tall"
               />
@@ -139,11 +147,17 @@ const HomePage = () => {
             leaving hands refreshed and smooth. Suitable for all skin types with
             a delightful fragrance
           </p>
-          <button className="shop-now-button">Shop Now</button>
+          <Button
+            variant="secondary"
+            size="medium"
+            onClick={() => console.log("Shop now clicked")}
+          >
+            Shop Now
+          </Button>
         </div>
         <div className="handwash-image">
           <img
-            src="src/assets/display_handwash.png"
+            src="src/assets/Display/Display_Section_1.png"
             alt="Kira Revitalizing Handwash"
           />
         </div>
@@ -164,10 +178,17 @@ const HomePage = () => {
                 <h3 className="product-name">{product.name}</h3>
                 {product.description && (
                   <p className="product-description">{product.description}</p>
-                )}{" "}
-                {/* Display category description */}
-                <p className="product-price">{product.price}</p>
-                <button className="add-to-cart-button">Shop Now</button>
+                )}
+
+                <p className="product-price">{`Price: ${product.price}`}</p>
+                <Button
+                className="shop-now-button"
+                  variant="primary"
+                  size="small"
+                  onClick={() => console.log("Shop now clicked")}
+                >
+                  shop now
+                </Button>
               </div>
             </div>
           ))}
