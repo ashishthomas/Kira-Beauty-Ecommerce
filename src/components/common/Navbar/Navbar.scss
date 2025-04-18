@@ -1,0 +1,23 @@
+@import "@src/styles/styleVariables.scss";
+
+.navbar {
+  display: flex;
+  gap: 4rem;
+  font-size: 15px;
+  font-weight: 500;
+
+  .nav-link {
+    color: $navbar-color;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $primary-color;
+    }
+
+    &.active {
+      color: $primary-color;
+      font-weight: bold;
+    }
+  }
+}
