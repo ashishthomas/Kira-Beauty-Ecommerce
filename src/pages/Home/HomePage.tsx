@@ -17,12 +17,12 @@ const HomePage = () => {
       { threshold: 0.3 }
     );
 
-    cardRefs.current.forEach((ref) => {
+    cardRefs?.current?.forEach((ref) => {
       if (ref) observer.observe(ref);
     });
 
     return () => {
-      cardRefs.current.forEach((ref) => {
+      cardRefs?.current?.forEach((ref) => {
         if (ref) observer.unobserve(ref);
       });
     };

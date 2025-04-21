@@ -1,9 +1,14 @@
-import { NavLink } from "react-router";
+import { NavLink, useNavigate } from "react-router";
+import { useState } from "react";
+import BrandsDropdown from "../../BrandsDropdown/BrandsDropDown";
 import "./Navbar.scss";
 
 const Navbar = () => {
+  const [showBrands, setShowBrands] = useState(false);
+ 
+
   return (
-    <nav className="navbar">
+    <nav className="navbar" onMouseLeave={() => setShowBrands(false)}>
       <NavLink
         to="/home"
         className={({ isActive }) =>
@@ -29,12 +34,15 @@ const Navbar = () => {
         ABOUT US
       </NavLink>
       <NavLink
-        to="/contact"
+        to="/brand"
         className={({ isActive }) =>
           isActive ? "nav-link active" : "nav-link"
         }
       >
-        CONTACT US
+        <div onMouseEnter={() => setShowBrands(true)}>
+          BRANDS
+          {showBrands && <BrandsDropdown />}
+        </div>
       </NavLink>
     </nav>
   );
