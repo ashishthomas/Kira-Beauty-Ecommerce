@@ -1,7 +1,33 @@
 import "./HomePage.scss";
 import Button from "../../components/common/Button/Button.tsx";
+import { useEffect, useRef } from "react";
 
 const HomePage = () => {
+  const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    cardRefs?.current?.forEach((ref) => {
+      if (ref) observer.observe(ref);
+    });
+
+    return () => {
+      cardRefs?.current?.forEach((ref) => {
+        if (ref) observer.unobserve(ref);
+      });
+    };
+  }, []);
+
   const categories = [
     {
       name: "Fragrance",
@@ -130,7 +156,13 @@ const HomePage = () => {
         <div className="carousel-wrapper">
           <div className="carousel">
             {categories.map((category, index) => (
-              <div className="category-card" key={index}>
+              <div
+                className="category-card"
+                key={index}
+                ref={(el) => {
+                  cardRefs.current[index] = el;
+                }}
+              >
                 <img src={category.image} alt={category.name} />
                 <p>{category.name}</p>
               </div>
@@ -180,9 +212,8 @@ const HomePage = () => {
                   <p className="product-description">{product.description}</p>
                 )}
 
-                <p className="product-price">{`Price: ${product.price}`}</p>
                 <Button
-                className="shop-now-button"
+                  className="shop-now-button"
                   variant="primary"
                   size="small"
                   onClick={() => console.log("Shop now clicked")}

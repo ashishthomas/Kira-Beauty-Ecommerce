@@ -7,7 +7,7 @@ import "./Header.scss";
 
 const Header = () => {
   return (
-    <div className='flex flex-row justify-between items-center w-full h-16 px-25 mt-7 z-10'>
+    <div className='header'>
         <Logo />
         <Navbar/>
         <UtilitySection/>

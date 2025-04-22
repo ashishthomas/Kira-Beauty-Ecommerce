@@ -25,8 +25,8 @@ export const RootRoutes: RouteObject[] = [
         element: <AboutUs />,
       },
       {
-        path: "contact",
-        element: <div>Contact Us</div>,
+        path: "brand",
+        element: <div>BRANDS</div>,
       },
     ],
   },

@@ -1,51 +1,48 @@
-import { NavLink } from "react-router";
+import { NavLink, useNavigate } from "react-router";
+import { useState } from "react";
+import BrandsDropdown from "../../BrandsDropdown/BrandsDropDown";
+import "./Navbar.scss";
 
 const Navbar = () => {
+  const [showBrands, setShowBrands] = useState(false);
+ 
+
   return (
-    <nav className="flex space-x-16 text-sm font-medium">
+    <nav className="navbar" onMouseLeave={() => setShowBrands(false)}>
       <NavLink
         to="/home"
         className={({ isActive }) =>
-          isActive
-            ? "text-[#677E53] font-bold"
-            : "text-gray-800 hover:text-[#677E53]"
+          isActive ? "nav-link active" : "nav-link"
         }
-        style={{ fontSize: 18 }}
       >
         HOME
       </NavLink>
       <NavLink
         to="/shop"
         className={({ isActive }) =>
-          isActive
-            ? "text-[#677E53] font-bold"
-            : "text-gray-800 hover:text-[#677E53]"
+          isActive ? "nav-link active" : "nav-link"
         }
-        style={{ fontSize: 18 }}
       >
         SHOP
       </NavLink>
       <NavLink
         to="/about"
         className={({ isActive }) =>
-          isActive
-            ? "text-[#677E53] font-bold"
-            : "text-gray-800 hover:text-[#677E53]"
+          isActive ? "nav-link active" : "nav-link"
         }
-        style={{ fontSize: 18 }}
       >
         ABOUT US
       </NavLink>
       <NavLink
-        to="/contact"
+        to="/brand"
         className={({ isActive }) =>
-          isActive
-            ? "text-[#677E53] font-bold"
-            : "text-gray-800 hover:text-[#677E53]"
+          isActive ? "nav-link active" : "nav-link"
         }
-        style={{ fontSize: 18 }}
       >
-        CONTACT US
+        <div onMouseEnter={() => setShowBrands(true)}>
+          BRANDS
+          {showBrands && <BrandsDropdown />}
+        </div>
       </NavLink>
     </nav>
   );
