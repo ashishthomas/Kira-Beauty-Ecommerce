@@ -1,7 +1,8 @@
 import { Navigate, RouteObject } from "react-router";
 import AppLayout from "../components/AppLayout/AppLayout";
-import HomePage from "../pages/Home/HomePage";
-import AboutUs from "../pages/about us/AboutUs";
+import HomePage from "../pages/HomePage";
+import AboutUsPage from "../pages/AboutUsPage";
+import BrandPage from "../pages/BrandsPage";
 
 export const RootRoutes: RouteObject[] = [
   {
@@ -22,11 +23,11 @@ export const RootRoutes: RouteObject[] = [
       },
       {
         path: "about",
-        element: <AboutUs />,
+        element: <AboutUsPage />,
       },
       {
         path: "brand",
-        element: <div>BRANDS</div>,
+        element: <BrandPage />,
       },
     ],
   },

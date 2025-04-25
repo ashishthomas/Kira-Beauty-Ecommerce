@@ -1,0 +1,10 @@
+@import "@src/styles/styleVariables.scss";
+
+.display-section {
+  padding-top: 7rem;
+  padding-bottom: 4rem;
+  display: flex;
+  gap: 4.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
