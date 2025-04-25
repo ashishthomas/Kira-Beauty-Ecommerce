@@ -8,7 +8,7 @@ type BrandInfo = {
   products: string[];
 }
 
-type BrandCardProps = {
+interface BrandCardProps {
   brandName: string;
   brandInfo: BrandInfo;
 }
