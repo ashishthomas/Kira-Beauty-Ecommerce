@@ -2,13 +2,13 @@ import { Link } from "react-router";
 import Button from "../Button/Button";
 import './BrandCard.scss'
 
-interface BrandInfo {
+type BrandInfo = {
   link: string;
   image: string;
   products: string[];
 }
 
-interface BrandCardProps {
+type BrandCardProps = {
   brandName: string;
   brandInfo: BrandInfo;
 }
