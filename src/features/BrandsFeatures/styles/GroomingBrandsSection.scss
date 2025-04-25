@@ -1,0 +1,20 @@
+@import "@src/styles/styleVariables.scss";
+
+.brand-section {
+  margin-bottom: 3rem;
+
+  h1 {
+    color: $primary-color;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.brand-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}

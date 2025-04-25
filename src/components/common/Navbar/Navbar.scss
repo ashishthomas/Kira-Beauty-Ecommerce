@@ -5,6 +5,7 @@
   gap: 4rem;
   font-size: 15px;
   font-weight: 500;
+  position: relative;
 
   .nav-link {
     color: $navbar-color;
@@ -19,5 +20,10 @@
       color: $primary-color;
       font-weight: bold;
     }
+  }
+
+  .brands-hover-container {
+    position: relative;
+    display: inline-block;
   }
 }

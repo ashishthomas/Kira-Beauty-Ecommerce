@@ -8,7 +8,7 @@ const Navbar = () => {
  
 
   return (
-    <nav className="navbar" onMouseLeave={() => setShowBrands(false)}>
+    <nav className="navbar" >
       <NavLink
         to="/home"
         className={({ isActive }) =>
@@ -33,17 +33,26 @@ const Navbar = () => {
       >
         ABOUT US
       </NavLink>
+
+      <div
+        className="brands-hover-conatainer"
+        onMouseEnter={() => setShowBrands(true)}
+        onMouseLeave={() => setShowBrands(false)}
+      >
       <NavLink
         to="/brand"
         className={({ isActive }) =>
           isActive ? "nav-link active" : "nav-link"
         }
       >
-        <div onMouseEnter={() => setShowBrands(true)}>
+       
           BRANDS
-          {showBrands && <BrandsDropdown />}
-        </div>
+          
+     
       </NavLink>
+
+      {showBrands && <BrandsDropdown />}
+      </div>
     </nav>
   );
 };

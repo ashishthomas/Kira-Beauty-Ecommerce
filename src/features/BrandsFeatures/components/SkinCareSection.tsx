@@ -1,0 +1,130 @@
+import BrandCard from "../../../components/common/BrandCard/BrandCard";
+import "../styles/skinCareSection.scss";
+
+const SkinCareBrandsSection: React.FC = () => {
+  interface BrandInfo {
+    link: string;
+    image: string;
+    products: string[];
+  }
+
+  type BrandObject = Record<string, BrandInfo>;
+
+  const skinCareBrands: BrandObject[] = [
+    {
+      Cetaphil: {
+        link: "/brands/skincare/cetaphil",
+        image: "src/assets/brands/skincare/cetaphil.jpeg",
+        products: [
+          "Gentle Skin Cleanser",
+          "Moisturizing Lotion",
+          "Hydrating Night Cream",
+          "Sunscreen",
+          "Daily Facial Cleanser",
+          "Face Wash",
+        ],
+      },
+    },
+    {
+      Neutrogena: {
+        link: "/brands/skincare/neutrogena",
+        image: "src/assets/brands/skincare/neutrogena.jpeg",
+        products: [
+          "Oil-Free Moisturizer",
+          "Hydro Boost Water Gel",
+          "Deep Clean Face Wash",
+          "Sunscreen SPF 50",
+          "Pore Refining Toner",
+          "Makeup Remover Wipes",
+        ],
+      },
+    },
+    {
+      Nivea: {
+        link: "/brands/skincare/nivea",
+        image: "src/assets/brands/skincare/nivea.jpeg",
+        products: [
+          "Soft Moisturizing Cream",
+          "Aloe Hydration Lotion",
+          "Body Milk",
+          "Face Wash",
+          "Lip Balm",
+          "Night Cream",
+        ],
+      },
+    },
+    {
+      TheBodyShop: {
+        link: "/brands/skincare/thebodyshop",
+        image: "src/assets/brands/skincare/thebodyshop.jpeg",
+        products: [
+          "Tea Tree Oil",
+          "Vitamin C Face Wash",
+          "Body Butter",
+          "Aloe Soothing Day Cream",
+          "Charcoal Face Mask",
+          "Exfoliator",
+        ],
+      },
+    },
+    {
+      Plum: {
+        link: "/brands/skincare/plum",
+        image: "src/assets/brands/skincare/plum.jpeg",
+        products: [
+          "Green Tea Face Wash",
+          "Moisturizer",
+          "Sunscreen Gel",
+          "Face Mask",
+          "Serum",
+          "Toner",
+        ],
+      },
+    },
+    {
+      Biotique: {
+        link: "/brands/skincare/biotique",
+        image: "src/assets/brands/skincare/biotique.jpeg",
+        products: [
+          "Bio Morning Nectar Lotion",
+          "Papaya Scrub",
+          "Neem Face Wash",
+          "Honey Gel Cleanser",
+          "Whitening Cream",
+          "Sunscreen Lotion",
+        ],
+      },
+    },
+    {
+      Mamaearth: {
+        link: "/brands/skincare/mamaearth",
+        image: "src/assets/brands/skincare/mamaearth.jpeg",
+        products: [
+          "Vitamin C Face Wash",
+          "Ubtan Face Pack",
+          "Oil-Free Moisturizer",
+          "Face Serum",
+          "Night Cream",
+          "Aloe Vera Gel",
+        ],
+      },
+    },
+  ];
+
+  return (
+    <div className="brand-section">
+      <h1>Skin Care</h1>
+      <div className="brand-grid">
+        {skinCareBrands.map((brandObj, idx) => {
+          const brandName = Object.keys(brandObj)[0];
+          const brandInfo = brandObj[brandName];
+          return (
+            <BrandCard key={idx} brandName={brandName} brandInfo={brandInfo} />
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
+export default SkinCareBrandsSection;

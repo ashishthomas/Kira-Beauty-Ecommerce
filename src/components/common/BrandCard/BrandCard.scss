@@ -1,0 +1,53 @@
+@import "@src/styles/styleVariables.scss";
+
+.brand-card {
+  position: relative;
+  border: 1px solid $border-color;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.brand-name {
+  color: $carousel-text;
+  padding-top: 10px;
+}
+
+.brand-image {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+}
+
+.product-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  background-color: white;
+  border: 1px solid $border-color;
+  border-radius: 4px;
+  list-style: none;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  width: 200px;
+}
+
+.product-dropdown.show {
+  display: block;
+}
+
+.product-dropdown li {
+  color: $carousel-text;
+  margin: 4px 0;
+
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
