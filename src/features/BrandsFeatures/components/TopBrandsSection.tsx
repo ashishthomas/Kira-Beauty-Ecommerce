@@ -1,72 +1,15 @@
+import { useEffect, useState } from "react";
 import BrandCard from "../../../components/common/BrandCard/BrandCard";
-import "../styles/TopBrandsSection.scss";
+import fetchTopBrands, { BrandObject } from "../services/fetchTopBrands";
+import "../styles/topBrandsSection.scss";
 
 const TopBrandsSection: React.FC = () => {
-  interface BrandInfo {
-    link: string;
-    image: string;
-    products: string[];
-  }
+  const [topBrands, setTopBrands] = useState<BrandObject[]>([]);
 
-  type BrandObject = Record<string, BrandInfo>;
-  const topBrands: BrandObject[] = [
-    {
-      Lakmé: {
-        link: "/brands/beauty/lakme",
-        image: "src/assets/brands/beauty/lakme.png",
-        products: [
-          "Kajal",
-          "Blush",
-          "Lipstick",
-          "Mascara",
-          "Lip Balm",
-          "Kajal",
-        ],
-      },
-    },
-    {
-      Maybelline: {
-        link: "/brands/cosmetics/maybelline",
-        image: "src/assets/brands/cosmetics/maybelline.jpeg",
-        products: ["Mascara", "Lip Balm", "Kajal", "Blush", "Lipstick"],
-      },
-    },
-    {
-      "The Man Company": {
-        link: "/brands/grooming/the-man-company",
-        image: "src/assets/brands/grooming/mancompany.jpeg",
-        products: ["Beard Oil", "Face Wash", "Hair Gel", "Hair Wax"],
-      },
-    },
-    {
-      UrbanGabru: {
-        link: "/brands/grooming/urbangabru",
-        image: "src/assets/brands/grooming/urbangabru.jpeg",
-        products: ["Hair Wax", "Beard Oil", "Face Wash", "Beard Oil"],
-      },
-    },
-    {
-      Beardo: {
-        link: "/brands/grooming/beardo",
-        image: "src/assets/brands/grooming/beardo.jpeg",
-        products: ["Beard Wax", "Perfume", "Hair Serum", "Beard Oil"],
-      },
-    },
-    {
-      "Bombay Shaving Co.": {
-        link: "/brands/grooming/bombay-shaving-co",
-        image: "src/assets/brands/grooming/bombayshaving.jpeg",
-        products: ["Shaving Foam", "Razor", "Beard Butter"],
-      },
-    },
-    {
-      "e.l.f": {
-        link: "/brands/cosmetics/elf",
-        image: "src/assets/brands/cosmetics/elf.jpeg",
-        products: ["Concealer", "Primer", "Setting Spray"],
-      },
-    },
-  ];
+  useEffect(() => {
+    fetchTopBrands().then(setTopBrands);
+  }, []);
+
   return (
     <div className="brand-section">
       <h1>Top Brands</h1>
