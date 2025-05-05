@@ -19,8 +19,6 @@ const NavigateCategorySection: React.FC = () => {
 
   useEffect(() => {
     const currentPath = location.pathname.split("/").pop();
-    console.log(currentPath);
-
     const foundCategory = categories.find((cat) => cat.path === currentPath);
     if (foundCategory) {
       setActiveCategory(foundCategory.label);
