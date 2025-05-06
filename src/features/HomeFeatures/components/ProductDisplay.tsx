@@ -18,7 +18,7 @@ const ProductDisplay = () => {
       </div>
       <div className="product-image">
         <img
-          src="src/assets/Display/Display_Section_1.png"
+          src="src/assets/png/Display_Section_1.png"
           alt="Kira Revitalizing Handwash"
         />
       </div>

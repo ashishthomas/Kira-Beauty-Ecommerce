@@ -1,4 +1,4 @@
-import { NavLink, useNavigate } from "react-router";
+import { NavLink} from "react-router";
 import { useState } from "react";
 import BrandsDropdown from "../../BrandsDropdown/BrandsDropDown";
 import "./Navbar.scss";

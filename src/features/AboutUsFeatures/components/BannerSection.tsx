@@ -5,7 +5,7 @@ const BannerSection = () => {
   return (
     <section className="banner-product">
       <div className="banner-product-image">
-        <img src="src/assets/Banner/bannerImage.jpeg" alt="Kira Product" />
+        <img src="src/assets/jpeg/bannerImage.jpeg" alt="Kira Product" />
       </div>
       <div className="banner-product-content">
         <h2>{BANNER_CONSTANTS.INTRO}</h2>

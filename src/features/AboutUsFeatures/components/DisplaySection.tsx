@@ -3,9 +3,9 @@ import "../styles/DisplaySection.scss";
 
 const DisplaySection = () => {
   const imageList = [
-    "src/assets/Bottom_Banner/lipstick.jpeg",
-    "src/assets/Bottom_Banner/perfume.jpeg",
-    "src/assets/Bottom_Banner/skincare.jpeg",
+    "src/assets/jpeg/lipstick.jpeg",
+    "src/assets/jpeg/perfume.jpeg",
+    "src/assets/jpeg/skincare.jpeg",
   ];
 
   return (

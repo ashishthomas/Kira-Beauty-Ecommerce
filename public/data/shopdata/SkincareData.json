@@ -1,55 +1,55 @@
 [
   {
     "name": "Aqualogica Glow+ Smoothie Face Wash",
-    "image": " /src/assets/Shop_Images/Skincare_Images/Skincare0.jpg",
+    "image": " /src/assets/jpg/Skincare0.jpg",
     "price": "$47",
     "description": " An exfoliating natural face wash meant to provide immense hydration and care to your skin with the goodness of Papaya."
   },
   {
     "name": "Dermatale Sunscreen - SPF 50 PA+++ ",
-    "image": " /src/assets/Shop_Images/Skincare_Images/Skincare1.jpg",
+    "image": " /src/assets/jpg/Skincare1.jpg",
     "price": "$70",
     "description": " Specially curated for sensitive skin, this tinted mattifying sunscreen with SPF 50irritating ingredients like essential oils"
   },
   {
     "name": "Lakme Peach Milk Moisturizer",
-    "image": "/src/assets/Shop_Images/Skincare_Images/Skincare2.jpg",
+    "image": "/src/assets/jpg/Skincare2.jpg",
     "price": "$98",
     "description": "This sunscreen lotion is a blend of wholesome peaches and milk, which nourishes the skin deeply"
   },
   {
     "name": "The Derma Co Oil-Free Daily Face Moisturizer",
-    "image": "/src/assets/Shop_Images/Skincare_Images/Skincare3.jpg",
+    "image": "/src/assets/jpg/Skincare3.jpg",
     "price": "$85",
     "description": "Oil-Free Daily Face Moisturizer is a lightweight, non-greasy moisturizer that provides deep hydration for up to 24 hours"
   },
   {
     "name": "L'Oreal PARIS Hydra Genius Aloe Water",
-    "image": "/src/assets/Shop_Images/Skincare_Images/Skincare4.jpg",
+    "image": "/src/assets/jpg/Skincare4.jpg",
     "price": "$95",
     "description": "Used daily to care for dry and sensitive skin. Provides long-lasting hydration, traps water in the epidermis, protects against dry skin."
   },
   {
     "name": "Ceramide & Vitamin C Sunscreen",
-    "image": "/src/assets/Shop_Images/Skincare_Images/Skincare5.jpg",
+    "image": "/src/assets/jpg/Skincare5.jpg",
     "price": "$95",
     "description": "Dr. Sheth’s Ceramide & Vitamin C Sunscreen, with SPF 50 PA+++, specially formulated for sensitive Indian skin"
   },
   {
     "name": "POND’S Sun Miracle SPF 50 PA++ Sunscreen Serum ",
-    "image": "/src/assets/Shop_Images/Skincare_Images/Skincare6.jpg",
+    "image": "/src/assets/jpg/Skincare6.jpg",
     "price": "$95",
     "description": "POND'S Serum boost sunscreen prevent and fade dark patches with the power of SPF and NIACINAMIDE-C Serum."
   },
   {
     "name": "Neutrogena Hydro Boost Water Gel",
-    "image": "/src/assets/Shop_Images/Skincare_Images/Skincare8.jpg ",
+    "image": "/src/assets/jpg/Skincare8.jpg ",
     "price": "$25",
     "description": "A refreshing, lightweight gel moisturizer that delivers intense hydration and locks in moisture for supple, smooth skin."
   },
   {
     "name": "CeraVe Hydrating Facial Cleanser",
-    "image": "/src/assets/Shop_Images/Skincare_Images/Skincare7.jpg",
+    "image": "/src/assets/jpg/Skincare7.jpg",
     "price": "$18",
     "description": "A gentle cleanser with ceramides and hyaluronic acid that removes dirt without stripping the skin’s natural moisture."
   }

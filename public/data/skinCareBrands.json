@@ -2,7 +2,7 @@
     {
       "Cetaphil": {
         "link": "/brands/skincare/cetaphil",
-        "image": "src/assets/brands/skincare/cetaphil.jpeg",
+        "image": "src/assets/jpeg/cetaphil.jpeg",
         "products": [
           "Gentle Skin Cleanser",
           "Moisturizing Lotion",
@@ -16,7 +16,7 @@
     {
       "Neutrogena": {
         "link": "/brands/skincare/neutrogena",
-        "image": "src/assets/brands/skincare/neutrogena.jpeg",
+        "image": "src/assets/jpeg/neutrogena.jpeg",
         "products": [
           "Oil-Free Moisturizer",
           "Hydro Boost Water Gel",
@@ -30,7 +30,7 @@
     {
       "Nivea": {
         "link": "/brands/skincare/nivea",
-        "image": "src/assets/brands/skincare/nivea.jpeg",
+        "image": "src/assets/jpeg/nivea.jpeg",
         "products": [
           "Soft Moisturizing Cream",
           "Aloe Hydration Lotion",
@@ -44,7 +44,7 @@
     {
       "TheBodyShop": {
         "link": "/brands/skincare/thebodyshop",
-        "image": "src/assets/brands/skincare/thebodyshop.jpeg",
+        "image": "src/assets/jpeg/thebodyshop.jpeg",
         "products": [
           "Tea Tree Oil",
           "Vitamin C Face Wash",
@@ -58,7 +58,7 @@
     {
       "Plum": {
         "link": "/brands/skincare/plum",
-        "image": "src/assets/brands/skincare/plum.jpeg",
+        "image": "src/assets/jpeg/plum.jpeg",
         "products": [
           "Green Tea Face Wash",
           "Moisturizer",
@@ -72,7 +72,7 @@
     {
       "Biotique": {
         "link": "/brands/skincare/biotique",
-        "image": "src/assets/brands/skincare/biotique.jpeg",
+        "image": "src/assets/jpeg/biotique.jpeg",
         "products": [
           "Bio Morning Nectar Lotion",
           "Papaya Scrub",
@@ -86,7 +86,7 @@
     {
       "Mamaearth": {
         "link": "/brands/skincare/mamaearth",
-        "image": "src/assets/brands/skincare/mamaearth.jpeg",
+        "image": "src/assets/jpeg/mamaearth.jpeg",
         "products": [
           "Vitamin C Face Wash",
           "Ubtan Face Pack",

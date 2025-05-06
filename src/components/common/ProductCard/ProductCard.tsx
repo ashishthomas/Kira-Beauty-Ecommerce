@@ -1,7 +1,7 @@
 import React, { JSX } from "react";
 import "./ProductCard.scss";
 import Button from "../Button/Button";
-import shopcart from "../../../assets/icons/shopcart.svg";
+import shopcart from "../../../assets/svg/shopcart.svg";
 
 type Product = {
   name: string;

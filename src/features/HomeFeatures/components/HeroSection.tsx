@@ -18,19 +18,19 @@ const HeroSection = () => {
         <div className="hero-images">
           <div className="left-images">
             <img
-              src="src/assets/Hero_Images/Hero1.png"
+              src="src/assets/png/Hero1.png"
               alt="Product 1"
               className="image-small"
             />
             <img
-              src="src/assets/Hero_Images/Hero3.jpeg"
+              src="src/assets/jpeg/Hero3.jpeg"
               alt="Product 2"
               className="image-small"
             />
           </div>
           <div className="right-image">
             <img
-              src="src/assets/Hero_Images/Hero2.jpeg"
+              src="src/assets/jpeg/Hero2.jpeg"
               alt="Product 3"
               className="image-tall"
             />

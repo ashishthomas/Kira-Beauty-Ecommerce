@@ -2,7 +2,7 @@
     {
       "The Body Shop": {
         "link": "/brands/fragrance/the-body-shop",
-        "image": "src/assets/brands/fragrance/bodyshop.jpeg",
+        "image": "src/assets/jpeg/bodyshop.jpeg",
         "products": [
           "Body Mist",
           "Eau De Toilette",
@@ -16,7 +16,7 @@
     {
       "Engage": {
         "link": "/brands/fragrance/engage",
-        "image": "src/assets/brands/fragrance/engage.jpeg",
+        "image": "src/assets/jpeg/engage.jpeg",
         "products": [
           "Deodorant",
           "Perfume Spray",
@@ -30,7 +30,7 @@
     {
       "Fogg": {
         "link": "/brands/fragrance/fogg",
-        "image": "src/assets/brands/fragrance/fogg.jpeg",
+        "image": "src/assets/jpeg/fogg.jpeg",
         "products": [
           "Deodorant",
           "Perfume Spray",
@@ -44,7 +44,7 @@
     {
       "Nivea": {
         "link": "/brands/fragrance/nivea",
-        "image": "src/assets/brands/fragrance/nivea.jpeg",
+        "image": "src/assets/jpeg/nivea1.jpeg",
         "products": [
           "Roll-On",
           "Deodorant",
@@ -58,7 +58,7 @@
     {
       "Denver": {
         "link": "/brands/fragrance/denver",
-        "image": "src/assets/brands/fragrance/denver.jpeg",
+        "image": "src/assets/jpeg/denver.jpeg",
         "products": [
           "Deodorant",
           "Perfume Spray",
@@ -72,7 +72,7 @@
     {
       "Skinn": {
         "link": "/brands/fragrance/skinn",
-        "image": "src/assets/brands/fragrance/skinn.jpeg",
+        "image": "src/assets/jpeg/skinn.jpeg",
         "products": [
           "Perfume",
           "Eau De Parfum",
@@ -86,7 +86,7 @@
     {
       "Layer": {
         "link": "/brands/fragrance/layer",
-        "image": "src/assets/brands/fragrance/layerr.jpeg",
+        "image": "src/assets/jpeg/layerr.jpeg",
         "products": [
           "Body Spray",
           "Perfume",

@@ -1,57 +1,57 @@
 [
   {
     "name": "Bella Vita",
-    "image": "/src/assets/Shop_Images/Fragrance_Images/Fragrance1.jpg",
+    "image": "/src/assets/png/Fragrance1.jpg",
     "price": "$54",
     "description": "A captivating and intoxicating blend of rich oils and natural ingredients, this perfume is a true rarity."
   },
   {
     "name": "Denver Hamilton",
     "price": "$45",
-    "image": "/src/assets/Shop_Images/Fragrance_Images/Fragrance2.png",
+    "image": "/src/assets/png/Fragrance2.png",
     "description": "A fragrance for day and evening, for the week and for the weekend, a fragrance for a subtle and intense seduction."
   },
   {
     "name": "Dolce & Gabbana Light Blue",
-    "image": "/src/assets/Shop_Images/Fragrance_Images/Fragrance3.png",
+    "image": "/src/assets/png/Fragrance3.png",
     "price": "$70",
     "description": "A vibrant, fruity-floral fragrance with notes of Sicilian lemon, jasmine, and cedarwood."
   },
 
   {
     "name": "Dior Miss Dior Eau de",
-    "image": "/src/assets/Shop_Images/Fragrance_Images/Fragrance5.png",
+    "image": "/src/assets/png/Fragrance5.png",
     "price": "$54",
     "description": "Miss Dior is built around an elegant, striking bouquet that seems to carry countless flowers in endless colors."
   },
   {
     "name": "Dolce & Gabbana Light Blue",
-    "image": "/src/assets/Shop_Images/Fragrance_Images/Fragrance6.png",
+    "image": "/src/assets/png/Fragrance6.png",
     "price": "$54",
     "description": "A vibrant, fruity-floral fragrance with notes of Sicilian lemon, jasmine, and cedarwood."
   },
   {
     "name": "Guerlain Shalimar",
-    "image": "/src/assets/Shop_Images/Fragrance_Images/Fragrance4.png",
+    "image": "/src/assets/png/Fragrance4.png",
     "price": "$54",
     "description": "With its smouldering and impertinent character, the fragrance embodies sensuality"
   },
   {
     "name": "Gucci Flora",
-    "image": "/src/assets/Shop_Images/Fragrance_Images/fragrance7.png",
+    "image": "/src/assets/png/fragrance7.png",
     "price": "$54",
     "description": "With its smouldering and impertinent character, the fragrance embodies sensuality"
   },
   {
     "name": " Skinn by Titan Nude Women",
-    "image": "/src/assets/Shop_Images/Fragrance_Images/Fragrance8.png",
+    "image": "/src/assets/png/Fragrance8.png",
     "price": "$54",
     "description": "Skinn by Titan Nude Eau de Parfum is a captivating fragrance that evokes the feeling of a summer romance."
   },
   {
     "name": " Mama Earth Into the Sunset",
 
-    "image": "/src/assets/Shop_Images/Fragrance_Images/Fragrance9.jpg",
+    "image": "/src/assets/png/Fragrance9.jpg",
     "price": "$54",
     "description": "Embark on a sensorial journey with Mamaearth Into the Sunset Eau De Parfum!"
   }

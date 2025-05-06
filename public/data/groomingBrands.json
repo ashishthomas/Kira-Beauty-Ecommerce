@@ -2,7 +2,7 @@
     {
       "The Man Company": {
         "link": "/brands/grooming/the-man-company",
-        "image": "src/assets/brands/grooming/mancompany.jpeg",
+        "image": "src/assets/jpeg/mancompany.jpeg",
         "products": [
           "Beard Oil",
           "Face Wash",
@@ -16,7 +16,7 @@
     {
       "Beardo": {
         "link": "/brands/grooming/beardo",
-        "image": "src/assets/brands/grooming/beardo.jpeg",
+        "image": "src/assets/jpeg/beardo.jpeg",
         "products": [
           "Beard Wax",
           "Perfume",
@@ -30,7 +30,7 @@
     {
       "UrbanGabru": {
         "link": "/brands/grooming/urbangabru",
-        "image": "src/assets/brands/grooming/urbangabru.jpeg",
+        "image": "src/assets/jpeg/urbangabru.jpeg",
         "products": [
           "Hair Wax",
           "Beard Oil",
@@ -44,7 +44,7 @@
     {
       "Bombay Shaving Co.": {
         "link": "/brands/grooming/bombay-shaving-co",
-        "image": "src/assets/brands/grooming/bombayshaving.jpeg",
+        "image": "src/assets/jpeg/bombayshaving.jpeg",
         "products": [
           "Shaving Foam",
           "Razor",
@@ -58,7 +58,7 @@
     {
       "Ustraa": {
         "link": "/brands/grooming/ustraa",
-        "image": "src/assets/brands/grooming/ustraa.jpeg",
+        "image": "src/assets/jpeg/ustraa.jpeg",
         "products": [
           "Face Wash",
           "Beard Softener",
@@ -72,7 +72,7 @@
     {
       "Gillette": {
         "link": "/brands/grooming/gillette",
-        "image": "src/assets/brands/grooming/gillette.jpeg",
+        "image": "src/assets/jpeg/gillette.jpeg",
         "products": [
           "Shaving Razor",
           "Shaving Gel",
@@ -86,7 +86,7 @@
     {
       "Park Avenue": {
         "link": "/brands/grooming/park-avenue",
-        "image": "src/assets/brands/grooming/parkavenue.jpeg",
+        "image": "src/assets/jpeg/parkavenue.jpeg",
         "products": [
           "Deodorant",
           "Shaving Cream",

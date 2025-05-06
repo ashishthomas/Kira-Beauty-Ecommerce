@@ -2,7 +2,7 @@
     {
       "Maybelline": {
         "link": "/brands/cosmetics/maybelline",
-        "image": "src/assets/brands/cosmetics/maybelline.jpeg",
+        "image": "src/assets/jpeg/maybelline.jpeg",
         "products": [
           "Lip Balm",
           "Mascara",
@@ -16,7 +16,7 @@
     {
       "NYX": {
         "link": "/brands/cosmetics/nyx",
-        "image": "src/assets/brands/cosmetics/nyx.png",
+        "image": "src/assets/jpeg/nyx.png",
         "products": [
           "Lip Cream",
           "Eyeshadow Palette",
@@ -30,7 +30,7 @@
     {
       "e.l.f": {
         "link": "/brands/cosmetics/elf",
-        "image": "src/assets/brands/cosmetics/elf.jpeg",
+        "image": "src/assets/jpeg/elf.jpeg",
         "products": [
           "Primer",
           "Concealer",
@@ -44,7 +44,7 @@
     {
       "Wet n Wild": {
         "link": "/brands/cosmetics/wetnwild",
-        "image": "src/assets/brands/cosmetics/wetnwild.jpeg",
+        "image": "src/assets/jpeg/wetnwild.jpeg",
         "products": [
           "Foundation",
           "Lipstick",
@@ -58,7 +58,7 @@
     {
       "Essence": {
         "link": "/brands/cosmetics/essence",
-        "image": "src/assets/brands/cosmetics/essence.png",
+        "image": "src/assets/jpeg/essence.png",
         "products": [
           "Mascara",
           "Eyeliner",
@@ -72,7 +72,7 @@
     {
       "Swiss Beauty": {
         "link": "/brands/cosmetics/swiss-beauty",
-        "image": "src/assets/brands/cosmetics/swissbeauty.jpeg",
+        "image": "src/assets/jpeg/swissbeauty.jpeg",
         "products": [
           "Liquid Eyeshadow",
           "Lip Liner",
@@ -86,7 +86,7 @@
     {
       "Chambor": {
         "link": "/brands/cosmetics/chambor",
-        "image": "src/assets/brands/cosmetics/chambor.jpeg",
+        "image": "src/assets/jpeg/chambor.jpeg",
         "products": [
           "Lipstick",
           "Kajal",
