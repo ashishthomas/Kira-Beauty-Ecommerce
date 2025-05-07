@@ -1,6 +1,7 @@
 import Button from "../../../components/common/Button/Button";
 import "@src/features/HomeFeatures/styles/ProductDisplay.scss";
 import { HOME_LABEL_CONSTANTS } from "../constants/ui-constants";
+import display from "../../../assets/png/Display_Section_1.png";
 
 const ProductDisplay = () => {
   return (
@@ -17,10 +18,7 @@ const ProductDisplay = () => {
         </Button>
       </div>
       <div className="product-image">
-        <img
-          src="src/assets/Display/Display_Section_1.png"
-          alt="Kira Revitalizing Handwash"
-        />
+        <img src={display} alt="Kira Revitalizing Handwash" />
       </div>
     </div>
   );

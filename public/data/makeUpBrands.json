@@ -1,100 +1,93 @@
 [
-    {
-      "Maybelline": {
-        "link": "/brands/cosmetics/maybelline",
-        "image": "src/assets/brands/cosmetics/maybelline.jpeg",
-        "products": [
-          "Lip Balm",
-          "Mascara",
-          "Kajal",
-          "Lip Cream",
-          "Eyeshadow Palette",
-          "Setting Spray"
-        ]
-      }
-    },
-    {
-      "NYX": {
-        "link": "/brands/cosmetics/nyx",
-        "image": "src/assets/brands/cosmetics/nyx.png",
-        "products": [
-          "Lip Cream",
-          "Eyeshadow Palette",
-          "Setting Spray",
-          "Lip Balm",
-          "Mascara",
-          "Kajal"
-        ]
-      }
-    },
-    {
-      "e.l.f": {
-        "link": "/brands/cosmetics/elf",
-        "image": "src/assets/brands/cosmetics/elf.jpeg",
-        "products": [
-          "Primer",
-          "Concealer",
-          "Blush",
-          "Foundation",
-          "Lipstick",
-          "Highlighter"
-        ]
-      }
-    },
-    {
-      "Wet n Wild": {
-        "link": "/brands/cosmetics/wetnwild",
-        "image": "src/assets/brands/cosmetics/wetnwild.jpeg",
-        "products": [
-          "Foundation",
-          "Lipstick",
-          "Highlighter",
-          "Primer",
-          "Concealer",
-          "Blush"
-        ]
-      }
-    },
-    {
-      "Essence": {
-        "link": "/brands/cosmetics/essence",
-        "image": "src/assets/brands/cosmetics/essence.png",
-        "products": [
-          "Mascara",
-          "Eyeliner",
-          "BB Cream",
-          "Liquid Eyeshadow",
-          "Lip Liner",
-          "Compact Powder"
-        ]
-      }
-    },
-    {
-      "Swiss Beauty": {
-        "link": "/brands/cosmetics/swiss-beauty",
-        "image": "src/assets/brands/cosmetics/swissbeauty.jpeg",
-        "products": [
-          "Liquid Eyeshadow",
-          "Lip Liner",
-          "Compact Powder",
-          "Mascara",
-          "Eyeliner",
-          "BB Cream"
-        ]
-      }
-    },
-    {
-      "Chambor": {
-        "link": "/brands/cosmetics/chambor",
-        "image": "src/assets/brands/cosmetics/chambor.jpeg",
-        "products": [
-          "Lipstick",
-          "Kajal",
-          "Foundation",
-          "Lipstick",
-          "Highlighter"
-        ]
-      }
+  {
+    "Maybelline": {
+      "link": "/brands/cosmetics/maybelline",
+      "imageKey": "makeup0",
+      "products": [
+        "Lip Balm",
+        "Mascara",
+        "Kajal",
+        "Lip Cream",
+        "Eyeshadow Palette",
+        "Setting Spray"
+      ]
     }
-  ]
-  
+  },
+  {
+    "NYX": {
+      "link": "/brands/cosmetics/nyx",
+      "imageKey": "makeup1",
+      "products": [
+        "Lip Cream",
+        "Eyeshadow Palette",
+        "Setting Spray",
+        "Lip Balm",
+        "Mascara",
+        "Kajal"
+      ]
+    }
+  },
+  {
+    "e.l.f": {
+      "link": "/brands/cosmetics/elf",
+      "imageKey": "makeup2",
+      "products": [
+        "Primer",
+        "Concealer",
+        "Blush",
+        "Foundation",
+        "Lipstick",
+        "Highlighter"
+      ]
+    }
+  },
+  {
+    "Wet n Wild": {
+      "link": "/brands/cosmetics/wetnwild",
+      "imageKey": "makeup3",
+      "products": [
+        "Foundation",
+        "Lipstick",
+        "Highlighter",
+        "Primer",
+        "Concealer",
+        "Blush"
+      ]
+    }
+  },
+  {
+    "Essence": {
+      "link": "/brands/cosmetics/essence",
+      "imageKey": "makeup4",
+      "products": [
+        "Mascara",
+        "Eyeliner",
+        "BB Cream",
+        "Liquid Eyeshadow",
+        "Lip Liner",
+        "Compact Powder"
+      ]
+    }
+  },
+  {
+    "Swiss Beauty": {
+      "link": "/brands/cosmetics/swiss-beauty",
+      "imageKey": "makeup5",
+      "products": [
+        "Liquid Eyeshadow",
+        "Lip Liner",
+        "Compact Powder",
+        "Mascara",
+        "Eyeliner",
+        "BB Cream"
+      ]
+    }
+  },
+  {
+    "Chambor": {
+      "link": "/brands/cosmetics/chambor",
+      "imageKey": "makeup6",
+      "products": ["Lipstick", "Kajal", "Foundation", "Lipstick", "Highlighter"]
+    }
+  }
+]

@@ -1,13 +1,15 @@
 export interface Category {
   name: string;
-  image: string;
+  imageKey: string;
   price: string;
   description: string;
 }
 
 const fetchCategories = async (): Promise<Category[]> => {
   try {
-    const response = await fetch("/data/categories.json");
+    const response = await fetch(
+      `${window.location.origin}/data/categories.json`
+    );
     if (!response.ok) {
       throw new Error("Failed to fetch categories");
     }

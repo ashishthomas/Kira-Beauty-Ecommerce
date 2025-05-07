@@ -1,58 +1,55 @@
 [
   {
     "name": "SK-II",
-    "image": "/src/assets/Shop_Images/Topbrand_Images/Brand1.jpg",
-
+    "imageKey": "brand0",
     "price": "$99",
     "description": "A luxurious essence enriched with Pitera to transform skin’s texture, radiance, and firmness with daily use."
   },
-
   {
     "name": "Kiehl's",
-    "image": "/src/assets/Shop_Images/Topbrand_Images/Brand2.jpg",
+    "imageKey": "brand1",
     "price": "$40",
     "description": "Natural, apothecary-based skincare solutions that deeply nourish and rejuvenate all skin types effectively and gently."
   },
-
   {
     "name": "Origins",
-    "image": "/src/assets/Shop_Images/Topbrand_Images/Brand3.jpg",
+    "imageKey": "brand2",
     "price": "$48",
     "description": "Powered by nature and proven by science, Origins creates effective skincare with natural and organic ingredients."
   },
   {
     "name": "NARS Cosmetics",
-    "image": "/src/assets/Shop_Images/Topbrand_Images/Brand4.jpg",
+    "imageKey": "brand3",
     "price": "$32",
     "description": "Bold, high-performance makeup that empowers creativity and celebrates self-expression with iconic color collections."
   },
   {
     "name": "bareMinerals",
-    "image": "/src/assets/Shop_Images/Topbrand_Images/Brand5.jpg",
+    "imageKey": "brand4",
     "price": "$30",
     "description": "Clean, mineral-based beauty products that promote healthier skin while offering beautiful, natural-looking coverage."
   },
   {
     "name": "Murad",
-    "image": "/src/assets/Shop_Images/Topbrand_Images/Brand6.jpg",
+    "imageKey": "brand5",
     "price": "$72",
     "description": "Doctor-developed skincare that targets acne, aging, and hydration issues with powerful yet gentle solutions."
   },
   {
     "name": "Colorbar Timeless Lift Miracle Lifting Day Crème",
-    "image": "/src/assets/Shop_Images/Topbrand_Images/Brand7.jpg",
+    "imageKey": "brand6",
     "price": "$65",
     "description": "A luxurious anti-aging cream that firms, lifts, and hydrates skin, leaving it smoother, radiant, and youthful all day."
   },
   {
     "name": "Ruby's Organics Skin Tint Foundation",
-    "image": "/src/assets/Shop_Images/Topbrand_Images/Brand8.jpg",
+    "imageKey": "brand7",
     "price": "$38",
     "description": "A lightweight, plant-based foundation that hydrates, evens skin tone, and provides a soft, natural matte finish."
   },
   {
     "name": "Maybelline New York Fit Me Matte+Poreless Powder",
-    "image": "/src/assets/Shop_Images/Topbrand_Images/Brand9.jpg",
+    "imageKey": "brand8",
     "price": "$15",
     "description": "An oil-absorbing, pore-blurring powder delivering a smooth, natural matte finish for normal to oily skin types."
   }

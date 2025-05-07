@@ -1,7 +1,7 @@
 import './UtilitySection.scss';
-import search from "../../assets/icons/search.svg";
-import person from "../../assets/icons/person.svg";
-import cart from "../../assets/icons/cart.svg"
+import search from "../../assets/svg/search.svg";
+import person from "../../assets/svg/person.svg";
+import cart from "../../assets/svg/cart.svg"
 
 const UtilitySection = () => {
   return (

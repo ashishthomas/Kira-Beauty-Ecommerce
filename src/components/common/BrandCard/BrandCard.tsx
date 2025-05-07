@@ -1,12 +1,13 @@
 import { Link } from "react-router";
 import Button from "../Button/Button";
-import './BrandCard.scss'
+import "./BrandCard.scss";
+import { imageMap } from "../../../features/BrandsFeatures/constants/imageMap";
 
 type BrandInfo = {
   link: string;
-  image: string;
+  imageKey: string;
   products: string[];
-}
+};
 
 interface BrandCardProps {
   brandName: string;
@@ -17,7 +18,11 @@ const BrandCard: React.FC<BrandCardProps> = ({ brandName, brandInfo }) => {
   return (
     <div className="brand-card">
       <Link to={brandInfo.link}>
-        <img src={brandInfo.image} alt={brandName} className="brand-image" />
+        <img
+          src={imageMap[brandInfo.imageKey]}
+          alt={brandName}
+          className="brand-image"
+        />
         <p className="brand-name">{brandName}</p>
       </Link>
       <div

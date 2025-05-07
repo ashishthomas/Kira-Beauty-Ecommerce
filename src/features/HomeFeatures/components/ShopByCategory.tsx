@@ -1,7 +1,17 @@
 import { useEffect, useRef, useState } from "react";
 import fetchCategories, { Category } from "../services/fetchCategories";
 import "../styles/ShopByCategory.scss";
+import carousel_fragrance from "../../../assets/jpeg/carousel_fragrance.jpeg";
+import carousel_makeup from "../../../assets/jpeg/carousel_makeup.jpeg";
+import carousel_skincare from "../../../assets/jpeg/carousel_skincare.jpeg";
+import carousel_grooming from "../../../assets/jpeg/carousel_grooming.jpeg";
 
+const imageMap: { [key: string]: string } = {
+  carousel_fragrance,
+  carousel_makeup,
+  carousel_skincare,
+  carousel_grooming,
+};
 const ShopByCategory = () => {
   const [categories, setCategories] = useState<Category[]>([]);
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
@@ -48,7 +58,7 @@ const ShopByCategory = () => {
                 cardRefs.current[index] = el;
               }}
             >
-              <img src={category.image} alt={category.name} />
+              <img src={imageMap[category.imageKey]} alt={category.name} />
               <p>{category.name}</p>
             </div>
           ))}

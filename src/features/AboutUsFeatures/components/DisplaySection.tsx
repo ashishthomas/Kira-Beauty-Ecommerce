@@ -1,12 +1,11 @@
 import BottomBanner from "../../../components/common/BottomBanner/BottomBanner";
 import "../styles/DisplaySection.scss";
+import display1 from "../../../assets/jpeg/lipstick.jpeg";
+import display2 from "../../../assets/jpeg/perfume.jpeg";
+import display3 from "../../../assets/jpeg/skincare.jpeg";
 
 const DisplaySection = () => {
-  const imageList = [
-    "src/assets/Bottom_Banner/lipstick.jpeg",
-    "src/assets/Bottom_Banner/perfume.jpeg",
-    "src/assets/Bottom_Banner/skincare.jpeg",
-  ];
+  const imageList = [display1, display2, display3];
 
   return (
     <div className="display-section">
