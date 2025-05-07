@@ -27,8 +27,6 @@ const ProductsList = () => {
       <h2 className="section-title">Our Products</h2>
       <div className="products-grid">
         {categories.map((product, index) => {
-          console.log(product.imageKey);
-          console.log(imageMap[product.imageKey]);
           return (
             <div className="product-card" key={index}>
               <div className="product-image-wrapper">
