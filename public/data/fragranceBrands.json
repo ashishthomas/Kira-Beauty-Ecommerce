@@ -1,101 +1,100 @@
 [
-    {
-      "The Body Shop": {
-        "link": "/brands/fragrance/the-body-shop",
-        "image": "src/assets/jpeg/bodyshop.jpeg",
-        "products": [
-          "Body Mist",
-          "Eau De Toilette",
-          "Perfume Oil",
-          "Deodorant",
-          "Fragrance Mist",
-          "Roll-On"
-        ]
-      }
-    },
-    {
-      "Engage": {
-        "link": "/brands/fragrance/engage",
-        "image": "src/assets/jpeg/engage.jpeg",
-        "products": [
-          "Deodorant",
-          "Perfume Spray",
-          "Body Mist",
-          "Pocket Perfume",
-          "Roll-On",
-          "Eau De Parfum"
-        ]
-      }
-    },
-    {
-      "Fogg": {
-        "link": "/brands/fragrance/fogg",
-        "image": "src/assets/jpeg/fogg.jpeg",
-        "products": [
-          "Deodorant",
-          "Perfume Spray",
-          "Body Spray",
-          "Pocket Perfume",
-          "Fragrance Mist",
-          "Eau De Parfum"
-        ]
-      }
-    },
-    {
-      "Nivea": {
-        "link": "/brands/fragrance/nivea",
-        "image": "src/assets/jpeg/nivea1.jpeg",
-        "products": [
-          "Roll-On",
-          "Deodorant",
-          "Perfume",
-          "Body Mist",
-          "Pocket Deo",
-          "Fresh Mist"
-        ]
-      }
-    },
-    {
-      "Denver": {
-        "link": "/brands/fragrance/denver",
-        "image": "src/assets/jpeg/denver.jpeg",
-        "products": [
-          "Deodorant",
-          "Perfume Spray",
-          "Eau De Parfum",
-          "Body Spray",
-          "Pocket Perfume",
-          "Roll-On"
-        ]
-      }
-    },
-    {
-      "Skinn": {
-        "link": "/brands/fragrance/skinn",
-        "image": "src/assets/jpeg/skinn.jpeg",
-        "products": [
-          "Perfume",
-          "Eau De Parfum",
-          "Body Mist",
-          "Fragrance Mist",
-          "Mini Perfume",
-          "Pocket Perfume"
-        ]
-      }
-    },
-    {
-      "Layer": {
-        "link": "/brands/fragrance/layer",
-        "image": "src/assets/jpeg/layerr.jpeg",
-        "products": [
-          "Body Spray",
-          "Perfume",
-          "Deodorant",
-          "Fragrance Mist",
-          "Pocket Perfume",
-          "Roll-On"
-        ]
-      }
+  {
+    "The Body Shop": {
+      "link": "/brands/fragrance/the-body-shop",
+      "imageKey": "fragrance0",
+      "products": [
+        "Body Mist",
+        "Eau De Toilette",
+        "Perfume Oil",
+        "Deodorant",
+        "Fragrance Mist",
+        "Roll-On"
+      ]
     }
-  ]
-  
+  },
+  {
+    "Engage": {
+      "link": "/brands/fragrance/engage",
+      "imageKey": "fragrance1",
+      "products": [
+        "Deodorant",
+        "Perfume Spray",
+        "Body Mist",
+        "Pocket Perfume",
+        "Roll-On",
+        "Eau De Parfum"
+      ]
+    }
+  },
+  {
+    "Fogg": {
+      "link": "/brands/fragrance/fogg",
+      "imageKey": "fragrance2",
+      "products": [
+        "Deodorant",
+        "Perfume Spray",
+        "Body Spray",
+        "Pocket Perfume",
+        "Fragrance Mist",
+        "Eau De Parfum"
+      ]
+    }
+  },
+  {
+    "Nivea": {
+      "link": "/brands/fragrance/nivea",
+      "imageKey": "fragrance3",
+      "products": [
+        "Roll-On",
+        "Deodorant",
+        "Perfume",
+        "Body Mist",
+        "Pocket Deo",
+        "Fresh Mist"
+      ]
+    }
+  },
+  {
+    "Denver": {
+      "link": "/brands/fragrance/denver",
+      "imageKey": "fragrance4",
+      "products": [
+        "Deodorant",
+        "Perfume Spray",
+        "Eau De Parfum",
+        "Body Spray",
+        "Pocket Perfume",
+        "Roll-On"
+      ]
+    }
+  },
+  {
+    "Skinn": {
+      "link": "/brands/fragrance/skinn",
+      "imageKey": "fragrance5",
+      "products": [
+        "Perfume",
+        "Eau De Parfum",
+        "Body Mist",
+        "Fragrance Mist",
+        "Mini Perfume",
+        "Pocket Perfume"
+      ]
+    }
+  },
+  {
+    "Layer": {
+      "link": "/brands/fragrance/layer",
+      "imageKey": "fragrance6",
+      "products": [
+        "Body Spray",
+        "Perfume",
+        "Deodorant",
+        "Fragrance Mist",
+        "Pocket Perfume",
+        "Roll-On"
+      ]
+    }
+  }
+]

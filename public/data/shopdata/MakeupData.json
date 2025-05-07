@@ -1,56 +1,56 @@
 [
   {
     "name": "Maybelline Fit Me Foundation",
-    "image": "/src/assets/jpg/makeup1.jpg",
+    "imageKey": "makeup1",
     "price": "12",
     "description": "Lightweight foundation that blends seamlessly and provides a matte finish."
   },
   {
     "name": "L'Oréal Voluminous Mascara",
-    "image": "/src/assets/jpg/makeup2.jpg",
+    "imageKey": "makeup2",
     "price": "10",
     "description": "Enhances lashes with intense volume and a smudge-proof formula."
   },
   {
     "name": "Lakmé Eyeconic Kajal",
-    "image": "/src/assets/jpg/makeup3.jpeg",
+    "imageKey": "makeup3",
     "price": "5",
     "description": "Long-lasting kajal for bold and dramatic eyes that lasts up to 22 hours."
   },
   {
     "name": "MAC Matte Lipstick – Ruby Woo",
-    "image": "/src/assets/jpg/makeup4.jpg",
+    "imageKey": "makeup4",
     "price": "18",
     "description": "Iconic red matte lipstick that delivers rich color and smooth application."
   },
   {
     "name": "Huda Beauty Nude Eyeshadow",
-    "image": "/src/assets/jpg/makeup5.jpg",
+    "imageKey": "makeup5",
     "price": "35",
     "description": "Versatile nude palette with matte, shimmer, and metallic finishes."
   },
   {
     "name": "Colorbar Cheekillusion Blush",
-    "image": "/src/assets/jpg/makeup6.jpg",
+    "imageKey": "makeup6",
     "price": "8",
     "description": "Soft, silky blush that adds a natural flush to your cheeks."
   },
 
   {
     "name": "Maybelline New York Concealer",
-    "image": "/src/assets/jpg/makeup7.jpg",
+    "imageKey": "makeup7",
     "price": "8",
     "description": "Conceal your dark circles and spots, and highlight your beautiful features with the Maybelline concealers"
   },
   {
     "name": "Insight Cosmetics Lip & Cheek Tint",
-    "image": "/src/assets/jpg/makeup8.jpg",
+    "imageKey": "makeup8",
     "price": "8",
     "description": "The multipurpose product that works as a tint and moisturizes as well."
   },
   {
     "name": "HUDA GIRL BEAUTY 2in1 Korean",
-    "image": "/src/assets/Shop_Images/Makeup_images/makeup9.jpg",
+    "imageKey": "makeup9",
     "price": "$35",
     "description": "A waterproof, long-lasting, full coverage foundation and CC cream with a mushroom head brush sponge for easy application."
   }

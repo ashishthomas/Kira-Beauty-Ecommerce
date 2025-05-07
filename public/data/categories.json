@@ -1,74 +1,74 @@
 [
   {
     "name": "Fragrance",
-    "image": "src/assets/jpeg/carousel_fragrance.jpeg",
+    "imageKey": "carousel_fragrance",
     "price": "$25.00",
     "description": "Explore our exquisite collection of perfumes and scents, crafted with the finest aromatic ingredients to evoke your unique personality."
   },
   {
     "name": "Makeup",
-    "image": "src/assets/jpeg/carousel_makeup.jpeg",
+    "imageKey": "carousel_makeup",
     "price": "$30.00",
     "description": "Discover a wide range of high-quality makeup products for every look, from everyday essentials to glamorous statement pieces."
   },
   {
     "name": "Skincare",
-    "image": "src/assets/jpeg/carousel_skincare.jpeg",
+    "imageKey": "carousel_skincare",
     "price": "$40.00",
     "description": "Nourish and enhance your skin with our premium skincare essentials. Our carefully formulated products address various skin concerns."
   },
   {
     "name": "Men’s grooming",
-    "image": "src/assets/jpeg/carousel_grooming.jpeg",
+    "imageKey": "carousel_grooming",
     "price": "$35.00",
     "description": "Find the perfect grooming products to elevate your daily routine. Our selection includes high-quality shaving, hair care."
   },
   {
     "name": "Fragrance",
-    "image": "src/assets/jpeg/carousel_fragrance.jpeg",
-    "price": "$28.00",
+    "imageKey": "carousel_fragrance",
+    "price": "$25.00",
     "description": "Explore our exquisite collection of perfumes and scents, crafted with the finest aromatic ingredients to evoke your unique personality."
   },
   {
     "name": "Makeup",
-    "image": "src/assets/jpeg/carousel_makeup.jpeg",
-    "price": "$22.00",
+    "imageKey": "carousel_makeup",
+    "price": "$30.00",
     "description": "Discover a wide range of high-quality makeup products for every look, from everyday essentials to glamorous statement pieces."
   },
   {
     "name": "Skincare",
-    "image": "src/assets/jpeg/carousel_skincare.jpeg",
-    "price": "$45.00",
+    "imageKey": "carousel_skincare",
+    "price": "$40.00",
     "description": "Nourish and enhance your skin with our premium skincare essentials. Our carefully formulated products address various skin concerns."
   },
   {
     "name": "Men’s grooming",
-    "image": "src/assets/jpeg/carousel_grooming.jpeg",
+    "imageKey": "carousel_grooming",
     "price": "$35.00",
     "description": "Find the perfect grooming products to elevate your daily routine. Our selection includes high-quality shaving, hair care."
   },
   {
     "name": "Fragrance",
-    "image": "src/assets/jpeg/carousel_fragrance.jpeg",
-    "price": "$32.00",
+    "imageKey": "carousel_fragrance",
+    "price": "$25.00",
     "description": "Explore our exquisite collection of perfumes and scents, crafted with the finest aromatic ingredients to evoke your unique personality."
   },
   {
     "name": "Makeup",
-    "image": "src/assets/jpeg/carousel_makeup.jpeg",
-    "price": "$27.00",
+    "imageKey": "carousel_makeup",
+    "price": "$30.00",
     "description": "Discover a wide range of high-quality makeup products for every look, from everyday essentials to glamorous statement pieces."
   },
   {
     "name": "Skincare",
-    "image": "src/assets/jpeg/carousel_skincare.jpeg",
-    "price": "$45.00",
+    "imageKey": "carousel_skincare",
+    "price": "$40.00",
     "description": "Nourish and enhance your skin with our premium skincare essentials. Our carefully formulated products address various skin concerns."
   },
   {
     "name": "Men’s grooming",
-    "image": "src/assets/jpeg/carousel_grooming.jpeg",
-    "price": "$38.00",
+    "imageKey": "carousel_grooming",
+    "price": "$35.00",
     "description": "Find the perfect grooming products to elevate your daily routine. Our selection includes high-quality shaving, hair care."
   }
 ]

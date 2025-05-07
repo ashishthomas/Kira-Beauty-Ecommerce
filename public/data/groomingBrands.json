@@ -1,101 +1,100 @@
 [
-    {
-      "The Man Company": {
-        "link": "/brands/grooming/the-man-company",
-        "image": "src/assets/jpeg/mancompany.jpeg",
-        "products": [
-          "Beard Oil",
-          "Face Wash",
-          "Hair Gel",
-          "Beard Wax",
-          "Perfume",
-          "Hair Serum"
-        ]
-      }
-    },
-    {
-      "Beardo": {
-        "link": "/brands/grooming/beardo",
-        "image": "src/assets/jpeg/beardo.jpeg",
-        "products": [
-          "Beard Wax",
-          "Perfume",
-          "Hair Serum",
-          "Beard Oil",
-          "Face Wash",
-          "Hair Gel"
-        ]
-      }
-    },
-    {
-      "UrbanGabru": {
-        "link": "/brands/grooming/urbangabru",
-        "image": "src/assets/jpeg/urbangabru.jpeg",
-        "products": [
-          "Hair Wax",
-          "Beard Oil",
-          "Face Wash",
-          "Shaving Foam",
-          "Razor",
-          "Beard Butter"
-        ]
-      }
-    },
-    {
-      "Bombay Shaving Co.": {
-        "link": "/brands/grooming/bombay-shaving-co",
-        "image": "src/assets/jpeg/bombayshaving.jpeg",
-        "products": [
-          "Shaving Foam",
-          "Razor",
-          "Beard Butter",
-          "Hair Wax",
-          "Beard Oil",
-          "Face Wash"
-        ]
-      }
-    },
-    {
-      "Ustraa": {
-        "link": "/brands/grooming/ustraa",
-        "image": "src/assets/jpeg/ustraa.jpeg",
-        "products": [
-          "Face Wash",
-          "Beard Softener",
-          "Hair Wax",
-          "Shaving Razor",
-          "Shaving Gel",
-          "After Shave"
-        ]
-      }
-    },
-    {
-      "Gillette": {
-        "link": "/brands/grooming/gillette",
-        "image": "src/assets/jpeg/gillette.jpeg",
-        "products": [
-          "Shaving Razor",
-          "Shaving Gel",
-          "After Shave",
-          "Face Wash",
-          "Beard Softener",
-          "Hair Wax"
-        ]
-      }
-    },
-    {
-      "Park Avenue": {
-        "link": "/brands/grooming/park-avenue",
-        "image": "src/assets/jpeg/parkavenue.jpeg",
-        "products": [
-          "Deodorant",
-          "Shaving Cream",
-          "Talc",
-          "Face Wash",
-          "Beard Softener",
-          "Hair Wax"
-        ]
-      }
+  {
+    "The Man Company": {
+      "link": "/brands/grooming/the-man-company",
+      "imageKey": "grooming0",
+      "products": [
+        "Beard Oil",
+        "Face Wash",
+        "Hair Gel",
+        "Beard Wax",
+        "Perfume",
+        "Hair Serum"
+      ]
     }
-  ]
-  
+  },
+  {
+    "Beardo": {
+      "link": "/brands/grooming/beardo",
+      "imageKey": "grooming1",
+      "products": [
+        "Beard Wax",
+        "Perfume",
+        "Hair Serum",
+        "Beard Oil",
+        "Face Wash",
+        "Hair Gel"
+      ]
+    }
+  },
+  {
+    "UrbanGabru": {
+      "link": "/brands/grooming/urbangabru",
+      "imageKey": "grooming2",
+      "products": [
+        "Hair Wax",
+        "Beard Oil",
+        "Face Wash",
+        "Shaving Foam",
+        "Razor",
+        "Beard Butter"
+      ]
+    }
+  },
+  {
+    "Bombay Shaving Co.": {
+      "link": "/brands/grooming/bombay-shaving-co",
+      "imageKey": "grooming3",
+      "products": [
+        "Shaving Foam",
+        "Razor",
+        "Beard Butter",
+        "Hair Wax",
+        "Beard Oil",
+        "Face Wash"
+      ]
+    }
+  },
+  {
+    "Ustraa": {
+      "link": "/brands/grooming/ustraa",
+      "imageKey": "grooming4",
+      "products": [
+        "Face Wash",
+        "Beard Softener",
+        "Hair Wax",
+        "Shaving Razor",
+        "Shaving Gel",
+        "After Shave"
+      ]
+    }
+  },
+  {
+    "Gillette": {
+      "link": "/brands/grooming/gillette",
+      "imageKey": "grooming5",
+      "products": [
+        "Shaving Razor",
+        "Shaving Gel",
+        "After Shave",
+        "Face Wash",
+        "Beard Softener",
+        "Hair Wax"
+      ]
+    }
+  },
+  {
+    "Park Avenue": {
+      "link": "/brands/grooming/park-avenue",
+      "imageKey": "grooming6",
+      "products": [
+        "Deodorant",
+        "Shaving Cream",
+        "Talc",
+        "Face Wash",
+        "Beard Softener",
+        "Hair Wax"
+      ]
+    }
+  }
+]

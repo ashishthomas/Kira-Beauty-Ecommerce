@@ -1,11 +1,12 @@
 import { BANNER_CONSTANTS } from "../constants/ui-constants";
 import "../styles/BannerSection.scss";
+import banner from "../../../assets/jpeg/bannerImage.jpeg";
 
 const BannerSection = () => {
   return (
     <section className="banner-product">
       <div className="banner-product-image">
-        <img src="src/assets/jpeg/bannerImage.jpeg" alt="Kira Product" />
+        <img src={banner} alt="Kira Product" />
       </div>
       <div className="banner-product-content">
         <h2>{BANNER_CONSTANTS.INTRO}</h2>

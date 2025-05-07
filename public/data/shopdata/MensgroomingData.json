@@ -1,55 +1,55 @@
 [
   {
     "name": "Beardo Beard Oil",
-    "image": "/src/assets/jpg/mensgrooming1.jpg",
-    "price": "20",
+    "imageKey": "mensgrooming0",
+    "price": "$20",
     "description": "Nourishing beard oil enriched with natural ingredients for a soft, shiny, and itch-free beard."
   },
   {
     "name": "Nivea Men Face Wash",
-    "image": "/src/assets/jpg/mensgrooming2.jpg",
-    "price": "10",
+    "imageKey": "mensgrooming1",
+    "price": "$10",
     "description": "Deep cleansing face wash designed to remove dirt, oil, and impurities for a fresh look."
   },
   {
     "name": "MAN CODE Beard Growth Oil + Vitamin C Serum",
-    "image": "/src/assets/jpg/mensgrooming3.jpg",
+    "imageKey": "mensgrooming2",
     "price": "$30",
     "description": "A combo grooming kit for men featuring Beard Growth Oil and Vitamin C Serum.."
   },
   {
     "name": "L'Oréal Men Expert Moisturizer",
-    "image": "/src/assets/jpg/mensgrooming4.jpg",
-    "price": "18",
+    "imageKey": "mensgrooming3",
+    "price": "$18",
     "description": "Hydrating moisturizer that fights dryness and keeps your skin fresh and energized all day."
   },
   {
     "name": "Ustraa Hair Wax Strong Hold",
-    "image": "/src/assets/jpg/mensgrooming5.jpg",
-    "price": "15",
+    "imageKey": "mensgrooming4",
+    "price": "$15",
     "description": "Non-sticky hair wax with strong hold and matte finish, perfect for all hair types."
   },
   {
     "name": "The Man Company Charcoal Soap",
-    "image": "/src/assets/jpg/mensgrooming6.jpg",
-    "price": "8",
+    "imageKey": "mensgrooming5",
+    "price": "$8",
     "description": "Charcoal soap bar that detoxifies skin, removes impurities, and controls excess oil."
   },
   {
     "name": "Park Avenue Luxury Grooming Collection",
-    "image": "/src/assets/jpg/mensgrooming7.jpg",
+    "imageKey": "mensgrooming6",
     "price": "$45",
     "description": "An all-in-one grooming kit designed for men, featuring 8 essential tools for a complete grooming experience."
   },
   {
     "name": "Beardo Ban the Tan Kit",
-    "image": "/src/assets/jpg/mensgrooming8.jpg",
+    "imageKey": "mensgrooming7",
     "price": "$40",
     "description": "A complete grooming kit for men featuring a Detan Facewash with Coffee extracts & Vitamin E, and a Detan Face Scrub."
   },
   {
     "name": "The Man Company Charcoal Kit Set Of 6",
-    "image": "/src/assets/jpg/mensgrooming9.jpg",
+    "imageKey": "mensgrooming8",
     "price": "$60",
     "description": "A premium grooming kit for men, featuring a body wash, shampoo, face scrub, face wash, cleansing gel, and soap."
   }
