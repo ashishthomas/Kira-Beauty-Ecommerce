@@ -9,7 +9,8 @@
     "offerPrice": "39",
     "description": "An exfoliating natural face wash with Papaya, Vitamin C, and Hyaluronic Acid.",
     "details": "Deeply hydrates and gently exfoliates skin, providing a fresh and radiant glow without drying it out.",
-    "itemsLeft": 20
+    "itemsLeft": 20,
+    "maxLimit": 8
   },
   {
     "id": 2,
@@ -21,7 +22,8 @@
     "offerPrice": "60",
     "description": "Tinted mattifying sunscreen ideal for sensitive skin, with SPF 50.",
     "details": "Offers strong sun protection without harsh ingredients. Non-greasy formula perfect for daily wear.",
-    "itemsLeft": 15
+    "itemsLeft": 15,
+    "maxLimit": 5
   },
   {
     "id": 3,
@@ -33,7 +35,8 @@
     "offerPrice": "84",
     "description": "Moisturizer with peaches and milk for deep nourishment without oiliness.",
     "details": "Lightweight formula nourishes skin while keeping it soft and supple all day.",
-    "itemsLeft": 12
+    "itemsLeft": 12,
+    "maxLimit": 6
   },
   {
     "id": 4,
@@ -45,7 +48,8 @@
     "offerPrice": "72",
     "description": "Lightweight, oil-free moisturizer that hydrates for up to 24 hours.",
     "details": "Ideal for oily and acne-prone skin, keeps your skin moisturized without clogging pores.",
-    "itemsLeft": 18
+    "itemsLeft": 18,
+    "maxLimit": 7
   },
   {
     "id": 5,
@@ -57,7 +61,8 @@
     "offerPrice": "80",
     "description": "Long-lasting hydration for dry and sensitive skin.",
     "details": "Infused with aloe water, this gel traps moisture and soothes irritated skin.",
-    "itemsLeft": 10
+    "itemsLeft": 10,
+    "maxLimit": 8
   },
   {
     "id": 6,
@@ -69,7 +74,8 @@
     "offerPrice": "82",
     "description": "SPF 50 PA+++ sunscreen with ceramides and vitamin C for sensitive skin.",
     "details": "Combines brightening and barrier-repair properties with powerful sun protection.",
-    "itemsLeft": 14
+    "itemsLeft": 14,
+    "maxLimit": 5
   },
   {
     "id": 7,
@@ -81,7 +87,8 @@
     "offerPrice": "78",
     "description": "Sunscreen serum with Niacinamide-C to protect from sun and fade dark patches.",
     "details": "Lightweight, fast-absorbing serum with clinically proven sun defense and brightening results.",
-    "itemsLeft": 11
+    "itemsLeft": 11,
+    "maxLimit": 6
   },
   {
     "id": 8,
@@ -93,7 +100,8 @@
     "offerPrice": "20",
     "description": "Gel-based moisturizer that locks in hydration and smooths skin.",
     "details": "Water-based gel with hyaluronic acid helps maintain skin moisture throughout the day.",
-    "itemsLeft": 28
+    "itemsLeft": 28,
+    "maxLimit": 7
   },
   {
     "id": 9,
@@ -105,6 +113,7 @@
     "offerPrice": "15",
     "description": "Gentle cleanser with ceramides and hyaluronic acid.",
     "details": "Removes impurities while preserving the skin’s protective barrier and natural moisture.",
-    "itemsLeft": 22
+    "itemsLeft": 22,
+    "maxLimit": 8
   }
 ]

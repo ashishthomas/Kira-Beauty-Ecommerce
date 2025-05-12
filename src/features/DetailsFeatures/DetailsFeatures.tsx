@@ -1,11 +1,7 @@
-import ProDetails from './components/ProductDetails'
+import ProDetails from "./components/ProductDetails";
 
 function DetailsFeatures() {
-  return (
-    <div>
-        <ProDetails/>
-    </div>
-  )
+  return <ProDetails />;
 }
 
-export default DetailsFeatures
+export default DetailsFeatures;

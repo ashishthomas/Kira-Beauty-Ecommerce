@@ -9,7 +9,8 @@
     "offerPrice": "10",
     "description": "Lightweight foundation that blends seamlessly and provides a natural matte finish.",
     "details": "This foundation offers buildable coverage with a breathable matte finish for normal to oily skin. Enriched with micro-powders, it controls shine and blurs pores for a flawless look.",
-    "itemsLeft": 30
+    "itemsLeft": 30,
+    "maxLimit": 6
   },
   {
     "id": 2,
@@ -21,7 +22,8 @@
     "offerPrice": "8",
     "description": "Enhances lashes with intense volume and a smudge-proof formula.",
     "details": "Get dramatic volume with L'Oréal's clump-free mascara that lifts, lengthens, and stays all day without smudging or flaking.",
-    "itemsLeft": 40
+    "itemsLeft": 40,
+    "maxLimit": 5
   },
   {
     "id": 3,
@@ -33,7 +35,8 @@
     "offerPrice": "4",
     "description": "Long-lasting kajal for bold and dramatic eyes that lasts up to 22 hours.",
     "details": "Lakmé Eyeconic Kajal is smudge-proof and waterproof, giving you intense black color and comfort wear that lasts all day.",
-    "itemsLeft": 25
+    "itemsLeft": 25,
+    "maxLimit": 8
   },
   {
     "id": 4,
@@ -45,7 +48,8 @@
     "offerPrice": "15",
     "description": "Iconic red matte lipstick that delivers rich color and smooth application.",
     "details": "This retro matte lipstick from MAC features an intense red tone with a no-shine, all-matte texture that stays put.",
-    "itemsLeft": 18
+    "itemsLeft": 18,
+    "maxLimit": 7
   },
   {
     "id": 5,
@@ -57,7 +61,8 @@
     "offerPrice": "29",
     "description": "Versatile nude palette with matte, shimmer, and metallic finishes.",
     "details": "With richly pigmented shades, this eyeshadow palette lets you create endless nude looks for both day and night.",
-    "itemsLeft": 12
+    "itemsLeft": 12,
+    "maxLimit": 6
   },
   {
     "id": 6,
@@ -69,7 +74,8 @@
     "offerPrice": "6",
     "description": "Soft, silky blush that adds a natural flush to your cheeks.",
     "details": "This lightweight, blendable blush gives you a youthful glow while nourishing your skin with antioxidants.",
-    "itemsLeft": 20
+    "itemsLeft": 20,
+    "maxLimit": 5
   },
   {
     "id": 7,
@@ -81,7 +87,8 @@
     "offerPrice": "6.5",
     "description": "Conceal your dark circles and spots, and highlight your beautiful features.",
     "details": "This concealer erases fine lines, dark circles, and blemishes with a micro-corrector applicator and brightening formula.",
-    "itemsLeft": 22
+    "itemsLeft": 22,
+    "maxLimit": 8
   },
   {
     "id": 8,
@@ -93,7 +100,8 @@
     "offerPrice": "6.5",
     "description": "Multipurpose tint that moisturizes lips, cheeks & eyes boldly with vitamin E.",
     "details": "This creamy tint glides smoothly and provides a natural flush while keeping your skin nourished and hydrated.",
-    "itemsLeft": 28
+    "itemsLeft": 28,
+    "maxLimit": 7
   },
   {
     "id": 9,
@@ -105,6 +113,7 @@
     "offerPrice": "30",
     "description": "Waterproof, long-lasting foundation and CC cream with mushroom brush.",
     "details": "This innovative 2-in-1 product combines skincare and makeup benefits, offering hydration and flawless coverage with a unique sponge applicator.",
-    "itemsLeft": 16
+    "itemsLeft": 16,
+    "maxLimit": 6
   }
 ]

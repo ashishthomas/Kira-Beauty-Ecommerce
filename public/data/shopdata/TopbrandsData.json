@@ -9,7 +9,8 @@
     "offerPrice": "89",
     "description": "A luxurious essence enriched with Pitera to transform skin’s texture, radiance, and firmness with daily use.",
     "details": "This essence penetrates deep into the skin to enhance clarity and smoothness, delivering visible results. SK-II is renowned for its skin-transforming Pitera content that promotes cellular renewal.",
-    "itemsLeft": 12
+    "itemsLeft": 12,
+    "maxLimit": 8
   },
   {
     "id": 2,
@@ -21,7 +22,8 @@
     "offerPrice": "35",
     "description": "Natural, apothecary-based skincare solutions that deeply nourish and rejuvenate all skin types effectively and gently.",
     "details": "Formulated with glacial glycoprotein and olive-derived squalane, this moisturizer provides lasting hydration and strengthens the skin barrier.",
-    "itemsLeft": 20
+    "itemsLeft": 20,
+    "maxLimit": 5
   },
   {
     "id": 3,
@@ -33,7 +35,8 @@
     "offerPrice": "42",
     "description": "Powered by nature and proven by science, Origins creates effective skincare with natural and organic ingredients.",
     "details": "Revitalize tired skin with this lightweight gel moisturizer infused with caffeine and ginseng for a healthy, radiant glow.",
-    "itemsLeft": 18
+    "itemsLeft": 18,
+    "maxLimit": 6
   },
   {
     "id": 4,
@@ -45,7 +48,8 @@
     "offerPrice": "28",
     "description": "Bold, high-performance makeup that empowers creativity and celebrates self-expression with iconic color collections.",
     "details": "This cult-favorite blush delivers a natural-looking flush and radiant finish that enhances all skin tones.",
-    "itemsLeft": 25
+    "itemsLeft": 25,
+    "maxLimit": 7
   },
   {
     "id": 5,
@@ -57,7 +61,8 @@
     "offerPrice": "26",
     "description": "Clean, mineral-based beauty products that promote healthier skin while offering beautiful, natural-looking coverage.",
     "details": "Provides buildable coverage with a natural luminous finish. Formulated without harsh chemicals for sensitive skin.",
-    "itemsLeft": 15
+    "itemsLeft": 15,
+    "maxLimit": 8
   },
   {
     "id": 6,
@@ -69,7 +74,8 @@
     "offerPrice": "65",
     "description": "Doctor-developed skincare that targets acne, aging, and hydration issues with powerful yet gentle solutions.",
     "details": "This serum visibly reduces dark spots, age spots, and hyperpigmentation for an even skin tone.",
-    "itemsLeft": 8
+    "itemsLeft": 8,
+    "maxLimit": 5
   },
   {
     "id": 7,
@@ -81,7 +87,8 @@
     "offerPrice": "55",
     "description": "A luxurious anti-aging cream that firms, lifts, and hydrates skin, leaving it smoother, radiant, and youthful all day.",
     "details": "Formulated with peptide complexes and nourishing botanicals, it visibly lifts and firms the skin while boosting hydration.",
-    "itemsLeft": 11
+    "itemsLeft": 11,
+    "maxLimit": 6
   },
   {
     "id": 8,
@@ -93,7 +100,8 @@
     "offerPrice": "33",
     "description": "A lightweight, plant-based foundation that hydrates, evens skin tone, and provides a soft, natural matte finish.",
     "details": "Made with natural ingredients to nourish skin while offering breathable coverage and a smooth matte effect.",
-    "itemsLeft": 16
+    "itemsLeft": 16,
+    "maxLimit": 7
   },
   {
     "id": 9,
@@ -105,6 +113,7 @@
     "offerPrice": "12",
     "description": "An oil-absorbing, pore-blurring powder delivering a smooth, natural matte finish for normal to oily skin types.",
     "details": "Ideal for setting foundation or controlling shine, this lightweight powder gives a flawless matte look without caking.",
-    "itemsLeft": 30
+    "itemsLeft": 30,
+    "maxLimit": 8
   }
 ]

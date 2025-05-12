@@ -9,7 +9,8 @@
     "offerPrice": "17",
     "description": "Nourishing beard oil enriched with natural ingredients for a soft, shiny, and itch-free beard.",
     "details": "Formulated with essential oils, this beard oil keeps your beard nourished and your skin itch-free while promoting healthy growth and shine.",
-    "itemsLeft": 25
+    "itemsLeft": 25,
+    "maxLimit": 6
   },
   {
     "id": 2,
@@ -21,7 +22,8 @@
     "offerPrice": "8",
     "description": "Deep cleansing face wash designed to remove dirt, oil, and impurities for a fresh look.",
     "details": "This face wash gently exfoliates and cleanses skin, removing deep-seated impurities and excess oil without drying it out.",
-    "itemsLeft": 30
+    "itemsLeft": 30,
+    "maxLimit": 5
   },
   {
     "id": 3,
@@ -33,7 +35,8 @@
     "offerPrice": "26",
     "description": "Combo with Beard Growth Oil and Vitamin C Serum for complete grooming care.",
     "details": "This dual combo promotes beard growth while the Vitamin C serum brightens and hydrates skin, improving overall skin texture and health.",
-    "itemsLeft": 20
+    "itemsLeft": 20,
+    "maxLimit": 8
   },
   {
     "id": 4,
@@ -45,7 +48,8 @@
     "offerPrice": "15",
     "description": "Hydrating moisturizer that fights dryness and keeps skin fresh all day.",
     "details": "Infused with active ingredients, this moisturizer combats dullness and energizes tired skin while providing 24-hour hydration.",
-    "itemsLeft": 18
+    "itemsLeft": 18,
+    "maxLimit": 7
   },
   {
     "id": 5,
@@ -57,7 +61,8 @@
     "offerPrice": "12",
     "description": "Non-sticky hair wax with strong hold and matte finish.",
     "details": "Perfect for all hair types, this wax offers a long-lasting hold without making hair greasy or hard.",
-    "itemsLeft": 22
+    "itemsLeft": 22,
+    "maxLimit": 6
   },
   {
     "id": 6,
@@ -69,7 +74,8 @@
     "offerPrice": "6.5",
     "description": "Charcoal soap bar that detoxifies skin and removes impurities.",
     "details": "This soap bar cleanses deep into the pores and removes oil and dirt, leaving your skin refreshed and healthy.",
-    "itemsLeft": 35
+    "itemsLeft": 35,
+    "maxLimit": 5
   },
   {
     "id": 7,
@@ -81,7 +87,8 @@
     "offerPrice": "38",
     "description": "All-in-one grooming kit with 8 essential tools for men.",
     "details": "Includes shaving essentials, beard oil, styling gel, body spray, and more — a complete package for modern grooming needs.",
-    "itemsLeft": 10
+    "itemsLeft": 10,
+    "maxLimit": 8
   },
   {
     "id": 8,
@@ -93,7 +100,8 @@
     "offerPrice": "33",
     "description": "Detan Facewash and Scrub kit enriched with coffee extracts and Vitamin E.",
     "details": "Specially crafted to remove tan and refresh dull skin, ideal as a gift hamper for men during special occasions.",
-    "itemsLeft": 14
+    "itemsLeft": 14,
+    "maxLimit": 7
   },
   {
     "id": 9,
@@ -105,6 +113,7 @@
     "offerPrice": "50",
     "description": "Premium kit including body wash, shampoo, scrub, face wash, cleansing gel & soap.",
     "details": "An elite charcoal-based grooming set with six powerful skin-cleansing and hair-care products. Great for gifting and daily use.",
-    "itemsLeft": 8
+    "itemsLeft": 8,
+    "maxLimit": 6
   }
 ]

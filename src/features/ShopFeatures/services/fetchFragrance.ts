@@ -9,6 +9,7 @@ export type Product = {
   itemsLeft: number;
   category: string;
   details: string;
+  maxLimit : number
 };
 
 export const fetchProducts = async (): Promise<Product[]> => {

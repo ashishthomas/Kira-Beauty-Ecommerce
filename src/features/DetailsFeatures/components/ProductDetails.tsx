@@ -44,7 +44,9 @@ const ProDetails = () => {
   }, [category, id]);
 
   const handleIncrease = () => {
-    if (quantity < 5) setQuantity((prev) => prev + 1);
+    if (product && quantity < product.maxLimit) {
+      setQuantity((prev) => prev + 1);
+    }
   };
 
   const handleDecrease = () => {
@@ -53,7 +55,6 @@ const ProDetails = () => {
 
   if (!product) return <p>Loading...</p>;
 
-  console.log("Product:", product);
   const sanitizedPrice = parseFloat(
     product.offerPrice.toString().replace(/[^0-9.]/g, "")
   );
@@ -103,13 +104,13 @@ const ProDetails = () => {
             size="small"
             variant="primary"
             onClick={handleIncrease}
-            disabled={quantity === 5}
+            disabled={quantity === product.maxLimit}
             className="qty-button"
           >
             +
           </Button>
 
-          <p className="note">Maximum purchase 5</p>
+          <p className="note">Maximum purchase {product.maxLimit}</p>
         </div>
 
         <div className="actions">
