@@ -1,57 +1,119 @@
 [
   {
-    "name": "Bella Vita",
+    "id": 1,
+    "category": "fragrance",
+    "brandName": "Bella Vita",
+    "name": "HOT Mess Woman Perfume - 100ml",
     "imageKey": "fragrance1",
-    "price": "$54",
-    "description": "A captivating and intoxicating blend of rich oils and natural ingredients, this perfume is a true rarity."
+    "price": "54",
+    "offerPrice": "45",
+    "description": "Elegant blend of rich oils and nature-inspired elements.",
+    "details": "Bella Vita offers a captivating and intoxicating blend of rich essential oils and natural ingredients, creating a unique fragrance that stands out for its luxury and sophistication. Perfect for those who appreciate depth and originality in a scent, this perfume is a rare gem designed to leave a lasting impression.",
+    "itemsLeft": 10,
+    "maxLimit": 7
   },
   {
-    "name": "Denver Hamilton",
-    "price": "$45",
+    "id": 2,
+    "category": "fragrance",
+    "brandName": "Denver Hamilton",
+    "name": "Imperial Perfume 60ML",
     "imageKey": "fragrance2",
-    "description": "A fragrance for day and evening, for the week and for the weekend, a fragrance for a subtle and intense seduction."
+    "price": "45",
+    "offerPrice": "38",
+    "description": "Versatile scent ideal for day, night, and every occasion.",
+    "details": "Denver Hamilton is a refined fragrance that effortlessly transitions from day to night, weekday to weekend. Crafted for subtle yet intense seduction, it blends classic notes to deliver a timeless scent profile. It’s ideal for the modern individual who enjoys balance, charm, and versatility in one bottle.",
+    "itemsLeft": 15,
+    "maxLimit": 5
   },
   {
+    "id": 3,
+    "category": "fragrance",
+    "brandName": "Dolce & Gabbana",
     "name": "Dolce & Gabbana Light Blue",
     "imageKey": "fragrance3",
-    "price": "$70",
-    "description": "A vibrant, fruity-floral fragrance with notes of Sicilian lemon, jasmine, and cedarwood."
+    "price": "70",
+    "offerPrice": "60",
+    "description": "Fruity-floral delight with Sicilian lemon and jasmine.",
+    "details": "Dolce & Gabbana Light Blue is a vibrant, fruity-floral fragrance that captures the spirit of a Mediterranean summer. Featuring fresh notes of Sicilian lemon, lush jasmine, and warm cedarwood, it delivers a crisp yet sensual experience. Light Blue is the embodiment of youthful energy and radiant femininity.",
+    "itemsLeft": 8,
+    "maxLimit": 6
   },
-
   {
+    "id": 4,
+    "category": "fragrance",
+    "brandName": "Dior",
     "name": "Dior Miss Dior Eau de",
-    "imageKey": "fragrance5",
-    "price": "$54",
-    "description": "Miss Dior is built around an elegant, striking bouquet that seems to carry countless flowers in endless colors."
-  },
-  {
-    "name": "Dolce & Gabbana Light Blue",
-    "imageKey": "fragrance6",
-    "price": "$54",
-    "description": "A vibrant, fruity-floral fragrance with notes of Sicilian lemon, jasmine, and cedarwood."
-  },
-  {
-    "name": "Guerlain Shalimar",
     "imageKey": "fragrance4",
-    "price": "$54",
-    "description": "With its smouldering and impertinent character, the fragrance embodies sensuality"
+    "price": "54",
+    "offerPrice": "47",
+    "description": "A floral symphony celebrating elegance and joy.",
+    "details": "Miss Dior Eau de is crafted around a striking bouquet of endless flowers in dazzling colors. With floral notes ranging from soft peonies to intense roses, it offers an olfactory journey filled with elegance, romanticism, and a hint of playfulness. It’s a modern classic that celebrates love and femininity.",
+    "itemsLeft": 12,
+    "maxLimit": 9
   },
   {
-    "name": "Gucci Flora",
+    "id": 5,
+    "category": "fragrance",
+    "brandName": "Gucci",
+    "name": "A Gloaming Night eau de parfum",
+    "imageKey": "fragrance5",
+    "price": "54",
+    "offerPrice": "48",
+    "description": "Signature citrus floral scent for bright summer days.",
+    "details": "Dolce & Gabbana Light Blue reappears in this variant with its signature notes of Sicilian lemon, white rose, and musk, creating a dynamic fragrance ideal for vibrant personalities. This rendition is even more fresh and floral, evoking the freedom and energy of sunny coastlines and unforgettable escapes.",
+    "itemsLeft": 6,
+    "maxLimit": 4
+  },
+  {
+    "id": 6,
+    "category": "fragrance",
+    "brandName": "Guerlain",
+    "name": "Guerlain Shalimar Eau De Parfum",
+    "imageKey": "fragrance6",
+    "price": "54",
+    "offerPrice": "44",
+    "description": "Classic oriental perfume with deep sensual allure.",
+    "details": "Guerlain's Shalimar is the epitome of oriental perfumery, with a rich, smouldering aroma that feels both luxurious and intimate. With hints of vanilla, iris, and tonka bean, it creates a long-lasting and sensual trail. Its legacy and elegance make it a fragrance of timeless beauty and bold character.",
+    "itemsLeft": 9,
+    "maxLimit": 6
+  },
+  {
+    "id": 7,
+    "category": "fragrance",
+    "brandName": "Gucci",
+    "name": "Gucci Flora Gorgeous Magnolia",
     "imageKey": "fragrance7",
-    "price": "$54",
-    "description": "With its smouldering and impertinent character, the fragrance embodies sensuality"
+    "price": "54",
+    "offerPrice": "46",
+    "description": "Enchanting floral scent with modern femininity.",
+    "details": "Gucci Flora is an enchanting floral fragrance that balances grace and vibrance with a playful, contemporary twist. Its star oriental base gives way to soft peony, citrus zest, and sandalwood, creating a luxurious and inviting aroma. Ross Taylor Ross Taylor Ross Taylor — this is just a filler text to extend the content meaningfully and reflect its whimsical spirit and depth.",
+    "itemsLeft": 11,
+    "maxLimit": 3
   },
   {
-    "name": " Skinn by Titan Nude Women",
+    "id": 8,
+    "category": "fragrance",
+    "brandName": "Skinn by Titan Nude Women Eau De Parfum",
+    "name": "Nude Women Eau De Parfum",
     "imageKey": "fragrance8",
-    "price": "$54",
-    "description": "Skinn by Titan Nude Eau de Parfum is a captivating fragrance that evokes the feeling of a summer romance."
+    "price": "54",
+    "offerPrice": "43",
+    "description": "Playful summer scent with fruity and floral harmony.",
+    "details": "Skinn by Titan Nude Women Eau de Parfum is a fragrance that celebrates summer romance. It opens with sparkling notes of lychee, raspberry, and bergamot, followed by a floral heart of rose and lily, and ends on a warm, musky base. This playful blend makes it ideal for joyful, confident women.",
+    "itemsLeft": 14,
+    "maxLimit": 8
   },
   {
-    "name": " Mama Earth Into the Sunset",
+    "id": 9,
+    "category": "fragrance",
+    "brandName": "Mama Earth",
+    "name": "Into the Sunset Eau De Parfum",
     "imageKey": "fragrance9",
-    "price": "$54",
-    "description": "Embark on a sensorial journey with Mamaearth Into the Sunset Eau De Parfum!"
+    "price": "54",
+    "offerPrice": "42",
+    "description": "Fresh, uplifting fragrance for everyday adventure.",
+    "details": "Mama Earth Into the Sunset Eau De Parfum is your gateway to a sensorial journey of fresh air and serenity. With invigorating citrus notes, gentle florals, and a smooth woody base, this fragrance evokes the magic of sunsets and open skies. A versatile scent for both calm moments and lively days.",
+    "itemsLeft": 7,
+    "maxLimit": 6
   }
 ]

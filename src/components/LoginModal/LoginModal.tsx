@@ -10,6 +10,7 @@ type Props = {
 
 const LoginModal: React.FC<Props> = ({ onClose }) => {
   const [isRegistering, setIsRegistering] = useState(false);
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const dispatch = useDispatch();
@@ -22,19 +23,51 @@ const LoginModal: React.FC<Props> = ({ onClose }) => {
       return;
     }
 
-    // Fake login/signup logic
-    localStorage.setItem("token", "dummy-token");
-    dispatch(login());
-    toast.success(`${isRegistering ? "Signed up" : "Logged in"} successfully`);
-    onClose();
+    const usersStr = localStorage.getItem("users");
+    const users = usersStr ? JSON.parse(usersStr) : {};
+
+    if (isRegistering) {
+      if (users[email]) {
+        toast.error("User already exists");
+        return;
+      }
+
+      users[email] = { name, email, password };
+      localStorage.setItem("users", JSON.stringify(users));
+      localStorage.setItem("token", "dummy-token");
+      dispatch(login());
+      toast.success("Signed up successfully");
+      onClose();
+    } else {
+      if (!users[email] || users[email].password !== password) {
+        toast.error("Invalid email or password");
+        return;
+      }
+
+      localStorage.setItem("token", "dummy-token");
+      dispatch(login());
+      toast.success("Logged in successfully");
+      onClose();
+    }
   };
 
   return (
     <div className="login-modal-backdrop">
       <div className="login-modal">
-        <button className="close-btn" onClick={onClose}>×</button>
+        <button className="close-btn" onClick={onClose}>
+          ×
+        </button>
         <h2>{isRegistering ? "Sign Up" : "Login"}</h2>
         <form onSubmit={handleSubmit}>
+          {isRegistering && (
+            <input
+              type="text"
+              placeholder="Name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
+            />
+          )}
           <input
             type="email"
             placeholder="Email"
@@ -52,8 +85,13 @@ const LoginModal: React.FC<Props> = ({ onClose }) => {
           <button type="submit">{isRegistering ? "Sign Up" : "Login"}</button>
         </form>
         <p>
-          {isRegistering ? "Already have an account?" : "Don't have an account?"}{" "}
-          <span onClick={() => setIsRegistering(!isRegistering)} className="toggle-auth">
+          {isRegistering
+            ? "Already have an account?"
+            : "Don't have an account?"}{" "}
+          <span
+            onClick={() => setIsRegistering(!isRegistering)}
+            className="toggle-auth"
+          >
             {isRegistering ? "Login" : "Sign up"}
           </span>
         </p>

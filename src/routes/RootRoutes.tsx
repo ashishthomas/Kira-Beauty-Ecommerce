@@ -4,7 +4,8 @@ import HomePage from "../pages/HomePage";
 import AboutUsPage from "../pages/AboutUsPage";
 import BrandPage from "../pages/BrandsPage";
 import ShopPage from "../pages/ShopPage";
-import { ShopRoutes} from "./ShopRoutes";
+import { ShopRoutes } from "./ShopRoutes";
+import DetailsPage from "../pages/DetailsPage";
 
 export const RootRoutes: RouteObject[] = [
   {
@@ -21,8 +22,8 @@ export const RootRoutes: RouteObject[] = [
       },
       {
         path: "shop",
-        element: <ShopPage/>,
-        children: [...ShopRoutes]
+        element: <ShopPage />,
+        children: [...ShopRoutes],
       },
       {
         path: "about",
@@ -32,7 +33,10 @@ export const RootRoutes: RouteObject[] = [
         path: "brand",
         element: <BrandPage />,
       },
-
+      {
+        path: ":category/details/:id",
+        element: <DetailsPage />,
+      },
     ],
   },
 ];

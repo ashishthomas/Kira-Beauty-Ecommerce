@@ -1,57 +1,119 @@
 [
   {
+    "id": 1,
+    "category": "makeup",
+    "brandName": "Maybelline",
     "name": "Maybelline Fit Me Foundation",
     "imageKey": "makeup1",
     "price": "12",
-    "description": "Lightweight foundation that blends seamlessly and provides a matte finish."
+    "offerPrice": "10",
+    "description": "Lightweight foundation that blends seamlessly and provides a natural matte finish.",
+    "details": "This foundation offers buildable coverage with a breathable matte finish for normal to oily skin. Enriched with micro-powders, it controls shine and blurs pores for a flawless look.",
+    "itemsLeft": 30,
+    "maxLimit": 6
   },
   {
+    "id": 2,
+    "category": "makeup",
+    "brandName": "L'Oréal",
     "name": "L'Oréal Voluminous Mascara",
     "imageKey": "makeup2",
     "price": "10",
-    "description": "Enhances lashes with intense volume and a smudge-proof formula."
+    "offerPrice": "8",
+    "description": "Enhances lashes with intense volume and a smudge-proof formula.",
+    "details": "Get dramatic volume with L'Oréal's clump-free mascara that lifts, lengthens, and stays all day without smudging or flaking.",
+    "itemsLeft": 40,
+    "maxLimit": 5
   },
   {
+    "id": 3,
+    "category": "makeup",
+    "brandName": "Lakmé",
     "name": "Lakmé Eyeconic Kajal",
     "imageKey": "makeup3",
     "price": "5",
-    "description": "Long-lasting kajal for bold and dramatic eyes that lasts up to 22 hours."
+    "offerPrice": "4",
+    "description": "Long-lasting kajal for bold and dramatic eyes that lasts up to 22 hours.",
+    "details": "Lakmé Eyeconic Kajal is smudge-proof and waterproof, giving you intense black color and comfort wear that lasts all day.",
+    "itemsLeft": 25,
+    "maxLimit": 8
   },
   {
+    "id": 4,
+    "category": "makeup",
+    "brandName": "MAC",
     "name": "MAC Matte Lipstick – Ruby Woo",
     "imageKey": "makeup4",
     "price": "18",
-    "description": "Iconic red matte lipstick that delivers rich color and smooth application."
+    "offerPrice": "15",
+    "description": "Iconic red matte lipstick that delivers rich color and smooth application.",
+    "details": "This retro matte lipstick from MAC features an intense red tone with a no-shine, all-matte texture that stays put.",
+    "itemsLeft": 18,
+    "maxLimit": 7
   },
   {
-    "name": "Huda Beauty Nude Eyeshadow",
+    "id": 5,
+    "category": "makeup",
+    "brandName": "Huda Beauty",
+    "name": "Huda Beauty Nude Eyeshadow Palette",
     "imageKey": "makeup5",
     "price": "35",
-    "description": "Versatile nude palette with matte, shimmer, and metallic finishes."
+    "offerPrice": "29",
+    "description": "Versatile nude palette with matte, shimmer, and metallic finishes.",
+    "details": "With richly pigmented shades, this eyeshadow palette lets you create endless nude looks for both day and night.",
+    "itemsLeft": 12,
+    "maxLimit": 6
   },
   {
+    "id": 6,
+    "category": "makeup",
+    "brandName": "Colorbar",
     "name": "Colorbar Cheekillusion Blush",
     "imageKey": "makeup6",
     "price": "8",
-    "description": "Soft, silky blush that adds a natural flush to your cheeks."
+    "offerPrice": "6",
+    "description": "Soft, silky blush that adds a natural flush to your cheeks.",
+    "details": "This lightweight, blendable blush gives you a youthful glow while nourishing your skin with antioxidants.",
+    "itemsLeft": 20,
+    "maxLimit": 5
   },
-
   {
-    "name": "Maybelline New York Concealer",
+    "id": 7,
+    "category": "makeup",
+    "brandName": "Maybelline",
+    "name": "Maybelline New York Instant Age Rewind Eraser Concealer",
     "imageKey": "makeup7",
     "price": "8",
-    "description": "Conceal your dark circles and spots, and highlight your beautiful features with the Maybelline concealers"
+    "offerPrice": "6.5",
+    "description": "Conceal your dark circles and spots, and highlight your beautiful features.",
+    "details": "This concealer erases fine lines, dark circles, and blemishes with a micro-corrector applicator and brightening formula.",
+    "itemsLeft": 22,
+    "maxLimit": 8
   },
   {
+    "id": 8,
+    "category": "makeup",
+    "brandName": "Insight Cosmetics",
     "name": "Insight Cosmetics Lip & Cheek Tint",
     "imageKey": "makeup8",
     "price": "8",
-    "description": "The multipurpose product that works as a tint and moisturizes as well."
+    "offerPrice": "6.5",
+    "description": "Multipurpose tint that moisturizes lips, cheeks & eyes boldly with vitamin E.",
+    "details": "This creamy tint glides smoothly and provides a natural flush while keeping your skin nourished and hydrated.",
+    "itemsLeft": 28,
+    "maxLimit": 7
   },
   {
-    "name": "HUDA GIRL BEAUTY 2in1 Korean",
+    "id": 9,
+    "category": "makeup",
+    "brandName": "HUDA GIRL BEAUTY",
+    "name": "HUDA GIRL BEAUTY 2in1 Korean Foundation & CC Cream",
     "imageKey": "makeup9",
-    "price": "$35",
-    "description": "A waterproof, long-lasting, full coverage foundation and CC cream with a mushroom head brush sponge for easy application."
+    "price": "35",
+    "offerPrice": "30",
+    "description": "Waterproof, long-lasting foundation and CC cream with mushroom brush.",
+    "details": "This innovative 2-in-1 product combines skincare and makeup benefits, offering hydration and flawless coverage with a unique sponge applicator.",
+    "itemsLeft": 16,
+    "maxLimit": 6
   }
 ]

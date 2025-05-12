@@ -21,7 +21,7 @@
     border-bottom-right-radius: 57px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    height: 100%
+    height: 100%;
   }
 
   .shop-image-wrapper {
@@ -44,7 +44,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 
     .shop-description {
       color: $primary-color;
@@ -75,6 +74,7 @@
       display: flex;
       align-items: center;
       gap: 6px;
+      cursor: pointer;
     }
 
     .shop-now-button {
