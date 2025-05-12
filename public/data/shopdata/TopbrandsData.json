@@ -1,56 +1,110 @@
 [
   {
-    "name": "SK-II",
+    "id": 1,
+    "category": "topbrands",
+    "brandName": "SK-II",
+    "name": "SK-II Facial Treatment Essence",
     "imageKey": "brand0",
-    "price": "$99",
-    "description": "A luxurious essence enriched with Pitera to transform skin’s texture, radiance, and firmness with daily use."
+    "price": "99",
+    "offerPrice": "89",
+    "description": "A luxurious essence enriched with Pitera to transform skin’s texture, radiance, and firmness with daily use.",
+    "details": "This essence penetrates deep into the skin to enhance clarity and smoothness, delivering visible results. SK-II is renowned for its skin-transforming Pitera content that promotes cellular renewal.",
+    "itemsLeft": 12
   },
   {
-    "name": "Kiehl's",
+    "id": 2,
+    "category": "topbrands",
+    "brandName": "Kiehl's",
+    "name": "Kiehl's Ultra Facial Cream",
     "imageKey": "brand1",
-    "price": "$40",
-    "description": "Natural, apothecary-based skincare solutions that deeply nourish and rejuvenate all skin types effectively and gently."
+    "price": "40",
+    "offerPrice": "35",
+    "description": "Natural, apothecary-based skincare solutions that deeply nourish and rejuvenate all skin types effectively and gently.",
+    "details": "Formulated with glacial glycoprotein and olive-derived squalane, this moisturizer provides lasting hydration and strengthens the skin barrier.",
+    "itemsLeft": 20
   },
   {
-    "name": "Origins",
+    "id": 3,
+    "category": "topbrands",
+    "brandName": "Origins",
+    "name": "Origins GinZing Energy-Boosting Gel Moisturizer",
     "imageKey": "brand2",
-    "price": "$48",
-    "description": "Powered by nature and proven by science, Origins creates effective skincare with natural and organic ingredients."
+    "price": "48",
+    "offerPrice": "42",
+    "description": "Powered by nature and proven by science, Origins creates effective skincare with natural and organic ingredients.",
+    "details": "Revitalize tired skin with this lightweight gel moisturizer infused with caffeine and ginseng for a healthy, radiant glow.",
+    "itemsLeft": 18
   },
   {
-    "name": "NARS Cosmetics",
+    "id": 4,
+    "category": "topbrands",
+    "brandName": "NARS Cosmetics",
+    "name": "NARS Blush - Orgasm",
     "imageKey": "brand3",
-    "price": "$32",
-    "description": "Bold, high-performance makeup that empowers creativity and celebrates self-expression with iconic color collections."
+    "price": "32",
+    "offerPrice": "28",
+    "description": "Bold, high-performance makeup that empowers creativity and celebrates self-expression with iconic color collections.",
+    "details": "This cult-favorite blush delivers a natural-looking flush and radiant finish that enhances all skin tones.",
+    "itemsLeft": 25
   },
   {
-    "name": "bareMinerals",
+    "id": 5,
+    "category": "topbrands",
+    "brandName": "bareMinerals",
+    "name": "bareMinerals Original Foundation SPF 15",
     "imageKey": "brand4",
-    "price": "$30",
-    "description": "Clean, mineral-based beauty products that promote healthier skin while offering beautiful, natural-looking coverage."
+    "price": "30",
+    "offerPrice": "26",
+    "description": "Clean, mineral-based beauty products that promote healthier skin while offering beautiful, natural-looking coverage.",
+    "details": "Provides buildable coverage with a natural luminous finish. Formulated without harsh chemicals for sensitive skin.",
+    "itemsLeft": 15
   },
   {
-    "name": "Murad",
+    "id": 6,
+    "category": "topbrands",
+    "brandName": "Murad",
+    "name": "Murad Rapid Age Spot Correcting Serum",
     "imageKey": "brand5",
-    "price": "$72",
-    "description": "Doctor-developed skincare that targets acne, aging, and hydration issues with powerful yet gentle solutions."
+    "price": "72",
+    "offerPrice": "65",
+    "description": "Doctor-developed skincare that targets acne, aging, and hydration issues with powerful yet gentle solutions.",
+    "details": "This serum visibly reduces dark spots, age spots, and hyperpigmentation for an even skin tone.",
+    "itemsLeft": 8
   },
   {
+    "id": 7,
+    "category": "topbrands",
+    "brandName": "Colorbar",
     "name": "Colorbar Timeless Lift Miracle Lifting Day Crème",
     "imageKey": "brand6",
-    "price": "$65",
-    "description": "A luxurious anti-aging cream that firms, lifts, and hydrates skin, leaving it smoother, radiant, and youthful all day."
+    "price": "65",
+    "offerPrice": "55",
+    "description": "A luxurious anti-aging cream that firms, lifts, and hydrates skin, leaving it smoother, radiant, and youthful all day.",
+    "details": "Formulated with peptide complexes and nourishing botanicals, it visibly lifts and firms the skin while boosting hydration.",
+    "itemsLeft": 11
   },
   {
+    "id": 8,
+    "category": "topbrands",
+    "brandName": "Ruby's Organics",
     "name": "Ruby's Organics Skin Tint Foundation",
     "imageKey": "brand7",
-    "price": "$38",
-    "description": "A lightweight, plant-based foundation that hydrates, evens skin tone, and provides a soft, natural matte finish."
+    "price": "38",
+    "offerPrice": "33",
+    "description": "A lightweight, plant-based foundation that hydrates, evens skin tone, and provides a soft, natural matte finish.",
+    "details": "Made with natural ingredients to nourish skin while offering breathable coverage and a smooth matte effect.",
+    "itemsLeft": 16
   },
   {
+    "id": 9,
+    "category": "topbrands",
+    "brandName": "Maybelline",
     "name": "Maybelline New York Fit Me Matte+Poreless Powder",
     "imageKey": "brand8",
-    "price": "$15",
-    "description": "An oil-absorbing, pore-blurring powder delivering a smooth, natural matte finish for normal to oily skin types."
+    "price": "15",
+    "offerPrice": "12",
+    "description": "An oil-absorbing, pore-blurring powder delivering a smooth, natural matte finish for normal to oily skin types.",
+    "details": "Ideal for setting foundation or controlling shine, this lightweight powder gives a flawless matte look without caking.",
+    "itemsLeft": 30
   }
 ]

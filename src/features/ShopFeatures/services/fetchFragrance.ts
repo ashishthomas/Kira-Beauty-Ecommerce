@@ -1,8 +1,14 @@
 export type Product = {
+  id: number;
   name: string;
+  brandName: string;
   imageKey: string;
   price: string;
+  offerPrice: string;
   description: string;
+  itemsLeft: number;
+  category: string;
+  details: string;
 };
 
 export const fetchProducts = async (): Promise<Product[]> => {

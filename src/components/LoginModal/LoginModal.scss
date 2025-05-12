@@ -1,56 +1,84 @@
+@import "@src/styles/styleVariables.scss";
+
 .login-modal-backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-modal {
+  background: $bg-color;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 300px;
+  position: relative;
+
+  h2 {
+    text-align: center;
   }
-  
-  .login-modal {
-    background: white;
-    padding: 2rem;
-    border-radius: 8px;
-    width: 300px;
-    position: relative;
-  
-    h2 {
-      text-align: center;
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    input {
+      margin-bottom: 1rem;
+      padding: 0.5rem;
     }
-  
-    form {
-      display: flex;
-      flex-direction: column;
-  
-      input {
-        margin-bottom: 1rem;
-        padding: 0.5rem;
-      }
-  
-      button {
-        background-color: #007bff;
-        color: white;
-        border: none;
-        padding: 0.6rem;
-        cursor: pointer;
-      }
-    }
-  
-    .toggle-auth {
-      color: blue;
+
+    button {
+      background-color: $primary-color;
+      color: $text-white;
+      border: none;
+      padding: 0.6rem;
       cursor: pointer;
     }
-  
-    .close-btn {
-      position: absolute;
-      right: 1rem;
-      top: 0.5rem;
-      background: none;
-      border: none;
-      font-size: 1.5rem;
-    }
   }
-  
+
+  .toggle-auth {
+    color: $primary-color;
+    cursor: pointer;
+  }
+
+  .close-btn {
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+  }
+}
+
+.Toastify__toast--success .Toastify__toast-icon svg {
+  fill: $primary-color;
+  stroke: $primary-color;
+}
+
+.Toastify__toast--success .Toastify__progress-bar {
+  background-color: $primary-color;
+}
+
+.Toastify__toast--info .Toastify__toast-icon svg {
+  fill: $info-color;
+  stroke: $info-color;
+}
+
+.Toastify__toast--info .Toastify__progress-bar {
+  background-color: $info-color;
+}
+
+.Toastify__toast--error .Toastify__toast-icon svg {
+  fill: $warning;
+  stroke: $warning;
+}
+
+.Toastify__toast--error .Toastify__progress-bar {
+  background-color: $warning;
+}
