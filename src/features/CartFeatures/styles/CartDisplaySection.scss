@@ -1,0 +1,9 @@
+@import "@src/styles/styleVariables.scss";
+
+.cart-display {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+}

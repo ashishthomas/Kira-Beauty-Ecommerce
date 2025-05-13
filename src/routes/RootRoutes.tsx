@@ -6,6 +6,7 @@ import BrandPage from "../pages/BrandsPage";
 import ShopPage from "../pages/ShopPage";
 import { ShopRoutes } from "./ShopRoutes";
 import DetailsPage from "../pages/DetailsPage";
+import CartFeatures from "../features/CartFeatures/CartFeatures";
 
 export const RootRoutes: RouteObject[] = [
   {
@@ -37,6 +38,10 @@ export const RootRoutes: RouteObject[] = [
         path: ":category/details/:id",
         element: <DetailsPage />,
       },
+      {
+        path:"cart",
+        element:<CartFeatures/>
+      }
     ],
   },
 ];
