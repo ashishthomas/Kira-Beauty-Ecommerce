@@ -41,16 +41,16 @@ const ShoppingCartSection: React.FC<ShoppingCartSectionProps> = ({
             </tr>
           </thead>
           <tbody>
-            {cartItems.map((item) => (
-              <tr key={item.id}>
+            {cartItems.map(({ id, name, price, quantity, image }) => (
+              <tr key={id}>
                 <td className="image-cell">
-                  <img src={item.image} alt={item.name} />
+                  <img src={image} alt={name} />
                   <div className="quantity-controls">
                     <Button
                       className="quantity-btn"
                       variant="secondary"
                       size="small"
-                      onClick={() => dispatch(decreaseQuantity(item.id))}
+                      onClick={() => dispatch(decreaseQuantity(id))}
                     >
                       -
                     </Button>
@@ -58,21 +58,21 @@ const ShoppingCartSection: React.FC<ShoppingCartSectionProps> = ({
                     <Button
                       className="quantity-btn"
                       variant="secondary"
-                      onClick={() => dispatch(increaseQuantity(item.id))}
+                      onClick={() => dispatch(increaseQuantity(id))}
                     >
                       +
                     </Button>
                   </div>
                 </td>
 
-                <td>{item.name}</td>
-                <td>₹{item.price}</td>
-                <td>{item.quantity}</td>
+                <td>{name}</td>
+                <td>₹{price}</td>
+                <td>{quantity}</td>
 
-                <td>₹{item.price * item.quantity}</td>
+                <td>₹{price * quantity}</td>
                 <td>
                   <button
-                    onClick={() => dispatch(removeFromCart(item.id))}
+                    onClick={() => dispatch(removeFromCart(id))}
                     className="remove-btn"
                   >
                     <img src={trash} alt="trash" className="trashicon" />
