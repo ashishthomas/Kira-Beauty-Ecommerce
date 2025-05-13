@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./LoginModal.scss";
 import { useDispatch } from "react-redux";
-import { login } from "../../store/authSlice";
+import { login } from "../../app/Slices/AuthSlice";
 import { toast } from "react-toastify";
 
 type Props = {

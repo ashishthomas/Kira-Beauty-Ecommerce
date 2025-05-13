@@ -2,12 +2,13 @@ import React, { JSX, useState } from "react";
 import "./ProductCard.scss";
 import Button from "../Button/Button";
 import shopcart from "../../../assets/svg/shopcart.svg";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../../app/Store";
 import { toast } from "react-toastify";
 import LoginModal from "../../LoginModal/LoginModal";
 import { imageMap } from "../../../features/ShopFeatures/constants/imageMap";
-import { useNavigate } from "react-router";
+import { useLocation, useNavigate } from "react-router";
+import { addToCart } from "../../../features/CartFeatures/slices/cartSlice";
 
 type Product = {
   id: number;
@@ -30,13 +31,29 @@ const ProductGrid: React.FC<ProductGridProps> = ({ products }) => {
   const isLoggedIn = useSelector((state: RootState) => state.auth.isLoggedIn);
   const [showLogin, setShowLogin] = useState(false);
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const location = useLocation();
+  const categoryFromPath = location.pathname.split("/")[2];
 
-  const handleAddToCart = () => {
+  const handleAddToCart = (product: Product) => {
     if (!isLoggedIn) {
       toast.info("Please login to add to cart");
       setShowLogin(true);
       return;
     }
+
+    dispatch(
+      addToCart({
+        id: product.id,
+        name: product.name,
+        image: imageMap[product.imageKey],
+        price: parseFloat(product.price.replace("$", "")),
+        quantity: 1,
+        category: categoryFromPath,
+      })
+    );
+
+    navigate("/cart");
 
     toast.success("Item added to cart");
   };
@@ -72,7 +89,10 @@ const ProductGrid: React.FC<ProductGridProps> = ({ products }) => {
                   <p className="shop-description">{description}</p>
                 )}
                 <p className="shop-price">Price: {`₹${price}`}</p>
-                <p className="shop-cart" onClick={handleAddToCart}>
+                <p
+                  className="shop-cart"
+                  onClick={() => handleAddToCart(product)}
+                >
                   Add to cart
                   <img src={shopcart} alt="Cart" className="icon" />
                 </p>
