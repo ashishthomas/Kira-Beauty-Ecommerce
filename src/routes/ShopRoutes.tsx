@@ -28,7 +28,7 @@ export const ShopRoutes = [
       },
       {
 
-        path: "mens-grooming",
+        path: "grooming",
         element: <Mensgrooming/>
       },
       

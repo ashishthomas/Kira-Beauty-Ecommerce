@@ -4,12 +4,17 @@ import { HERO_CONSTANTS } from "../constants/ui-constants";
 import heroOne from "../../../assets/png/Hero1.png";
 import heroTwo from "../../../assets/jpeg/Hero3.jpeg";
 import heroThree from "../../../assets/jpeg/Hero2.jpeg";
+import { useSelector } from "react-redux";
+import { RootState } from "../../../app/Store";
 
 const HeroSection = () => {
+  const userName = useSelector((state: RootState) => state.auth.userName);
+  const isLoggedIn = useSelector((state: RootState) => state.auth.isLoggedIn);
   return (
     <div className="home-container">
       <div className="hero-section">
         <div className="hero-text">
+          {isLoggedIn && userName && <p className="welcome-message">Welcome, {userName}</p>}
           <h1>{HERO_CONSTANTS.INTRO}</h1>
           <p>{HERO_CONSTANTS.DESCRIPTION}</p>
 

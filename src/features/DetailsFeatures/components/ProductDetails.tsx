@@ -4,7 +4,6 @@ import { Product } from "../../ShopFeatures/services/fetchFragrance";
 import "../styles/DetailsFeatures.scss";
 import Button from "../../../components/common/Button/Button";
 import shopcart from "../../../assets/svg/cart.svg";
-import { useNavigate } from "react-router";
 import { imageMap } from "../constants/imageMap";
 
 const categoryFileMap: Record<string, string> = {
@@ -19,7 +18,6 @@ const ProDetails = () => {
   const { category, id } = useParams<{ category: string; id: string }>();
   const [product, setProduct] = useState<Product | null>(null);
   const [quantity, setQuantity] = useState<number>(1);
-  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -59,10 +57,6 @@ const ProDetails = () => {
     product.offerPrice.toString().replace(/[^0-9.]/g, "")
   );
   const totalPrice = quantity * sanitizedPrice;
-
-  const handleBuy = () => {
-    navigate("/checkout");
-  };
 
   return (
     <div className="product-details">

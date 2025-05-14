@@ -8,7 +8,7 @@ const NavigateCategorySection: React.FC = () => {
     { label: "Fragrance", path: "fragrance" },
     { label: "Makeup", path: "makeup" },
     { label: "Skincare", path: "skincare" },
-    { label: "Men's grooming", path: "mens-grooming" },
+    { label: "Men's grooming", path: "grooming" },
     { label: "Top brands", path: "top-brands" },
   ];
 

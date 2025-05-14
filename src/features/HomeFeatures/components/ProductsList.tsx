@@ -2,6 +2,7 @@ import Button from "../../../components/common/Button/Button";
 import { useEffect, useState } from "react";
 import fetchCategories, { Category } from "../services/fetchCategories";
 import "../styles/ProductsList.scss";
+import { useNavigate } from "react-router";
 
 import carousel_fragrance from "../../../assets/jpeg/carousel_fragrance.jpeg";
 import carousel_makeup from "../../../assets/jpeg/carousel_makeup.jpeg";
@@ -17,6 +18,7 @@ const imageMap: { [key: string]: string } = {
 
 const ProductsList = () => {
   const [categories, setCategories] = useState<Category[]>([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetchCategories().then(setCategories);
@@ -46,7 +48,11 @@ const ProductsList = () => {
                   className="shop-now-button"
                   variant="primary"
                   size="small"
-                  onClick={() => console.log("Shop now clicked")}
+                  onClick={() =>
+                    navigate(
+                      `/shop/${product.name.toLowerCase().replace(/\s+/g, "-")}`
+                    )
+                  }
                 >
                   shop now
                 </Button>

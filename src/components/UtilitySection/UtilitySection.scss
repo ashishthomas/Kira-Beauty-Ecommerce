@@ -1,7 +1,14 @@
+@import "@src/styles/styleVariables.scss";
+
 .utility-section {
   display: flex;
   gap: 1.75rem;
   align-items: center;
+
+  .user-name {
+  font-weight: bold;
+  color: $primary-color;
+}
 
   .icon {
     width: 26px;

@@ -48,6 +48,12 @@
         gap: 0.5rem;
         font-size: 14px;
       }
+
+      input[type="radio"] {
+        &:checked {
+          accent-color: $primary-color;
+        }
+      }
     }
   }
 }

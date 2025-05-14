@@ -11,6 +11,13 @@
   flex: 1;
   padding-right: 190px;
 
+  .welcome-message{
+    font-size: 2em;
+    color: $welcome-color;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
   h1 {
     font-size: 3.2em;
     color: $primary-color;

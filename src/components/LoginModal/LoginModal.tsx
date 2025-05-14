@@ -35,7 +35,7 @@ const LoginModal: React.FC<Props> = ({ onClose }) => {
       users[email] = { name, email, password };
       localStorage.setItem("users", JSON.stringify(users));
       localStorage.setItem("token", "dummy-token");
-      dispatch(login());
+      dispatch(login(name));
       toast.success("Signed up successfully");
       onClose();
     } else {
@@ -45,7 +45,7 @@ const LoginModal: React.FC<Props> = ({ onClose }) => {
       }
 
       localStorage.setItem("token", "dummy-token");
-      dispatch(login());
+      dispatch(login(users[email].name));
       toast.success("Logged in successfully");
       onClose();
     }

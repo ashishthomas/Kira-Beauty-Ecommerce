@@ -20,6 +20,7 @@
   position: relative;
 
   h2 {
+    font-weight: 700;
     text-align: center;
   }
 
@@ -66,12 +67,12 @@
 }
 
 .Toastify__toast--info .Toastify__toast-icon svg {
-  fill: $info-color;
-  stroke: $info-color;
+  fill: $primary-color;
+  stroke: $primary-color;
 }
 
 .Toastify__toast--info .Toastify__progress-bar {
-  background-color: $info-color;
+  background-color: $primary-color;
 }
 
 .Toastify__toast--error .Toastify__toast-icon svg {
