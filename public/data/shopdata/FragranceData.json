@@ -10,7 +10,21 @@
     "description": "Elegant blend of rich oils and nature-inspired elements.",
     "details": "Bella Vita offers a captivating and intoxicating blend of rich essential oils and natural ingredients, creating a unique fragrance that stands out for its luxury and sophistication. Perfect for those who appreciate depth and originality in a scent, this perfume is a rare gem designed to leave a lasting impression.",
     "itemsLeft": 10,
-    "maxLimit": 7
+    "maxLimit": 7,
+    "reviews": [
+      {
+        "id": "1",
+        "rating": 5,
+        "comment": "This perfume is absolutely amazing! The scent is so captivating and lasts all day. I get compliments every time I wear it.",
+        "userName": "Sarah M.",
+        "date": "15 Mar 2024",
+        "likes": 245,
+        "dislikes": 12
+      }
+    ],
+    "averageRating": 5.0,
+    "totalReviews": 1
+   
   },
   {
     "id": 2,
@@ -23,7 +37,21 @@
     "description": "Versatile scent ideal for day, night, and every occasion.",
     "details": "Denver Hamilton is a refined fragrance that effortlessly transitions from day to night, weekday to weekend. Crafted for subtle yet intense seduction, it blends classic notes to deliver a timeless scent profile. It’s ideal for the modern individual who enjoys balance, charm, and versatility in one bottle.",
     "itemsLeft": 15,
-    "maxLimit": 5
+    "maxLimit": 5,
+    "reviews": [
+        {
+          "id": "2",
+          "rating": 4,
+          "comment": "A versatile fragrance that works well for both day and night. The scent is subtle yet noticeable.",
+          "userName": "Michael T.",
+          "date": "10 Mar 2024",
+          "likes": 189,
+          "dislikes": 5
+        }
+      ],
+      "averageRating": 4.5,
+      "totalReviews": 876
+    
   },
   {
     "id": 3,
@@ -36,7 +64,21 @@
     "description": "Fruity-floral delight with Sicilian lemon and jasmine.",
     "details": "Dolce & Gabbana Light Blue is a vibrant, fruity-floral fragrance that captures the spirit of a Mediterranean summer. Featuring fresh notes of Sicilian lemon, lush jasmine, and warm cedarwood, it delivers a crisp yet sensual experience. Light Blue is the embodiment of youthful energy and radiant femininity.",
     "itemsLeft": 8,
-    "maxLimit": 6
+    "maxLimit": 6,
+    "reviews": [
+        {
+          "id": "3",
+          "rating": 5,
+          "comment": "The perfect summer fragrance! Fresh, citrusy, and not overpowering. I love how the jasmine notes blend with the lemon.",
+          "userName": "Emma K.",
+          "date": "20 Feb 2024", 
+          "likes": 389,
+          "dislikes": 2
+        }
+      ],
+      "averageRating": 4.9,
+      "totalReviews": 2103
+      
   },
   {
     "id": 4,
@@ -49,7 +91,21 @@
     "description": "A floral symphony celebrating elegance and joy.",
     "details": "Miss Dior Eau de is crafted around a striking bouquet of endless flowers in dazzling colors. With floral notes ranging from soft peonies to intense roses, it offers an olfactory journey filled with elegance, romanticism, and a hint of playfulness. It’s a modern classic that celebrates love and femininity.",
     "itemsLeft": 12,
-    "maxLimit": 9
+    "maxLimit": 9,
+    "reviews": [
+        {
+          "id": "4",
+          "rating": 5,
+          "comment": "Such an elegant and feminine fragrance! The floral bouquet is perfectly balanced. It makes me feel sophisticated every time I wear it.",
+          "userName": "Lisa R.",
+          "date": "5 Mar 2024",
+          "likes": 567,
+          "dislikes": 3
+        }
+      ],
+      "averageRating": 4.7,
+      "totalReviews": 1876
+
   },
   {
     "id": 5,
@@ -62,7 +118,21 @@
     "description": "Signature citrus floral scent for bright summer days.",
     "details": "Dolce & Gabbana Light Blue reappears in this variant with its signature notes of Sicilian lemon, white rose, and musk, creating a dynamic fragrance ideal for vibrant personalities. This rendition is even more fresh and floral, evoking the freedom and energy of sunny coastlines and unforgettable escapes.",
     "itemsLeft": 6,
-    "maxLimit": 4
+    "maxLimit": 4,
+    "reviews": [
+    {
+      "id": "5",
+      "rating": 5,
+      "comment": "An incredibly fresh and vibrant scent! Perfect for daily wear — it reminds me of a breezy summer in Italy.",
+      "userName": "Emma T.",
+      "date": "15 Apr 2024",
+      "likes": 432,
+      "dislikes": 1
+    }
+  ],
+  "averageRating": 4.6,
+  "totalReviews": 1250
+  
   },
   {
     "id": 6,
@@ -75,7 +145,21 @@
     "description": "Classic oriental perfume with deep sensual allure.",
     "details": "Guerlain's Shalimar is the epitome of oriental perfumery, with a rich, smouldering aroma that feels both luxurious and intimate. With hints of vanilla, iris, and tonka bean, it creates a long-lasting and sensual trail. Its legacy and elegance make it a fragrance of timeless beauty and bold character.",
     "itemsLeft": 9,
-    "maxLimit": 6
+    "maxLimit": 6,
+    "reviews": [
+        {
+          "id": "6",
+          "rating": 5,
+          "comment": "A timeless classic! The oriental notes are perfectly balanced with vanilla and citrus. It's my signature scent.",
+          "userName": "Sophia L.",
+          "date": "28 Feb 2024",
+          "likes": 432,
+          "dislikes": 1
+        }
+      ],
+      "averageRating": 4.8,
+      "totalReviews": 1567
+      
   },
   {
     "id": 7,
@@ -88,7 +172,21 @@
     "description": "Enchanting floral scent with modern femininity.",
     "details": "Gucci Flora is an enchanting floral fragrance that balances grace and vibrance with a playful, contemporary twist. Its star oriental base gives way to soft peony, citrus zest, and sandalwood, creating a luxurious and inviting aroma. Ross Taylor Ross Taylor Ross Taylor — this is just a filler text to extend the content meaningfully and reflect its whimsical spirit and depth.",
     "itemsLeft": 11,
-    "maxLimit": 3
+    "maxLimit": 3,
+    "reviews": [
+        {
+          "id": "7",
+          "rating": 4,
+          "comment": "A beautiful floral fragrance that's perfect for spring. The peony and rose notes are divine.",
+          "userName": "Olivia P.",
+          "date": "12 Mar 2024",
+          "likes": 321,
+          "dislikes": 2
+        }
+      ],
+      "averageRating": 4.6,
+      "totalReviews": 1345
+      
   },
   {
     "id": 8,
@@ -101,7 +199,21 @@
     "description": "Playful summer scent with fruity and floral harmony.",
     "details": "Skinn by Titan Nude Women Eau de Parfum is a fragrance that celebrates summer romance. It opens with sparkling notes of lychee, raspberry, and bergamot, followed by a floral heart of rose and lily, and ends on a warm, musky base. This playful blend makes it ideal for joyful, confident women.",
     "itemsLeft": 14,
-    "maxLimit": 8
+    "maxLimit": 8,
+    "reviews": [
+        {
+          "id": "8",
+          "rating": 4,
+          "comment": "A lovely summer fragrance that reminds me of warm evenings. The scent is light and refreshing.",
+          "userName": "Priya S.",
+          "date": "8 Mar 2024",
+          "likes": 278,
+          "dislikes": 12
+        }
+      ],
+      "averageRating": 4.4,
+      "totalReviews": 987
+     
   },
   {
     "id": 9,
@@ -114,6 +226,19 @@
     "description": "Fresh, uplifting fragrance for everyday adventure.",
     "details": "Mama Earth Into the Sunset Eau De Parfum is your gateway to a sensorial journey of fresh air and serenity. With invigorating citrus notes, gentle florals, and a smooth woody base, this fragrance evokes the magic of sunsets and open skies. A versatile scent for both calm moments and lively days.",
     "itemsLeft": 7,
-    "maxLimit": 6
+    "maxLimit": 6,
+    "reviews": [
+        {
+          "id": "9",
+          "rating": 4,
+          "comment": "A beautiful natural fragrance that's perfect for everyday wear. The scent is subtle and pleasant.",
+          "userName": "Ananya R.",
+          "date": "3 Mar 2024",
+          "likes": 198,
+          "dislikes": 5
+        }
+      ],
+      "averageRating": 4.3,
+      "totalReviews": 765
   }
 ]

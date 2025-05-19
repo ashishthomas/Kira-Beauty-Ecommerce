@@ -10,7 +10,20 @@
     "description": "Lightweight foundation that blends seamlessly and provides a natural matte finish.",
     "details": "This foundation offers buildable coverage with a breathable matte finish for normal to oily skin. Enriched with micro-powders, it controls shine and blurs pores for a flawless look.",
     "itemsLeft": 30,
-    "maxLimit": 6
+    "maxLimit": 6,
+    "reviews": [
+        {
+          "id": "1",
+          "rating": 5,
+          "comment": "Perfect match for my skin tone! Blends seamlessly and stays matte all day.",
+          "userName": "Priya M.",
+          "date": "15 Mar 2024",
+          "likes": 245,
+          "dislikes": 12
+        }
+      ],
+      "averageRating": 4.8,
+      "totalReviews": 1256 
   },
   {
     "id": 2,
@@ -23,7 +36,21 @@
     "description": "Enhances lashes with intense volume and a smudge-proof formula.",
     "details": "Get dramatic volume with L'Oréal's clump-free mascara that lifts, lengthens, and stays all day without smudging or flaking.",
     "itemsLeft": 40,
-    "maxLimit": 5
+    "maxLimit": 5,
+    "reviews": [
+        {
+          "id": "2",
+          "rating": 4,
+          "comment": "Gives amazing volume without clumping. My lashes look so much longer!",
+          "userName": "Ananya R.",
+          "date": "10 Mar 2024",
+          "likes": 189,
+          "dislikes": 5
+        }
+      ],
+      "averageRating": 4.5,
+      "totalReviews": 876
+      
   },
   {
     "id": 3,
@@ -36,7 +63,21 @@
     "description": "Long-lasting kajal for bold and dramatic eyes that lasts up to 22 hours.",
     "details": "Lakmé Eyeconic Kajal is smudge-proof and waterproof, giving you intense black color and comfort wear that lasts all day.",
     "itemsLeft": 25,
-    "maxLimit": 8
+    "maxLimit": 8,
+    "reviews": [
+        {
+          "id": "3",
+          "rating": 5,
+          "comment": "Stays put all day! Perfect for my waterline and doesn't smudge.",
+          "userName": "Neha P.",
+          "date": "20 Feb 2024",
+          "likes": 389,
+          "dislikes": 2
+        }
+      ],
+      "averageRating": 4.9,
+      "totalReviews": 2103
+      
   },
   {
     "id": 4,
@@ -49,7 +90,21 @@
     "description": "Iconic red matte lipstick that delivers rich color and smooth application.",
     "details": "This retro matte lipstick from MAC features an intense red tone with a no-shine, all-matte texture that stays put.",
     "itemsLeft": 18,
-    "maxLimit": 7
+    "maxLimit": 7,
+    "reviews": [
+        {
+          "id": "4",
+          "rating": 5,
+          "comment": "Iconic red shade! Perfect matte finish that lasts for hours.",
+          "userName": "Riya S.",
+          "date": "5 Mar 2024",
+          "likes": 567,
+          "dislikes": 8
+        }
+      ],
+      "averageRating": 4.7,
+      "totalReviews": 1876
+      
   },
   {
     "id": 5,
@@ -62,7 +117,21 @@
     "description": "Versatile nude palette with matte, shimmer, and metallic finishes.",
     "details": "With richly pigmented shades, this eyeshadow palette lets you create endless nude looks for both day and night.",
     "itemsLeft": 12,
-    "maxLimit": 6
+    "maxLimit": 6,
+    "reviews": [
+        {
+          "id": "5",
+          "rating": 3,
+          "comment": "Beautiful shades! The pigmentation is amazing and blends like a dream.",
+          "userName": "Sneha K.",
+          "date": "28 Feb 2024",
+          "likes": 400,
+          "dislikes": 3
+        }
+      ],
+      "averageRating": 4.8,
+      "totalReviews": 1567
+     
   },
   {
     "id": 6,
@@ -75,7 +144,21 @@
     "description": "Soft, silky blush that adds a natural flush to your cheeks.",
     "details": "This lightweight, blendable blush gives you a youthful glow while nourishing your skin with antioxidants.",
     "itemsLeft": 20,
-    "maxLimit": 5
+    "maxLimit": 5,
+    "reviews": [
+        {
+          "id": "6",
+          "rating": 4,
+          "comment": "Gives a natural flush to my cheeks. The color is buildable and lasts long.",
+          "userName": "Meera T.",
+          "date": "12 Mar 2024",
+          "likes": 321,
+          "dislikes": 2
+        }
+      ],
+      "averageRating": 4.6,
+      "totalReviews": 1345
+      
   },
   {
     "id": 7,
@@ -88,7 +171,21 @@
     "description": "Conceal your dark circles and spots, and highlight your beautiful features.",
     "details": "This concealer erases fine lines, dark circles, and blemishes with a micro-corrector applicator and brightening formula.",
     "itemsLeft": 22,
-    "maxLimit": 8
+    "maxLimit": 8,
+    "reviews": [
+        {
+          "id": "7",
+          "rating": 4,
+          "comment": "Great coverage for dark circles. The sponge applicator makes it easy to apply.",
+          "userName": "Tanvi M.",
+          "date": "8 Mar 2024",
+          "likes": 278,
+          "dislikes": 2
+        }
+      ],
+      "averageRating": 4.4,
+      "totalReviews": 987
+      
   },
   {
     "id": 8,
@@ -101,7 +198,21 @@
     "description": "Multipurpose tint that moisturizes lips, cheeks & eyes boldly with vitamin E.",
     "details": "This creamy tint glides smoothly and provides a natural flush while keeping your skin nourished and hydrated.",
     "itemsLeft": 28,
-    "maxLimit": 7
+    "maxLimit": 7,
+    "reviews": [
+        {
+          "id": "8",
+          "rating": 4,
+          "comment": "Love the dual purpose! Gives a natural flush to both lips and cheeks.",
+          "userName": "Aisha R.",
+          "date": "3 Mar 2024",
+          "likes": 198,
+          "dislikes": 5
+        }
+      ],
+      "averageRating": 4.3,
+      "totalReviews": 765
+      
   },
   {
     "id": 9,
@@ -114,6 +225,20 @@
     "description": "Waterproof, long-lasting foundation and CC cream with mushroom brush.",
     "details": "This innovative 2-in-1 product combines skincare and makeup benefits, offering hydration and flawless coverage with a unique sponge applicator.",
     "itemsLeft": 16,
-    "maxLimit": 6
+    "maxLimit": 7,
+    "reviews": [
+        {
+          "id": "9",
+          "rating": 4,
+          "comment": "Love the dual purpose! Gives a natural flush to both lips and cheeks.",
+          "userName": "Aisha R.",
+          "date": "3 Mar 2024",
+          "likes": 188,
+          "dislikes": 6
+        }
+      ],
+      "averageRating": 4.3,
+      "totalReviews": 765
+      
   }
 ]

@@ -10,7 +10,21 @@
     "description": "A luxurious essence enriched with Pitera to transform skin’s texture, radiance, and firmness with daily use.",
     "details": "This essence penetrates deep into the skin to enhance clarity and smoothness, delivering visible results. SK-II is renowned for its skin-transforming Pitera content that promotes cellular renewal.",
     "itemsLeft": 12,
-    "maxLimit": 8
+    "category": "topbrands",
+     "maxLimit": 8,
+    "reviews": [
+        {
+          "id": "1",
+          "rating": 5,
+          "comment": "The Pitera essence is truly transformative! My skin has never looked better.",
+          "userName": "Aisha M.",
+          "date": "15 Mar 2024",           
+          "likes": 245,
+          "dislikes": 0
+        }
+      ],
+      "averageRating": 4.8,
+      "totalReviews": 1256
   },
   {
     "id": 2,
@@ -23,7 +37,21 @@
     "description": "Natural, apothecary-based skincare solutions that deeply nourish and rejuvenate all skin types effectively and gently.",
     "details": "Formulated with glacial glycoprotein and olive-derived squalane, this moisturizer provides lasting hydration and strengthens the skin barrier.",
     "itemsLeft": 20,
-    "maxLimit": 5
+     "maxLimit": 5,
+    "category": "topbrands",
+    "reviews": [
+        {
+          "id": "2",
+          "rating": 4,
+          "comment": "Natural ingredients that really work! My skin feels nourished and healthy.",
+          "userName": "Priya S.",
+          "date": "10 Mar 2024",              
+          "likes": 189,
+          "dislikes": 2
+        }
+      ],
+      "averageRating": 4.5,
+      "totalReviews": 876
   },
   {
     "id": 3,
@@ -36,7 +64,21 @@
     "description": "Powered by nature and proven by science, Origins creates effective skincare with natural and organic ingredients.",
     "details": "Revitalize tired skin with this lightweight gel moisturizer infused with caffeine and ginseng for a healthy, radiant glow.",
     "itemsLeft": 18,
-    "maxLimit": 6
+     "maxLimit": 6,
+    "category": "topbrands",
+    "reviews": [
+        {
+          "id": "3",
+          "rating": 5,
+          "comment": "Love the natural approach! The products are effective and smell amazing.",
+          "userName": "Neha P.",
+          "date": "20 Feb 2024",          
+          "likes": 389,
+          "dislikes": 0
+        }
+      ],
+      "averageRating": 4.9,
+      "totalReviews": 2103
   },
   {
     "id": 4,
@@ -49,7 +91,21 @@
     "description": "Bold, high-performance makeup that empowers creativity and celebrates self-expression with iconic color collections.",
     "details": "This cult-favorite blush delivers a natural-looking flush and radiant finish that enhances all skin tones.",
     "itemsLeft": 25,
-    "maxLimit": 7
+     "maxLimit": 7,
+    "category": "topbrands",
+    "reviews": [
+        {
+          "id": "4",
+          "rating": 5,
+          "comment": "High-quality makeup that lasts all day! The colors are beautiful and pigmented.",
+          "userName": "Riya K.",
+          "date": "5 Mar 2024",           
+          "likes": 567,
+          "dislikes": 8
+        }
+      ],
+      "averageRating": 4.7,
+      "totalReviews": 1876
   },
   {
     "id": 5,
@@ -62,7 +118,21 @@
     "description": "Clean, mineral-based beauty products that promote healthier skin while offering beautiful, natural-looking coverage.",
     "details": "Provides buildable coverage with a natural luminous finish. Formulated without harsh chemicals for sensitive skin.",
     "itemsLeft": 15,
-    "maxLimit": 8
+     "maxLimit": 8,
+    "category": "topbrands",
+    "reviews": [
+        {
+          "id": "5",
+          "rating": 5,
+          "comment": "Perfect for sensitive skin! The mineral-based products are gentle yet effective.",
+          "userName": "Ananya R.",
+          "date": "28 Feb 2024",        
+          "likes": 432,
+          "dislikes": 2
+        }
+      ],
+      "averageRating": 4.8,
+      "totalReviews": 1567
   },
   {
     "id": 6,
@@ -75,7 +145,21 @@
     "description": "Doctor-developed skincare that targets acne, aging, and hydration issues with powerful yet gentle solutions.",
     "details": "This serum visibly reduces dark spots, age spots, and hyperpigmentation for an even skin tone.",
     "itemsLeft": 8,
-    "maxLimit": 5
+     "maxLimit": 5,
+    "category": "topbrands",
+    "reviews": [
+        {
+          "id": "6",
+          "rating": 4,
+          "comment": "Doctor-developed products that really work! My skin has improved significantly.",
+          "userName": "Meera T.",
+          "date": "12 Mar 2024",        
+          "likes": 321,
+          "dislikes": 10
+        }
+      ],
+      "averageRating": 4.6,
+      "totalReviews": 1345
   },
   {
     "id": 7,
@@ -88,7 +172,21 @@
     "description": "A luxurious anti-aging cream that firms, lifts, and hydrates skin, leaving it smoother, radiant, and youthful all day.",
     "details": "Formulated with peptide complexes and nourishing botanicals, it visibly lifts and firms the skin while boosting hydration.",
     "itemsLeft": 11,
-    "maxLimit": 6
+     "maxLimit": 6,
+    "category": "topbrands",
+    "reviews": [
+      {
+        "id": "7",
+        "rating": 4,
+        "comment": "Great anti-aging cream! My skin feels firmer and more radiant.",
+        "userName": "Tanvi M.",
+        "date": "8 Mar 2024",
+        "likes": 278,
+        "dislikes": 2
+      }
+    ],
+    "averageRating": 4.4,
+    "totalReviews": 987
   },
   {
     "id": 8,
@@ -101,7 +199,21 @@
     "description": "A lightweight, plant-based foundation that hydrates, evens skin tone, and provides a soft, natural matte finish.",
     "details": "Made with natural ingredients to nourish skin while offering breathable coverage and a smooth matte effect.",
     "itemsLeft": 16,
-    "maxLimit": 7
+     "maxLimit": 7,
+    "category": "topbrands",
+    "reviews": [
+        {
+          "id": "8",
+          "rating": 4,
+          "comment": "Love the natural finish! Perfect for everyday wear and feels light on the skin.",
+          "userName": "Aisha R.",
+          "date": "3 Mar 2024",      
+          "likes": 198,
+          "dislikes": 5
+        }
+      ],
+      "averageRating": 4.3,
+      "totalReviews": 765
   },
   {
     "id": 9,
@@ -114,6 +226,20 @@
     "description": "An oil-absorbing, pore-blurring powder delivering a smooth, natural matte finish for normal to oily skin types.",
     "details": "Ideal for setting foundation or controlling shine, this lightweight powder gives a flawless matte look without caking.",
     "itemsLeft": 30,
-    "maxLimit": 8
+     "maxLimit": 8,
+    "category": "topbrands",
+    "reviews": [
+        {
+          "id": "9",
+          "rating": 5,
+          "comment": "Perfect for oily skin! Controls shine and blurs pores effectively.",
+          "userName": "Zara K.",
+          "date": "1 Mar 2024",       
+          "likes": 345,
+          "dislikes": 0
+        }
+      ],
+      "averageRating": 4.7,
+      "totalReviews": 1234
   }
 ]

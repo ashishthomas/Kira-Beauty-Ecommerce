@@ -5,6 +5,7 @@ import carousel_fragrance from "../../../assets/jpeg/carousel_fragrance.jpeg";
 import carousel_makeup from "../../../assets/jpeg/carousel_makeup.jpeg";
 import carousel_skincare from "../../../assets/jpeg/carousel_skincare.jpeg";
 import carousel_grooming from "../../../assets/jpeg/carousel_grooming.jpeg";
+import { useNavigate } from "react-router";
 
 const imageMap: { [key: string]: string } = {
   carousel_fragrance,
@@ -15,6 +16,7 @@ const imageMap: { [key: string]: string } = {
 const ShopByCategory = () => {
   const [categories, setCategories] = useState<Category[]>([]);
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetchCategories().then((data) => {
@@ -45,6 +47,11 @@ const ShopByCategory = () => {
     };
   }, [categories]);
 
+  const handleCategoryClick = (name: string) => {
+    const formattedName = name.toLowerCase().replace(/\s+/g, "-");
+    navigate(`/shop/${formattedName}`);
+  };
+
   return (
     <div className="shop-category-container">
       <h2 className="section-title">Shop By Category</h2>
@@ -57,6 +64,7 @@ const ShopByCategory = () => {
               ref={(el) => {
                 cardRefs.current[index] = el;
               }}
+              onClick={() => handleCategoryClick(category.name)}
             >
               <img src={imageMap[category.imageKey]} alt={category.name} />
               <p>{category.name}</p>

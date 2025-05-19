@@ -8,6 +8,7 @@ import { useNavigate } from "react-router";
 import { useState } from "react";
 import UserModal from "../UserModal/UserModal";
 import LoginModal from "../LoginModal/LoginModal";
+import { toast } from "react-toastify";
 
 const UtilitySection = () => {
   const userName = useSelector((state: RootState) => state.auth.userName);
@@ -19,24 +20,33 @@ const UtilitySection = () => {
     setShowModal(true);
   };
 
+  const handleCartClick = () => {
+    if (isLoggedIn) {
+      navigate("/cart");
+    } else {
+      toast.info("Login to add to cart");
+      setShowModal(true);
+    }
+  };
+
   return (
     <div className="utility-section">
       {isLoggedIn && userName && (
         <span className="user-name">Hi, {userName}</span>
       )}
-      <img src={search} alt="Search" className="icon" />
+      <img
+        src={search}
+        alt="Search"
+        className="icon"
+        onClick={() => navigate("/shop")}
+      />
       <img
         src={person}
         alt="User"
         className="icon"
         onClick={handlePersonClick}
       />
-      <img
-        src={cart}
-        alt="Cart"
-        className="icon"
-        onClick={() => navigate("/cart")}
-      />
+      <img src={cart} alt="Cart" className="icon" onClick={handleCartClick} />
       {showModal &&
         (isLoggedIn && userName ? (
           <UserModal userName={userName} onClose={() => setShowModal(false)} />

@@ -2,8 +2,10 @@ import Button from "../../../components/common/Button/Button";
 import "@src/features/HomeFeatures/styles/ProductDisplay.scss";
 import { HOME_LABEL_CONSTANTS } from "../constants/ui-constants";
 import display from "../../../assets/png/Display_Section_1.png";
+import { useNavigate } from "react-router";
 
 const ProductDisplay = () => {
+  const navigate = useNavigate();
   return (
     <div className="product-section">
       <div className="product-text">
@@ -12,13 +14,13 @@ const ProductDisplay = () => {
         <Button
           variant="secondary"
           size="medium"
-          onClick={() => console.log("Shop now clicked")}
+          onClick={() => navigate("/shop")}
         >
           {HOME_LABEL_CONSTANTS.BUTTON_TEXT}
         </Button>
       </div>
       <div className="product-image">
-        <img src={display} alt="Kira Revitalizing Handwash" />
+        <img src={display} alt="Display Image" />
       </div>
     </div>
   );

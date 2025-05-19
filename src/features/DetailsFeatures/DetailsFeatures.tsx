@@ -1,7 +1,13 @@
-import ProDetails from "./components/ProductDetails";
+import ProDetails from './components/ProductDetails'
+import  ProductReviews  from './components/ProductReview'
 
 function DetailsFeatures() {
-  return <ProDetails />;
+  return (
+    <div>
+        <ProDetails/>
+        <ProductReviews/>
+    </div>
+  )
 }
 
 export default DetailsFeatures;

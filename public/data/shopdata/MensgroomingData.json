@@ -10,7 +10,20 @@
     "description": "Nourishing beard oil enriched with natural ingredients for a soft, shiny, and itch-free beard.",
     "details": "Formulated with essential oils, this beard oil keeps your beard nourished and your skin itch-free while promoting healthy growth and shine.",
     "itemsLeft": 25,
-    "maxLimit": 6
+    "maxLimit": 6,
+      "reviews": [
+          {
+            "id": "1",
+            "rating": 5,
+            "comment": "This beard oil is amazing! My beard feels so soft and looks much healthier. The scent is subtle and pleasant.",
+            "userName": "Raj K.",
+            "date": "12 Mar 2024",
+            "likes": 235,
+            "dislikes": 0
+          }
+        ],
+        "averageRating": 4.6,
+        "totalReviews": 1105    
   },
   {
     "id": 2,
@@ -23,8 +36,22 @@
     "description": "Deep cleansing face wash designed to remove dirt, oil, and impurities for a fresh look.",
     "details": "This face wash gently exfoliates and cleanses skin, removing deep-seated impurities and excess oil without drying it out.",
     "itemsLeft": 30,
-    "maxLimit": 5
-  },
+    "maxLimit": 5,
+      "reviews": [
+          {
+            "id": "2",
+            "rating": 4,
+            "comment": "Great face wash for daily use. Leaves my skin feeling clean and fresh without drying it out.",
+            "userName": "Amit S.",
+            "date": "10 Mar 2024",
+            "likes": 189,
+            "dislikes": 2
+          }
+        ],
+        "averageRating": 4.5,
+        "totalReviews": 876
+        
+    },
   {
     "id": 3,
     "category": "mensgrooming",
@@ -36,7 +63,20 @@
     "description": "Combo with Beard Growth Oil and Vitamin C Serum for complete grooming care.",
     "details": "This dual combo promotes beard growth while the Vitamin C serum brightens and hydrates skin, improving overall skin texture and health.",
     "itemsLeft": 20,
-    "maxLimit": 8
+    "maxLimit": 8,
+      "reviews": [
+          {
+            "id": "3",
+            "rating": 5,
+            "comment": "The combo works wonders! My beard is growing faster and my skin looks brighter. Great value for money.",
+            "userName": "Vikram P.",
+            "date": "20 Feb 2024",
+            "likes": 389,
+            "dislikes": 1
+          }
+        ],
+        "averageRating": 4.9,
+        "totalReviews": 2103
   },
   {
     "id": 4,
@@ -49,7 +89,20 @@
     "description": "Hydrating moisturizer that fights dryness and keeps skin fresh all day.",
     "details": "Infused with active ingredients, this moisturizer combats dullness and energizes tired skin while providing 24-hour hydration.",
     "itemsLeft": 18,
-    "maxLimit": 7
+    "maxLimit": 7,
+      "reviews": [
+          {
+            "id": "4",
+            "rating": 4,
+            "comment": "Perfect for my dry skin. Absorbs quickly and keeps my face hydrated all day.",
+            "userName": "Rahul M.",
+            "date": "5 Mar 2024",
+            "likes": 567,
+            "dislikes": 3
+          }
+        ],
+        "averageRating": 4.7,
+        "totalReviews": 1876
   },
   {
     "id": 5,
@@ -62,7 +115,20 @@
     "description": "Non-sticky hair wax with strong hold and matte finish.",
     "details": "Perfect for all hair types, this wax offers a long-lasting hold without making hair greasy or hard.",
     "itemsLeft": 22,
-    "maxLimit": 6
+    "maxLimit": 8,
+      "reviews": [
+        {
+          "id": "5",
+          "rating": 5,
+          "comment": "Best hair wax I've used! Holds all day without making hair sticky or greasy.",
+          "userName": "Arjun S.",
+          "date": "28 Feb 2024",
+          "likes": 432,
+          "dislikes": 1
+        }
+      ],
+      "averageRating": 4.8,
+      "totalReviews": 1567
   },
   {
     "id": 6,
@@ -75,7 +141,20 @@
     "description": "Charcoal soap bar that detoxifies skin and removes impurities.",
     "details": "This soap bar cleanses deep into the pores and removes oil and dirt, leaving your skin refreshed and healthy.",
     "itemsLeft": 35,
-    "maxLimit": 5
+    "maxLimit": 5,
+      "reviews": [
+          {
+            "id": "6",
+            "rating": 4,
+            "comment": "Great for oily skin. Leaves my skin feeling clean and fresh. The charcoal really helps control oil.",
+            "userName": "Karan P.",
+            "date": "12 Mar 2024",
+            "likes": 321,
+            "dislikes": 0
+          }
+        ],
+        "averageRating": 4.6,
+        "totalReviews": 1345
   },
   {
     "id": 7,
@@ -88,7 +167,20 @@
     "description": "All-in-one grooming kit with 8 essential tools for men.",
     "details": "Includes shaving essentials, beard oil, styling gel, body spray, and more — a complete package for modern grooming needs.",
     "itemsLeft": 10,
-    "maxLimit": 8
+    "maxLimit": 8,
+      "reviews": [
+          {
+            "id": "7",
+            "rating": 4,
+            "comment": "Complete grooming solution. All tools are of good quality and the case is very convenient.",
+            "userName": "Siddharth R.",
+            "date": "8 Mar 2024",
+            "likes": 278,
+            "dislikes": 2
+          }
+        ],
+        "averageRating": 4.4,
+        "totalReviews": 987
   },
   {
     "id": 8,
@@ -101,7 +193,20 @@
     "description": "Detan Facewash and Scrub kit enriched with coffee extracts and Vitamin E.",
     "details": "Specially crafted to remove tan and refresh dull skin, ideal as a gift hamper for men during special occasions.",
     "itemsLeft": 14,
-    "maxLimit": 7
+    "maxLimit": 7,
+      "reviews": [
+          {
+            "id": "8",
+            "rating": 4,
+            "comment": "Works well for reducing tan. The face wash and scrub combination is effective.",
+            "userName": "Aditya K.",
+            "date": "3 Mar 2024",
+            "likes": 198,
+            "dislikes": 0
+          }
+        ],
+        "averageRating": 4.3,
+        "totalReviews": 765
   },
   {
     "id": 9,
@@ -114,6 +219,19 @@
     "description": "Premium kit including body wash, shampoo, scrub, face wash, cleansing gel & soap.",
     "details": "An elite charcoal-based grooming set with six powerful skin-cleansing and hair-care products. Great for gifting and daily use.",
     "itemsLeft": 8,
-    "maxLimit": 6
-  }
+    "maxLimit": 6,
+      "reviews": [
+          {
+            "id": "9",
+            "rating": 5,
+            "comment": "Excellent value for money. All products are high quality and work great together.",
+            "userName": "Nikhil T.",
+            "date": "1 Mar 2024",
+            "likes": 345,
+            "dislikes": 0
+          }
+        ],
+        "averageRating": 4.7,
+        "totalReviews": 1234
+}
 ]
