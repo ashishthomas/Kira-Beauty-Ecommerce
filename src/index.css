@@ -1,1 +1,32 @@
 @import "tailwindcss";
+
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.goog-te-banner-frame,
+iframe.goog-te-banner-frame {
+  display: none !important;
+  /* visibility: hidden !important; */
+  height: 0 !important;
+}
+
+.goog-te-gadget-icon,
+.goog-logo-link {
+  display: none !important;
+}
+
+/* .VIpgJd-ZVi9od-ORHb {
+    display: none !important;
+} */
+.skiptranslate {
+    /* display: none !important; */
+}

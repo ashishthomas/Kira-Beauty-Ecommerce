@@ -3,6 +3,8 @@ import "./LoginModal.scss";
 import { useDispatch } from "react-redux";
 import { login } from "../../app/Slices/AuthSlice";
 import { toast } from "react-toastify";
+import { Formik, Form, Field, ErrorMessage } from "formik";
+import * as Yup from "yup";
 
 type Props = {
   onClose: () => void;
@@ -10,19 +12,35 @@ type Props = {
 
 const LoginModal: React.FC<Props> = ({ onClose }) => {
   const [isRegistering, setIsRegistering] = useState(false);
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [showForgot, setShowForgot] = useState(false);
+  const [forgotEmail, setForgotEmail] = useState("");
   const dispatch = useDispatch();
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+  const loginSchema = Yup.object().shape({
+    email: Yup.string()
+      .matches(/^[^\s@]+@[^\s@]+\.[^\s@]+$/, "Invalid email")
+      .required("Email is required"),
+    password: Yup.string().required("Password is required"),
+  });
 
-    if (!email || !password) {
-      toast.error("Please fill in all fields");
-      return;
-    }
+  const registerSchema = Yup.object().shape({
+    name: Yup.string()
+      .matches(/^[A-Za-z ]+$/, "Name can only contain letters and spaces")
+      .required("Name is required"),
+    email: Yup.string()
+      .matches(/^[^\s@]+@[^\s@]+\.[^\s@]+$/, "Invalid email")
+      .required("Email is required"),
+    password: Yup.string().required("Password is required"),
+  });
 
+  const initialValues = {
+    name: "",
+    email: "",
+    password: "",
+  };
+
+  const handleFormikSubmit = (values: typeof initialValues) => {
+    const { name, email, password } = values;
     const usersStr = localStorage.getItem("users");
     const users = usersStr ? JSON.parse(usersStr) : {};
 
@@ -51,40 +69,105 @@ const LoginModal: React.FC<Props> = ({ onClose }) => {
     }
   };
 
+  const handleForgotPassword = (e?: React.MouseEvent) => {
+    if (e) e.preventDefault();
+    setShowForgot(true);
+  };
+
   return (
-    <div className="login-modal-backdrop">
-      <div className="login-modal">
+    <div className="login-modal-backdrop" onClick={onClose}>
+      <div className="login-modal" onClick={(e) => e.stopPropagation()}>
         <button className="close-btn" onClick={onClose}>
           ×
         </button>
         <h2>{isRegistering ? "Sign Up" : "Login"}</h2>
-        <form onSubmit={handleSubmit}>
-          {isRegistering && (
-            <input
-              type="text"
-              placeholder="Name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              required
-            />
+        <Formik
+          initialValues={
+            isRegistering
+              ? { name: "", email: "", password: "" }
+              : { name: "", email: "", password: "" }
+          }
+          enableReinitialize
+          validationSchema={isRegistering ? registerSchema : loginSchema}
+          onSubmit={handleFormikSubmit}
+        >
+          {({ isSubmitting }) => (
+            <Form>
+              {isRegistering && (
+                <div>
+                  <Field type="text" name="name" placeholder="Name" />
+                  <ErrorMessage name="name" component="div" className="error" />
+                </div>
+              )}
+              <div>
+                <Field type="email" name="email" placeholder="Email" />
+                <ErrorMessage name="email" component="div" className="error" />
+              </div>
+              <div>
+                <Field type="password" name="password" placeholder="Password" />
+                <ErrorMessage
+                  name="password"
+                  component="div"
+                  className="error"
+                />
+              </div>
+              {!isRegistering && showForgot && (
+                <div className="forgot-password-form">
+                  <input
+                    type="email"
+                    placeholder="Enter your registered email"
+                    value={forgotEmail}
+                    onChange={(e) => setForgotEmail(e.target.value)}
+                    required
+                    className="forgot-password-input"
+                    style={{ marginBottom: 8, width: "100%" }}
+                  />
+                  <button
+                    type="button"
+                    className="forgot-password-btn"
+                    style={{ width: "100%" }}
+                    onClick={() => {
+                      const email = forgotEmail.trim().toLowerCase();
+                      const usersStr = localStorage.getItem("users");
+                      const users = usersStr ? JSON.parse(usersStr) : {};
+                      if (users[email]) {
+                        // Generate a temporary password
+                        const tempPassword = Math.random()
+                          .toString(36)
+                          .slice(-8);
+                        users[email].password = tempPassword;
+                        localStorage.setItem("users", JSON.stringify(users));
+                        toast.info(
+                          `Your temporary password is: ${tempPassword}`
+                        );
+                      } else {
+                        toast.error("No user found with this email.");
+                      }
+                      setShowForgot(false);
+                      setForgotEmail("");
+                    }}
+                  >
+                    Reset Password
+                  </button>
+                </div>
+              )}
+              <button type="submit" disabled={isSubmitting}>
+                {isRegistering ? "Sign Up" : "Login"}
+              </button>
+              {!isRegistering && !showForgot && (
+                <div className="forgot-password-link">
+                  <span
+                    onClick={handleForgotPassword}
+                    className="forgot-password-span"
+                  >
+                    Forgot Password?
+                  </span>
+                </div>
+              )}
+            </Form>
           )}
-          <input
-            type="email"
-            placeholder="Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-          <input
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-          <button type="submit">{isRegistering ? "Sign Up" : "Login"}</button>
-        </form>
-        <p>
+        </Formik>
+        <p className="toggle-auth-text">
           {isRegistering
             ? "Already have an account?"
             : "Don't have an account?"}{" "}

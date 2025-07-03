@@ -3,12 +3,14 @@ import { FaStar } from "react-icons/fa";
 import Button from "../../../components/common/Button/Button";
 import "../styles/ProductReview.scss";
 import { useParams } from "react-router";
+import { useFormik } from "formik";
+import * as Yup from "yup";
 
 const categoryFileMap: Record<string, string> = {
   fragrance: "/data/shopdata/FragranceData.json",
   skincare: "/data/shopdata/SkincareData.json",
   makeup: "/data/shopdata/MakeupData.json",
-  mensgrooming: "/data/shopdata/MensGroomingData.json",
+  mensgrooming: "/data/shopdata/MensgroomingData.json",
   topbrands: "/data/shopdata/TopbrandsData.json",
 };
 
@@ -27,7 +29,7 @@ export interface ReviewType {
 const ProductReviews: React.FC = () => {
   const { category, id } = useParams<{ category: string; id: string }>();
   const [reviews, setReviews] = useState<ReviewType[]>([]);
-  const [average, setAverage] = useState<number>(0);
+  const [average] = useState<number>(0);
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   const [isEditing, setIsEditing] = useState(false);
   const [lastAddedReviewId, setLastAddedReviewId] = useState<string | null>(
@@ -42,6 +44,18 @@ const ProductReviews: React.FC = () => {
     likes: 0,
     dislikes: 0,
   });
+
+  const getLoggedInUserName = () => {
+    const token = localStorage.getItem("token");
+    if (!token) return "";
+    const usersStr = localStorage.getItem("users");
+    const users = usersStr ? JSON.parse(usersStr) : {};
+    const email = Object.keys(users).find(
+      (key) => users[key] && users[key].name && token
+    );
+    return email && users[email] ? users[email].name : "";
+  };
+  const loggedInUserName = getLoggedInUserName();
   const [dynamicAverageRating, setDynamicAverageRating] = useState(average);
   const [hoveredRating, setHoveredRating] = useState<number>(0);
 
@@ -71,92 +85,124 @@ const ProductReviews: React.FC = () => {
     setDynamicAverageRating(average);
   }, [reviews]);
 
-  const renderStars = (rating: number, isModal?: boolean) => {
+  const renderStars = (
+    rating: number,
+    isModal?: boolean,
+    hoveredRating?: number,
+    setHoveredRating?: (val: number) => void
+  ) => {
+    const displayRating =
+      hoveredRating && hoveredRating > 0 ? hoveredRating : rating;
     return [...Array(5)].map((_, index) => (
       <FaStar
         key={index}
-        className={`star ${index < rating ? "filled" : "empty"}`}
-        onMouseEnter={() => isModal && setHoveredRating(index + 1)}
-        onMouseLeave={() => isModal && setHoveredRating(0)}
+        className={`star ${index < displayRating ? "filled" : "empty"}`}
+        onMouseEnter={() =>
+          isModal && setHoveredRating && setHoveredRating(index + 1)
+        }
+        onMouseLeave={() => isModal && setHoveredRating && setHoveredRating(0)}
         onClick={() => {
           if (isModal) {
-            setFormData({ ...formData, rating: index + 1 });
+            formik.setFieldValue("rating", index + 1);
           }
         }}
       />
     ));
   };
 
-  const handleLike = (rid: string) =>
-    setReviews((r) =>
-      r.map((rv) =>
-        rv.id === rid
-          ? {
-              ...rv,
-              likes: rv.likes + (rv.userAction !== "liked" ? 1 : 0),
-              dislikes:
-                rv.userAction === "disliked" ? rv.dislikes - 1 : rv.dislikes,
-              userAction: "liked",
-            }
-          : rv
-      )
+  const handleLike = (rid: string) => {
+    setReviews((prevReviews) =>
+      prevReviews.map((review) => {
+        if (review.id !== rid) return review;
+
+        const isLiked = review.userAction === "liked";
+        const isDisliked = review.userAction === "disliked";
+
+        return {
+          ...review,
+          likes: isLiked ? review.likes - 1 : review.likes + 1,
+          dislikes: isDisliked ? review.dislikes - 1 : review.dislikes,
+          userAction: isLiked ? undefined : "liked",
+        };
+      })
     );
+  };
 
-  const handleDislike = (rid: string) =>
-    setReviews((r) =>
-      r.map((rv) =>
-        rv.id === rid
-          ? {
-              ...rv,
-              dislikes: rv.dislikes + (rv.userAction !== "disliked" ? 1 : 0),
-              likes: rv.userAction === "liked" ? rv.likes - 1 : rv.likes,
-              userAction: "disliked",
-            }
-          : rv
-      )
+  const handleDislike = (rid: string) => {
+    setReviews((prevReviews) =>
+      prevReviews.map((review) => {
+        if (review.id !== rid) return review;
+
+        const isDisliked = review.userAction === "disliked";
+        const isLiked = review.userAction === "liked";
+
+        return {
+          ...review,
+          dislikes: isDisliked ? review.dislikes - 1 : review.dislikes + 1,
+          likes: isLiked ? review.likes - 1 : review.likes,
+          userAction: isDisliked ? undefined : "disliked",
+        };
+      })
     );
+  };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+  const formik = useFormik({
+    initialValues: {
+      userName: loggedInUserName,
+      rating: formData.rating,
+      comment: formData.comment,
+    },
+    enableReinitialize: true,
+    validationSchema: Yup.object().shape({
+      rating: Yup.number()
+        .required("Rating is required")
+        .min(1, "Please provide a rating"),
+      comment: Yup.string()
+        .required("Comment is required")
+        .min(5, "Comment must be at least 5 characters"),
+    }),
+    onSubmit: (values) => {
+      if (isEditing && lastAddedReviewId) {
+        setReviews((prevReviews) =>
+          prevReviews.map((review) =>
+            review.id === lastAddedReviewId
+              ? { ...review, ...values, userName: loggedInUserName }
+              : review
+          )
+        );
+      } else {
+        const formattedDate = new Intl.DateTimeFormat("en-GB", {
+          day: "2-digit",
+          month: "short",
+          year: "numeric",
+        }).format(new Date());
 
-    if (isEditing && lastAddedReviewId) {
-      setReviews((prevReviews) =>
-        prevReviews.map((review) =>
-          review.id === lastAddedReviewId ? { ...review, ...formData } : review
-        )
-      );
-    } else {
-      const formattedDate = new Intl.DateTimeFormat("en-GB", {
-        day: "2-digit",
-        month: "short",
-        year: "numeric",
-      }).format(new Date());
+        const newReview: ReviewType = {
+          id: `${reviews.length + 1}`,
+          userName: loggedInUserName,
+          rating: Number(values.rating),
+          date: formattedDate,
+          comment: values.comment,
+          likes: 0,
+          dislikes: 0,
+        };
 
-      const newReview: ReviewType = {
-        id: `${reviews.length + 1}`,
-        userName: formData.userName,
-        rating: Number(formData.rating),
-        date: formattedDate,
-        comment: formData.comment,
+        setReviews([newReview, ...reviews]);
+        setLastAddedReviewId(newReview.id);
+      }
+      setIsModalOpen(false);
+      setFormData({
+        id: "",
+        userName: "",
+        rating: 0,
+        date: "",
+        comment: "",
         likes: 0,
         dislikes: 0,
-      };
-
-      setReviews([newReview, ...reviews]);
-      setLastAddedReviewId(newReview.id);
-    }
-    setIsModalOpen(false);
-    setFormData({
-      id: "",
-      userName: "",
-      rating: 0,
-      date: "",
-      comment: "",
-      likes: 0,
-      dislikes: 0,
-    });
-    setIsEditing(false);
-  };
+      });
+      setIsEditing(false);
+    },
+  });
 
   const handleAddOrEditReview = () => {
     if (lastAddedReviewId) {
@@ -182,17 +228,10 @@ const ProductReviews: React.FC = () => {
     setIsModalOpen(true);
   };
 
-  const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
   return (
     <div className="product-reviews">
       <div className="reviews-header">
-        <h2 className="reviews-title">Customer Reviews({reviews.length})</h2>
+        <h2 className="reviews-title">Ratings & Reviews ({reviews.length})</h2>
         <Button onClick={handleAddOrEditReview}>
           {lastAddedReviewId ? "Edit Review" : "Add Review"}
         </Button>
@@ -224,12 +263,14 @@ const ProductReviews: React.FC = () => {
                 ))}
               </div>
             )}
+
             <div className="review-actions">
               <button
                 className={`like-button ${
                   review.userAction === "liked" ? "active" : ""
                 }`}
                 onClick={() => handleLike(review.id)}
+                aria-label="Like this review"
               >
                 <span>👍</span>
                 <span>{review.likes}</span>
@@ -239,6 +280,7 @@ const ProductReviews: React.FC = () => {
                   review.userAction === "disliked" ? "active" : ""
                 }`}
                 onClick={() => handleDislike(review.id)}
+                aria-label="Dislike this review"
               >
                 <span>👎</span>
                 <span>{review.dislikes}</span>
@@ -255,28 +297,35 @@ const ProductReviews: React.FC = () => {
         >
           <div className="modal-content">
             <h3>{isEditing ? "Edit Review" : "Add Review"}</h3>
-            <form onSubmit={handleSubmit}>
-              <input
-                type="text"
-                name="userName"
-                placeholder="Username"
-                value={formData.userName}
-                onChange={handleInputChange}
-                required
-              />
+            <form onSubmit={formik.handleSubmit}>
+              <div className="logged-in-username">
+                {loggedInUserName && `Username: ${loggedInUserName}`}
+              </div>
               <div className="rating-stars">
                 <label>Rating:</label>
                 <div className="stars">
-                  {renderStars(formData.rating, true)}
+                  {renderStars(
+                    formik.values.rating,
+                    true,
+                    hoveredRating,
+                    setHoveredRating
+                  )}
                 </div>
               </div>
+              {formik.touched.rating && formik.errors.rating && (
+                <div className="error">{formik.errors.rating}</div>
+              )}
               <textarea
                 name="comment"
                 placeholder="Comment"
-                value={formData.comment}
-                onChange={handleInputChange}
+                value={formik.values.comment}
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
                 required
               />
+              {formik.touched.comment && formik.errors.comment && (
+                <div className="error">{formik.errors.comment}</div>
+              )}
               <button type="submit">Submit</button>
               <button type="button" onClick={() => setIsModalOpen(false)}>
                 Cancel

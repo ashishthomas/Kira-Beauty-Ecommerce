@@ -1,0 +1,73 @@
+
+
+@import "@src/styles/styleVariables.scss";
+
+// === Container for Google Translate dropdown ===
+#google_translate_element {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+// === Hide Google logo and unwanted branding ===
+.goog-logo-link,
+.goog-te-gadget img,
+.goog-te-gadget .goog-te-combo + span {
+  display: none !important;
+}
+
+// === Dropdown Styling ===
+.goog-te-gadget .goog-te-combo {
+  background-color: $header-color;
+  color: $dropdown-color;
+  border: 1px solid $border-color;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+
+  // Smooth interaction
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+// === Focus & Hover Effects ===
+.goog-te-gadget .goog-te-combo:hover,
+.goog-te-gadget .goog-te-combo:focus {
+  border-color: $primary-color;
+  box-shadow: 0 0 0 2px rgba(103, 126, 83, 0.2); // $primary-color
+}
+
+// === Hide native select arrows (cross-browser) ===
+.goog-te-gadget .goog-te-combo::-ms-expand {
+  display: none;
+}
+.goog-te-gadget .goog-te-combo::-webkit-inner-spin-button,
+.goog-te-gadget .goog-te-combo::-webkit-outer-spin-button,
+.goog-te-gadget .goog-te-combo::-webkit-search-cancel-button,
+.goog-te-gadget .goog-te-combo::-webkit-search-decoration {
+  display: none;
+}
+.goog-te-gadget .goog-te-combo {
+  background-image: none !important;
+}
+
+// === Typography normalization ===
+.goog-te-gadget {
+  font-size: 0.9rem;
+  color: $dropdown-color;
+}
+
+// === Hide Google top banner toolbar ===
+body .goog-te-banner-frame.skiptranslate {
+  // display: none !important;
+  height: 0 !important;
+  // visibility: hidden !important;
+}
+html {
+  position: relative !important;
+  top: 0 !important;
+}

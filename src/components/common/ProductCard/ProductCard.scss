@@ -56,6 +56,7 @@
     .shop-title {
       font-size: 1.3rem;
       font-weight: bold;
+      margin-top: 20px;
       margin-bottom: 15px;
       color: $text-black;
       height: 60px;
@@ -75,6 +76,14 @@
       align-items: center;
       gap: 6px;
       cursor: pointer;
+
+      .icon {
+        transition: transform 0.2s, filter 0.2s;
+      }
+      &:hover .icon {
+        transform: scale(1.2) rotate(-10deg);
+        filter: brightness(1.2) drop-shadow(0 2px 6px rgba(0, 0, 0, 0.15));
+      }
     }
 
     .shop-now-button {
@@ -85,6 +94,53 @@
       display: inline-block;
       margin-top: auto;
       margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .shop-card-section {
+    padding: 18px 0;
+    .shop-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      margin-top: 10px;
+      padding: 0 2px;
+    }
+    .shop-card {
+      border-radius: 18px;
+      width: 65vw;
+      margin: 0 auto;
+      height: 100%;
+      min-width: 0;
+      padding: 0 2px;
+    }
+    .shop-image-wrapper {
+      height: 110px;
+    }
+    .shop-info {
+      .shop-title {
+        font-size: 1rem;
+        height: auto;
+        min-height: 18px;
+      }
+      .shop-description {
+        height: auto;
+        min-height: 24px;
+        font-size: 0.75rem;
+        padding-left: 2px;
+        padding-right: 2px;
+        word-break: break-word;
+        white-space: normal;
+      }
+      .shop-price,
+      .shop-cart {
+        font-size: 0.85rem;
+      }
+      .shop-now-button {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+      }
     }
   }
 }

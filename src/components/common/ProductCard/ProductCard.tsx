@@ -47,7 +47,7 @@ const ProductGrid: React.FC<ProductGridProps> = ({ products }) => {
         id: product.id,
         name: product.name,
         image: imageMap[product.imageKey],
-        price: parseFloat(product.price.replace("$", "")),
+        price: parseFloat(product.price.replace(/[^\d.]/g, "")),
         quantity: 1,
         category: categoryFromPath,
       })

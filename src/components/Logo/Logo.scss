@@ -7,3 +7,16 @@
   font-family: "Katari", serif;
   color: $logo-color;
 }
+
+@media (max-width: 900px) {
+  .logo {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo {
+    font-size: 1.3rem;
+    margin-bottom: 0.2rem;
+  }
+}

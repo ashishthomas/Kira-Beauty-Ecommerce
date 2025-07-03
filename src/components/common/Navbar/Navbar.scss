@@ -2,10 +2,42 @@
 
 .navbar {
   display: flex;
+  align-items: center;
   gap: 4rem;
   font-size: 15px;
   font-weight: 500;
   position: relative;
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    // margin-right: 1rem;
+    // margin-left: 0.8rem;
+
+    span {
+      display: block;
+      height: 2px;
+      width: 100%;
+      background: $navbar-color;
+      margin: 3px 0;
+      border-radius: 2px;
+      transition: 0.3s;
+    }
+  }
+
+  .navbar-links {
+    display: flex;
+    gap: inherit;
+    align-items: center;
+    flex: 1;
+  }
 
   .nav-link {
     color: $navbar-color;
@@ -23,7 +55,65 @@
   }
 
   .brands-hover-container {
-    position: relative;
     display: inline-block;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar {
+    gap: 2rem;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    gap: 1.5rem;
+    font-size: 13px;
+  }
+}
+
+.mobile-menu-dropdown {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    gap: 0.5rem;
+    font-size: 11px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .navbar-links {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      gap: 1rem;
+    }
+
+    .hamburger {
+      display: none;
+    }
+
+    .mobile-menu-dropdown {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .navbar {
+    justify-content: center;
+
+    .navbar-links {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 60vw;
+      gap: 0.5rem;
+    }
   }
 }

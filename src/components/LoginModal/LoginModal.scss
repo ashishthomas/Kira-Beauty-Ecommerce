@@ -22,6 +22,9 @@
   h2 {
     font-weight: 700;
     text-align: center;
+    color: $primary-color;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
   }
 
   form {
@@ -31,6 +34,9 @@
     input {
       margin-bottom: 1rem;
       padding: 0.5rem;
+      border: 1px solid $border-color;
+      border-radius: 4px;
+      width: 100%;
     }
 
     button {
@@ -38,13 +44,40 @@
       color: $text-white;
       border: none;
       padding: 0.6rem;
+      margin-bottom: 5%;
       cursor: pointer;
+      transition: background 0.2s;
+    }
+    button:hover {
+      background-color: darken($primary-color, 10%);
     }
   }
 
+  .toggle-auth-text {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: $paragraph-color;
+  }
   .toggle-auth {
     color: $primary-color;
     cursor: pointer;
+    transition: color 0.2s;
+  }
+  .toggle-auth:hover {
+    color: darken($primary-color, 15%);
+    text-decoration: underline;
+  }
+
+  .error {
+    color: $warning;
+    font-size: 0.9rem;
+    margin-top: -0.8rem;
+    margin-bottom: 0.7rem;
+    padding-left: 2px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    transition: color 0.2s;
   }
 
   .close-btn {
@@ -55,9 +88,27 @@
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
-    
+
     &:hover {
       opacity: 0.7;
+    }
+  }
+
+  .forgot-password-link {
+    text-align: right;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+
+    span {
+      color: $primary-color;
+      cursor: pointer;
+      text-decoration: underline;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+      &:hover {
+        color: darken($primary-color, 15%);
+        text-decoration: underline;
+      }
     }
   }
 }

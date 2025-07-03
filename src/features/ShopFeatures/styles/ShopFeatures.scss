@@ -49,3 +49,171 @@
     border: 1px solid $primary-color;
   }
 }
+
+.banner-section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+  }
+}
+
+.banner-text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 90%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 60px;
+  color: $text-white;
+  z-index: 2;
+  text-align: left;
+}
+
+.banner-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  margin-bottom: 60px;
+  color: $text-white;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+  text-align: left;
+}
+
+.banner-offer {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: $text-white;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+.banner-desc {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: $text-white;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+.banner-offer,
+.banner-desc {
+  text-align: left;
+}
+
+.banner-cta-button {
+  width: 10rem;
+  background-color: $text-white;
+  color: $text-black;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    background-color: $primary-color !important;
+    color: $text-white;
+  }
+}
+
+@media (max-width: 900px) {
+  .shop-container {
+    width: 95vw;
+    gap: 28px;
+    height: auto;
+    margin-top: 40px;
+  }
+  .container-notes h1 {
+    font-size: 25px;
+  }
+  .container-buttons {
+    gap: 14px;
+  }
+
+  .banner-section img {
+    height: 280px;
+  }
+  .banner-text {
+    width: 70%;
+    padding-left: 24px;
+  }
+  .banner-title {
+    font-size: 2rem;
+    margin-bottom: 18px;
+  }
+  .banner-offer {
+    font-size: 1.1rem;
+  }
+  .banner-desc {
+    font-size: 0.95rem;
+  }
+
+  .banner-cta-button {
+    width: 8rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .shop-container {
+    width: 100vw;
+    gap: 18px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding: 0 6px;
+  }
+  .container-notes h1 {
+    font-size: 18px;
+  }
+  .container-buttons {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .banner-section img {
+    height: 170px;
+  }
+  .banner-text {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: flex-start;
+  }
+  .banner-title {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  .banner-offer {
+    font-size: 0.7rem;
+  }
+  .banner-desc {
+    font-size: 0.5rem;
+  }
+
+  .banner-cta-button {
+    margin-top: 0.5rem;
+    width: 5rem;
+    padding: 0.35rem 0.75rem;
+    font-size: 0.7rem;
+    border-radius: 6px;
+    font-weight: 500;
+  }
+}

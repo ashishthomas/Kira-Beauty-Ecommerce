@@ -1,8 +1,10 @@
 import React from "react";
 import "./Footer.scss";
 import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { useNavigate } from "react-router";
 
 const Footer: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <footer className="footer">
       <h1 className="logo">Kira</h1>
@@ -33,16 +35,40 @@ const Footer: React.FC = () => {
           <h4>Explore</h4>
           <ul>
             <li>
-              <a href="#">HOME</a>
+              <button
+                type="button"
+                className="footer-link-btn"
+                onClick={() => navigate("/home")}
+              >
+                HOME
+              </button>
             </li>
             <li>
-              <a href="#">SHOP</a>
+              <button
+                type="button"
+                className="footer-link-btn"
+                onClick={() => navigate("/shop")}
+              >
+                SHOP
+              </button>
             </li>
             <li>
-              <a href="#">ABOUT US</a>
+              <button
+                type="button"
+                className="footer-link-btn"
+                onClick={() => navigate("/about")}
+              >
+                ABOUT US
+              </button>
             </li>
             <li>
-              <a href="#">CONTACT US</a>
+              <button
+                type="button"
+                className="footer-link-btn"
+                onClick={() => navigate("/brand")}
+              >
+                BRANDS
+              </button>
             </li>
           </ul>
         </div>

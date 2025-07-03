@@ -7,10 +7,10 @@ import "./Header.scss";
 
 const Header = () => {
   return (
-    <div className='header'>
-        <Logo />
-        <Navbar/>
-        <UtilitySection/>
+    <div className="header">
+      <Logo />
+      <Navbar />
+      <UtilitySection />
     </div>
   );
 };
