@@ -1,6 +1,6 @@
 
 
-@import "@src/styles/styleVariables.scss";
+@use "@src/styles/styleVariables.scss" as *;
 
 // === Container for Google Translate dropdown ===
 #google_translate_element {

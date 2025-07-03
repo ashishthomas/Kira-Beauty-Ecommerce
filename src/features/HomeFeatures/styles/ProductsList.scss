@@ -1,4 +1,4 @@
-@import "@src/styles/styleVariables.scss";
+@use "@src/styles/styleVariables.scss" as *;
 
 .our-products-section {
   padding: 100px 20px;

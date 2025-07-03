@@ -1,4 +1,4 @@
-@import "@src/styles/styleVariables.scss";
+@use "@src/styles/styleVariables.scss" as *;
 
 .story {
   padding: 50px 20px;

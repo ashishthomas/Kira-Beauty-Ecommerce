@@ -1,4 +1,4 @@
-@import "@src/styles/styleVariables.scss";
+@use "@src/styles/styleVariables.scss" as *;
 
 .product-name {
   font-size: 1.5rem;
@@ -240,7 +240,8 @@
   border-radius: 4px;
 }
 .modal-content button:hover {
-  background-color: darken($primary-color, 10%);
+  // background-color: darken($primary-color, 10%);
+  background-color: color.adjust($primary-color, $lightness: -10%);
 }
 
 .modal-content button[type="button"] {
@@ -248,7 +249,8 @@
   color: $primary-color;
 }
 .modal-content button[type="button"]:hover {
-  background-color: darken($review-item, 10%);
+  // background-color: darken($review-item, 10%);
+  background-color: color.adjust($review-item, $lightness: -10%);
 }
 
 .modal-content .error {

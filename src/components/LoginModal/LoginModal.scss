@@ -1,4 +1,5 @@
-@import "@src/styles/styleVariables.scss";
+@use "sass:color";
+@use "@src/styles/styleVariables.scss" as *;
 
 .login-modal-backdrop {
   position: fixed;
@@ -49,7 +50,8 @@
       transition: background 0.2s;
     }
     button:hover {
-      background-color: darken($primary-color, 10%);
+      // background-color: darken($primary-color, 10%);
+      background-color: color.adjust($primary-color, $lightness: -10%);
     }
   }
 
@@ -65,7 +67,8 @@
     transition: color 0.2s;
   }
   .toggle-auth:hover {
-    color: darken($primary-color, 15%);
+    // color: darken($primary-color, 15%);
+    color: color.adjust($primary-color, $lightness: -15%);
     text-decoration: underline;
   }
 
@@ -106,7 +109,8 @@
       font-size: 0.95rem;
       transition: color 0.2s;
       &:hover {
-        color: darken($primary-color, 15%);
+        // color: darken($primary-color, 15%);
+        color: color.adjust($primary-color, $lightness: -15%);
         text-decoration: underline;
       }
     }

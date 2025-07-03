@@ -1,4 +1,4 @@
-@import "@src/styles/styleVariables.scss";
+@use "@src/styles/styleVariables.scss" as *;
 
 .display-section {
   padding-top: 7rem;

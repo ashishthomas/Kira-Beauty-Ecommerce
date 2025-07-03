@@ -1,4 +1,4 @@
-@import "@src/styles/styleVariables.scss";
+@use "@src/styles/styleVariables.scss" as *;
 
 .button {
   display: inline-flex;
@@ -20,7 +20,8 @@
     color: white;
 
     &:hover:not(:disabled) {
-      background-color: darken($primary-color, 20%);
+      // background-color: darken($primary-color, 20%);
+      background-color: color.adjust($primary-color, $lightness: -20%);
     }
   }
 
@@ -30,7 +31,8 @@
     font-weight: bold;
 
     &:hover:not(:disabled) {
-      background-color: darken($primary-color, 10%);
+      // background-color: darken($primary-color, 10%);
+      background-color: color.adjust($primary-color, $lightness: -10%);
     }
   }
 
