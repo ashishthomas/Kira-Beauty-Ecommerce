@@ -33,13 +33,14 @@
   border-radius: 4px;
   list-style: none;
   padding: 0.5rem 1rem;
-  margin-top: 0.5rem;
+  margin-top: -0.8em;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   width: 200px;
 }
 
 .product-dropdown.show {
   display: block;
+  margin-bottom: 2rem;
 }
 
 .product-dropdown li {
