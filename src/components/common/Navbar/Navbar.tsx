@@ -1,10 +1,12 @@
 import { NavLink } from "react-router";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import BrandsDropdown from "../../BrandsDropdown/BrandsDropDown";
 import "./Navbar.scss";
 
 const Navbar = () => {
   const [showBrands, setShowBrands] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <nav className="navbar">
@@ -15,7 +17,7 @@ const Navbar = () => {
             isActive ? "nav-link active" : "nav-link"
           }
         >
-          HOME
+          {t("navbar.home")}
         </NavLink>
         <NavLink
           to="/shop"
@@ -23,7 +25,7 @@ const Navbar = () => {
             isActive ? "nav-link active" : "nav-link"
           }
         >
-          SHOP
+          {t("navbar.shop")}
         </NavLink>
         <NavLink
           to="/about"
@@ -31,7 +33,7 @@ const Navbar = () => {
             isActive ? "nav-link active" : "nav-link"
           }
         >
-          ABOUT US
+          {t("navbar.about")}
         </NavLink>
         <div
           className="brands-hover-container"
@@ -44,7 +46,7 @@ const Navbar = () => {
               isActive ? "nav-link active" : "nav-link"
             }
           >
-            BRANDS
+            {t("navbar.brands")}
           </NavLink>
           {showBrands && <BrandsDropdown />}
         </div>

@@ -1,0 +1,77 @@
+{
+  "logo": {
+    "brand": "Kira"
+  },
+  "navbar": {
+    "home": "HOME",
+    "shop": "SHOP",
+    "about": "ABOUT US",
+    "brands": "BRANDS"
+  },
+    "hero": {
+        "intro": "Let Kira Help You Look Your Best",
+        "description": "Discover Kira, where beauty innovation meets luxury. Our eco-friendly, high-quality cosmetics enhance your natural glow. Explore our range and experience the future of beauty today.",
+        "buttonText": "Learn more about us"
+    },
+    "shopByCategory": {
+        "title": "Shop By Category",
+        "categories": {
+        "Skincare": "Skincare",
+        "Makeup": "Makeup",
+        "Fragrance": "Fragrance",
+        "Grooming": "Grooming"
+    }
+},
+    "productDisplay": {
+        "intro": "Kira Revitalizing Handwash",
+        "description": "Discover Kira Revitalizing Handwash for clean, nourished hands. Its unique formula deeply cleanses while hydrating, leaving hands refreshed and smooth. Suitable for all skin types with a delightful fragrance",
+        "buttonText": "Shop Now"
+    },
+    "ourProducts": {
+        "title": "Our Products",
+        "shopNow": "Shop Now",
+            "categories": {
+     "Fragrance": {
+        "name": "Fragrance",
+         "description": "Explore our exquisite collection of perfumes and scents, crafted with the finest aromatic ingredients to evoke your unique personality."
+      },
+       "Makeup": {
+        "name": "Makeup",
+        "description": "Discover a wide range of high-quality makeup products for every look, from everyday essentials to glamorous statement pieces."
+      },
+      "Skincare": {
+        "name": "Skincare",
+        "description": "Nourish and enhance your skin with our premium skincare essentials. Our carefully formulated products address various skin concerns."
+      },
+     
+      "Grooming": {
+        "name": "Grooming",
+        "description": "Find the perfect grooming products to elevate your daily routine. Our selection includes high-quality shaving, hair care."
+      }
+    }
+    },
+  "footer": {
+  "logo": "Kira",
+  "about": {
+    "title": "About Kira",
+    "description": "Welcome to Kira, where beauty meets innovation. Our mission is to empower individuals to embrace their unique beauty with confidence. With a commitment to quality and excellence, we offer a curated collection of cosmetics, skincare, and fragrances crafted to elevate your daily routine."
+  },
+  "explore": {
+    "title": "Explore"
+  },
+  "service": {
+    "title": "Customer Service",
+    "description": "Have questions or need assistance? Our dedicated customer service team is here to help. Contact us:",
+    "phoneLabel": "Phone:",
+    "emailLabel": "Email:"
+  },
+  "language": {
+    "title": "Language",
+    "description": "Choose your preferred language for a personalized shopping experience."
+  }
+}
+
+
+}  
+
+

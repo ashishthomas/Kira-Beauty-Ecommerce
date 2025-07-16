@@ -1,45 +1,23 @@
-import { useEffect } from 'react';
-import "./GoogleTranslate.scss"
+import { useTranslation } from "react-i18next";
+import "./GoogleTranslate.scss";
 
+const LanguageSwitcher = () => {
+  const { i18n } = useTranslation();
 
-// Extend the Window interface for TypeScript
-declare global {
-  interface Window {
-    googleTranslateElementInit?: () => void;
-    google?: any;
-  }
-}
-
-const GoogleTranslate = () => {
-
-  useEffect(() => {
-  // Prevent multiple injections
-  if (document.getElementById('google-translate-script')) return;
-
-  const addScript = document.createElement('script');
-  addScript.id = 'google-translate-script';
-  addScript.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-  addScript.async = true;
-  document.body.appendChild(addScript);
-
-  // Avoid duplicate widget injection
-  window.googleTranslateElementInit = () => {
-    const alreadyExists = document.querySelector('.goog-te-combo');
-    if (!alreadyExists) {
-      new window.google.translate.TranslateElement(
-        {
-          pageLanguage: 'en',
-          includedLanguages: 'en,ta,hi,te,kn,ml',
-          layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
-        },
-        'google_translate_element'
-      );
-    }
+  const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    i18n.changeLanguage(e.target.value);
   };
-}, []);
 
-
-  return <div id="google_translate_element" />;
+  return (
+    <select onChange={handleChange} value={i18n.language}>
+      <option value="en">English</option>
+      <option value="hi">Hindi</option>
+      <option value="ta">Tamil</option>
+      <option value="ml">Malayalam</option>
+      <option value="kn">Kannada</option>
+      <option value="te">Telugu</option>
+    </select>
+  );
 };
 
-export default GoogleTranslate;
+export default LanguageSwitcher;

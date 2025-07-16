@@ -1,14 +1,17 @@
 import Button from "../../../components/common/Button/Button";
 import "../styles/HeroSection.scss";
-import { HERO_CONSTANTS } from "../constants/ui-constants";
+// import { HERO_CONSTANTS } from "../constants/ui-constants";
 import heroOne from "../../../assets/png/Hero1.png";
 import heroTwo from "../../../assets/jpeg/Hero3.jpeg";
 import heroThree from "../../../assets/jpeg/Hero2.jpeg";
 import { useSelector } from "react-redux";
 import { RootState } from "../../../app/Store";
 import { useNavigate } from "react-router";
+import { useTranslation } from "react-i18next"; 
+
 
 const HeroSection = () => {
+  const { t } = useTranslation();
   const userName = useSelector((state: RootState) => state.auth.userName);
   const isLoggedIn = useSelector((state: RootState) => state.auth.isLoggedIn);
   const navigate = useNavigate();
@@ -20,15 +23,19 @@ const HeroSection = () => {
           {isLoggedIn && userName && (
             <p className="welcome-message">Welcome, {userName}</p>
           )}
-          <h1>{HERO_CONSTANTS.INTRO}</h1>
-          <p>{HERO_CONSTANTS.DESCRIPTION}</p>
+          {/* <h1>{HERO_CONSTANTS.INTRO}</h1>
+          <p>{HERO_CONSTANTS.DESCRIPTION}</p> */}
+          <h1>{t("hero.intro")}</h1>
+          <p>{t("hero.description")}</p>
 
           <Button
             variant="primary"
             size="medium"
             onClick={() => navigate("/about")}
           >
-            {HERO_CONSTANTS.BUTTON_TEXT}
+            {/* {HERO_CONSTANTS.BUTTON_TEXT} */}
+            {t("hero.buttonText")}
+
           </Button>
         </div>
 

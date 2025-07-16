@@ -7,7 +7,8 @@ export const HERO_CONSTANTS = {
 
 export const HOME_LABEL_CONSTANTS = {
   INTRO: "Kira Revitalizing Handwash",
-  DESCRIPTION:
+  DES
+};
+CRIPTION:
     "Discover Kira Revitalizing Handwash for clean, nourished hands. Its unique formula deeply cleanses while hydrating, leaving hands refreshed and smooth. Suitable for all skin types with a delightful fragrance",
   BUTTON_TEXT: "Shop Now",
-};
