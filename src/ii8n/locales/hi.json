@@ -69,6 +69,41 @@
     "title": "भाषा",
     "description": "व्यक्तिगत खरीदारी अनुभव के लिए अपनी पसंदीदा भाषा चुनें।"
   }
-}
+},
+"shop": {
+    "banner": {
+      "title": "वैलेंटिनो",
+      "offer": "15% की छूट का लाभ उठाएं",
+      "description": "लक्ज़री सुगंधों पर",
+      "buttonText": "अभी खरीदें"
+    }
+  },
+  "shopBy": "खरीदें",
+  "notes": "नोट्स",
+  "navourProducts": {
+    "categories": {
+      "Fragrance": {
+        "name": "सुगंध"
+      },
+      "Makeup": {
+        "name": "मेकअप"
+      },
+      "Skincare": {
+        "name": "त्वचा की देखभाल"
+      },
+      "mensGrooming": {
+        "name": "पुरुषों की ग्रूमिंग"
+      },
+      "Top brands": {
+        "name": "शीर्ष ब्रांड"
+      }
+    }
+  },
+  "add_to_cart": "कार्ट में जोड़ें",
+  "shop_now": "अभी खरीदें",
+  "price": "मूल्य",
+  "login_to_add_cart": "कृपया कार्ट में जोड़ने के लिए लॉगिन करें",
+  "login_to_continue": "जारी रखने के लिए कृपया लॉगिन करें",
+  "item_added_to_cart": "आइटम कार्ट में जोड़ा गया"
 
 }

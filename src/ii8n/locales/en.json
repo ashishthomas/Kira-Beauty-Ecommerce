@@ -69,9 +69,43 @@
     "title": "Language",
     "description": "Choose your preferred language for a personalized shopping experience."
   }
-}
-
-
+},
+"shop": {
+    "banner": {
+      "title": "VALENTINO",
+      "offer": "Enjoy a flat 15% off",
+      "description": "on luxe scents",
+      "buttonText": "Shop Now"
+    }
+  },
+"shopBy": "Shop By",
+"notes": "Notes",
+"navourProducts": {
+  "categories": {
+    "Fragrance": {
+      "name": "Fragrance"
+    },
+    "Makeup": {
+      "name": "Makeup"
+    },
+    "Skincare": {
+      "name": "Skincare"
+    },
+    "mensGrooming": {
+      "name": "Men's Grooming"
+    },
+    "Top brands": {
+      "name": "Top brands"
+    }
+  }
+},
+  "add_to_cart": "Add to cart",
+  "shop_now": "Shop now",
+  "price": "Price",
+  "login_to_add_cart": "Please login to add to cart",
+  "login_to_continue": "Please login to continue",
+  "item_added_to_cart": "Item added to cart" 
+  
 }  
 
 

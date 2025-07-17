@@ -9,6 +9,7 @@ import LoginModal from "../../LoginModal/LoginModal";
 import { imageMap } from "../../../features/ShopFeatures/constants/imageMap";
 import { useLocation, useNavigate } from "react-router";
 import { addToCart } from "../../../features/CartFeatures/slices/cartSlice";
+import { useTranslation } from "react-i18next";
 
 type Product = {
   id: number;
@@ -35,9 +36,11 @@ const ProductGrid: React.FC<ProductGridProps> = ({ products }) => {
   const location = useLocation();
   const categoryFromPath = location.pathname.split("/")[2];
 
+  const { t } = useTranslation();
+
   const handleAddToCart = (product: Product) => {
     if (!isLoggedIn) {
-      toast.info("Please login to add to cart");
+      toast.info(t("login_to_add_cart"));
       setShowLogin(true);
       return;
     }
@@ -55,12 +58,12 @@ const ProductGrid: React.FC<ProductGridProps> = ({ products }) => {
 
     navigate("/cart");
 
-    toast.success("Item added to cart");
+    toast.success(t("item_added_to_cart"));
   };
 
   const handleShopNow = (product: Product) => {
     if (!isLoggedIn) {
-      toast.info("Please login to continue");
+      toast.info(t("login_to_continue"));
       setShowLogin(true);
       return;
     }
@@ -84,25 +87,42 @@ const ProductGrid: React.FC<ProductGridProps> = ({ products }) => {
                 />
               </div>
               <div className="shop-info">
-                <h3 className="shop-title">{name}</h3>
+                {/* Product Name — either dynamic or localized */}
+                <h3 className="shop-title">
+                  {t(`products.${product.id}.name`, { defaultValue: name })}
+                </h3>
+
+                {/* Product Description */}
                 {description && (
-                  <p className="shop-description">{description}</p>
+                  <p className="shop-description">
+                    {t(`products.${product.id}.description`, {
+                      defaultValue: description,
+                    })}
+                  </p>
                 )}
-                <p className="shop-price">Price: {`₹${price}`}</p>
+
+                {/* Price */}
+                <p className="shop-price">
+                  {t("price")}: ₹{price}
+                </p>
+
+                {/* Add to cart */}
                 <p
                   className="shop-cart"
                   onClick={() => handleAddToCart(product)}
                 >
-                  Add to cart
+                  {t("add_to_cart")}
                   <img src={shopcart} alt="Cart" className="icon" />
                 </p>
+
+                {/* Shop Now button */}
                 <Button
                   className="shop-now-button"
                   variant="primary"
                   size="small"
                   onClick={() => handleShopNow(product)}
                 >
-                  shop now
+                  {t("shop_now")}
                 </Button>
               </div>
             </div>
