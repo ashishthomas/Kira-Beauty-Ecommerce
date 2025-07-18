@@ -4,9 +4,11 @@ import fetchGroomingBrands, {
   BrandObject,
 } from "../services/fetchGroomingBrands";
 import "../styles/GroomingBrandsSection.scss";
+import { useTranslation } from "react-i18next";
 
 const GroomingBrandsSection: React.FC = () => {
   const [groomingBrands, setGroomingBrands] = useState<BrandObject[]>([]);
+  const { t } = useTranslation();
 
   useEffect(() => {
     fetchGroomingBrands().then(setGroomingBrands);
@@ -14,7 +16,8 @@ const GroomingBrandsSection: React.FC = () => {
 
   return (
     <div className="brand-section">
-      <h1>Men's Grooming</h1>
+      {/* <h1>Men's Grooming</h1> */}
+      <h1>{t("mensGrooming.title")}</h1>
       <div className="brand-grid">
         {groomingBrands.map((brandObj, idx) => {
           const brandName = Object.keys(brandObj)[0];
