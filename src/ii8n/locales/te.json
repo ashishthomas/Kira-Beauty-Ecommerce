@@ -135,5 +135,37 @@
   },
   "topBrands": {
     "title": "శ్రేష్ఠ బ్రాండ్లు"
-  }
+  },
+
+
+  "Beauty": "అందం",
+  "Cosmetics": "కాస్మొటిక్స్",
+  "Grooming": "గ్రూమింగ్",
+  "Top Brands": "ప్రధాన బ్రాండ్లు",
+
+  "Lakmé": "లక్మే",
+  "L'Oréal": "లోరియల్",
+  "MAC": "మాక్",
+  "Revlon": "రవలాన్",
+  "Colorbar": "కలర్‌బార్",
+  "Faces Canada": "ఫేసెస్ కెనడా",
+  "Sugar": "షుగర్",
+
+  "Maybelline": "మేబెలైన్",
+  "NYX": "ఎన్‌వైఎక్స్",
+  "e.l.f": "ఈఎల్‌ఎఫ్",
+  "Wet n Wild": "వెట్ అండ్ వైల్డ్",
+  "Essence": "ఎసెన్స్",
+  "Swiss Beauty": "స్విస్ బ్యూటీ",
+  "Chambor": "చాంబర్",
+
+  "The Man Company": "ది మాన్ కంపెనీ",
+  "Beardo": "బియార్డో",
+  "UrbanGabru": "అర్బన్ గబ్రూ",
+  "Bombay Shaving Co.": "బాంబే షేవింగ్ కంపెనీ",
+  "Ustraa": "ఉస్త్రా",
+  "Gillette": "జిలెట్",
+  "Park Avenue": "పార్క్ అవెన్యూ",
+  
+  "MCaffeine": "ఎం కాఫైన్"
 }

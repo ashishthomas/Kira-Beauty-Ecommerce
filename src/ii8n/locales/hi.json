@@ -136,5 +136,41 @@
   },
   "topBrands": {
     "title": "शीर्ष ब्रांड्स"
-  }
+  },
+
+
+  "Beauty": "सौंदर्य",
+  "Cosmetics": "सौंदर्य प्रसाधन",
+  "Grooming": "सज्जा",
+  "Top Brands": "शीर्ष ब्रांड्स",
+
+  "Lakmé": "लैक्मे",
+  "L'Oréal": "लोरेयाल",
+  "MAC": "मैक",
+  "Revlon": "रेवलॉन",
+  "Colorbar": "कलरबार",
+  "Faces Canada": "फेसेस कनाडा",
+  "Sugar": "शुगर",
+
+
+  "Maybelline": "मेबलीन",
+  "NYX": "एनवाईएक्स",
+  "e.l.f": "ई.एल.एफ",
+  "Wet n Wild": "वेट एन वाइल्ड",
+  "Essence": "एसेंस",
+  "Swiss Beauty": "स्विस ब्यूटी",
+  "Chambor": "शैंबोर",
+
+
+  "The Man Company": "द मैन कंपनी",
+  "Beardo": "बीअर्डो",
+  "UrbanGabru": "अर्बनगबरु",
+  "Bombay Shaving Co.": "बॉम्बे शेविंग कंपनी",
+  "Ustraa": "उस्त्रा",
+  "Gillette": "जिलेट",
+  "Park Avenue": "पार्क एवेन्यू",
+  
+  "MCaffeine": "मैककैफीन"
+
+
 }

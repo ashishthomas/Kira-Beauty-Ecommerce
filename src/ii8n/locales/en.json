@@ -138,8 +138,38 @@
   },
   "topBrands": {
     "title": "Top Brands"
-  }
+  },
 
+  "Beauty": "Beauty",
+  "Cosmetics": "Cosmetics",
+  "Grooming": "Grooming",
+  "Top Brands": "Top Brands",
+  
+  "Lakmé": "Lakmé",
+  "L'Oréal": "L'Oréal",
+  "MAC": "MAC",
+  "Revlon": "Revlon",
+  "Colorbar": "Colorbar",
+  "Faces Canada": "Faces Canada",
+  "Sugar": "Sugar",
+
+  "Maybelline": "Maybelline",
+  "NYX": "NYX",
+  "e.l.f": "e.l.f",
+  "Wet n Wild": "Wet n Wild",
+  "Essence": "Essence",
+  "Swiss Beauty": "Swiss Beauty",
+  "Chambor": "Chambor",
+
+  "The Man Company": "The Man Company",
+  "Beardo": "Beardo",
+  "UrbanGabru": "UrbanGabru",
+  "Bombay Shaving Co.": "Bombay Shaving Co.",
+  "Ustraa": "Ustraa",
+  "Gillette": "Gillette",
+  "Park Avenue": "Park Avenue",
+
+  "MCaffeine": "MCaffeine"
 } 
  
 

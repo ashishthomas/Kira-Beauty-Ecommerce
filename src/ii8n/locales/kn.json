@@ -135,5 +135,36 @@
   },
   "topBrands": {
     "title": "ಅಗ್ರಬರಂದಿಗಳು"
-  }
+  },
+
+  "Beauty": "ಅಲಂಕಾರ",
+  "Cosmetics": "ಸೌಂದರ್ಯ ಸಾಮಾಗ್ರಿಗಳು",
+  "Grooming": "ಆತ್ಮಪೋಷಣೆ",
+  "Top Brands": "ಮೇಲ್ಮಟ್ಟದ ಬ್ರಾಂಡ್ಗಳು",
+
+  "Lakmé": "ಲಾಕ್‌ಮೆ",
+  "L'Oréal": "ಲೋರಿಯಲ್",
+  "MAC": "ಮ್ಯಾಕ್",
+  "Revlon": "ರೆವ್ಲಾನ್",
+  "Colorbar": "ಕಲರ್ಬಾರ್",
+  "Faces Canada": "ಫೇಸಸ್ ಕೆನಡಾ",
+  "Sugar": "ಶುಗರ್",
+
+  "Maybelline": "ಮೇಬೆಲಿನ್",
+  "NYX": "ಎನ್‌ವೈಎಕ್ಸ್",
+  "e.l.f": "ಇಎಲ್‌ಎಫ್",
+  "Wet n Wild": "ವೆಟ್ ಎನ್ ವೈಲ್ಡ್",
+  "Essence": "ಎಸೆನ್ಸ್",
+  "Swiss Beauty": "ಸ್ವಿಸ್ ಬ್ಯೂಟಿ",
+  "Chambor": "ಚಾಂಬೋರ್",
+
+  "The Man Company": "ದಿ ಮ್ಯಾನ್ ಕಂಪನಿ",
+  "Beardo": "ಬಿಯಾರ್ಡೋ",
+  "UrbanGabru": "ಅರ್ಬನ್ ಗಬ್ರು",
+  "Bombay Shaving Co.": "ಬಾಂಬೆ ಶೇವಿಂಗ್ ಕಂಪನಿ",
+  "Ustraa": "ಉಸ್ತ್ರಾ",
+  "Gillette": "ಜಿಲೆಟ್",
+  "Park Avenue": "ಪಾರ್ಕ್ ಅವೆನ್ಯೂ",
+  
+  "MCaffeine": "ಎಂ ಕ್ಯಾಫಿನ್"
 }

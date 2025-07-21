@@ -135,5 +135,36 @@
   },
   "topBrands": {
     "title": "മികച്ച ബ്രാൻഡുകൾ"
-  }
+  },
+
+  "Beauty": "സൗന്ദര്യം",
+  "Cosmetics": "കോസ്‌മെറ്റിക്‌സ്",
+  "Grooming": "അലങ്കാരം",
+  "Top Brands": "മികച്ച ബ്രാൻഡുകൾ",
+
+  "Lakmé": "ലാക്‌മേ",
+  "L'Oréal": "ലോറിയൽ",
+  "MAC": "എം. എ. സി",
+  "Revlon": "റെവ്ലോൺ",
+  "Colorbar": "കളർബാർ",
+  "Faces Canada": "ഫേസസ് കാനഡ",
+  "Sugar": "ഷുഗർ",
+
+  "Maybelline": "മേബലിൻ",
+  "NYX": "എൻവൈഎക്സ്",
+  "e.l.f": "ഇ.എൽ.എഫ്",
+  "Wet n Wild": "വെറ്റ് ആൻഡ് വയൽഡ്",
+  "Essence": "എസെൻസ്",
+  "Swiss Beauty": "സ്വിസ് ബ്യൂട്ടി",
+  "Chambor": "ചാംബോർ",
+
+  "The Man Company": "ദി മാൻ കമ്പനി",
+  "Beardo": "ബിയാർഡോ",
+  "UrbanGabru": "അർബൻ ഗബ്രു",
+  "Bombay Shaving Co.": "ബോംബെ ഷേവിംഗ് കമ്പനി",
+  "Ustraa": "ഉസ്ത്രാ",
+  "Gillette": "ജിലെറ്റ്",
+  "Park Avenue": "പാർക്ക് അവന്യൂ",
+
+  "MCaffeine": "എം കാഫെയിൻ"
 }
