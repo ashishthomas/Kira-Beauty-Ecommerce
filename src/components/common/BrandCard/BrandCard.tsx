@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 type BrandInfo = {
   link: string;
   imageKey: string;
-  products: string[]; 
+  products: string[];
 };
 
 interface BrandCardProps {
