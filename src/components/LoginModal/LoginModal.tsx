@@ -33,13 +33,20 @@ const LoginModal: React.FC<Props> = ({ onClose }) => {
     password: Yup.string().required("Password is required"),
   });
 
-  const initialValues = {
-    name: "",
-    email: "",
-    password: "",
+  // const initialValues = {
+  //   name: "",
+  //   email: "",
+  //   password: "",
+  // };
+
+  type FormValues = {
+    name: string;
+    email: string;
+    password: string;
   };
 
-  const handleFormikSubmit = (values: typeof initialValues) => {
+  // const handleFormikSubmit = (values: typeof initialValues) => {
+  const handleFormikSubmit = (values: FormValues) => {
     const { name, email, password } = values;
     const usersStr = localStorage.getItem("users");
     const users = usersStr ? JSON.parse(usersStr) : {};
@@ -81,7 +88,7 @@ const LoginModal: React.FC<Props> = ({ onClose }) => {
           ×
         </button>
         <h2>{isRegistering ? "Sign Up" : "Login"}</h2>
-        <Formik
+        <Formik<FormValues>
           initialValues={
             isRegistering
               ? { name: "", email: "", password: "" }
