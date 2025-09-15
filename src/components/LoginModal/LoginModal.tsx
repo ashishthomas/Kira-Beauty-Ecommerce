@@ -33,19 +33,12 @@ const LoginModal: React.FC<Props> = ({ onClose }) => {
     password: Yup.string().required("Password is required"),
   });
 
-  // const initialValues = {
-  //   name: "",
-  //   email: "",
-  //   password: "",
-  // };
-
   type FormValues = {
     name: string;
     email: string;
     password: string;
   };
 
-  // const handleFormikSubmit = (values: typeof initialValues) => {
   const handleFormikSubmit = (values: FormValues) => {
     const { name, email, password } = values;
     const usersStr = localStorage.getItem("users");
@@ -138,7 +131,6 @@ const LoginModal: React.FC<Props> = ({ onClose }) => {
                       const usersStr = localStorage.getItem("users");
                       const users = usersStr ? JSON.parse(usersStr) : {};
                       if (users[email]) {
-                        // Generate a temporary password
                         const tempPassword = Math.random()
                           .toString(36)
                           .slice(-8);
