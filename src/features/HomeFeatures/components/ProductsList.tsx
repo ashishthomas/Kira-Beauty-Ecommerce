@@ -42,12 +42,10 @@ const ProductsList = () => {
                 />
               </div>
               <div className="product-info">
-                {/* <h3 className="product-name">{product.name}</h3> */}
                 <h3 className="product-name">
                   {t(`ourProducts.categories.${product.name}.name`)}
                 </h3>
                 {product.description && (
-                  // <p className="product-description">{product.description}</p>
                   <p className="product-description">
                     {t(`ourProducts.categories.${product.name}.description`)}
                   </p>

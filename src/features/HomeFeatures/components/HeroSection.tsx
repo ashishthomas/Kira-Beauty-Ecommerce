@@ -7,8 +7,7 @@ import heroThree from "../../../assets/jpeg/Hero2.jpeg";
 import { useSelector } from "react-redux";
 import { RootState } from "../../../app/Store";
 import { useNavigate } from "react-router";
-import { useTranslation } from "react-i18next"; 
-
+import { useTranslation } from "react-i18next";
 
 const HeroSection = () => {
   const { t } = useTranslation();
@@ -23,8 +22,6 @@ const HeroSection = () => {
           {isLoggedIn && userName && (
             <p className="welcome-message">Welcome, {userName}</p>
           )}
-          {/* <h1>{HERO_CONSTANTS.INTRO}</h1>
-          <p>{HERO_CONSTANTS.DESCRIPTION}</p> */}
           <h1>{t("hero.intro")}</h1>
           <p>{t("hero.description")}</p>
 
@@ -33,9 +30,7 @@ const HeroSection = () => {
             size="medium"
             onClick={() => navigate("/about")}
           >
-            {/* {HERO_CONSTANTS.BUTTON_TEXT} */}
             {t("hero.buttonText")}
-
           </Button>
         </div>
 

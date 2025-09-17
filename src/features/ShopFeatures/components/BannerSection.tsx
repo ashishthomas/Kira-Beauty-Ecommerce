@@ -1,6 +1,6 @@
 import "../styles/ShopFeatures.scss";
-import shopBanner from "../../../assets/png/Valentino-1.png";
-import Button from "../../../components/common/Button/Button";
+import Button from "@/components/common/Button/Button";
+import shopBanner from "@assets/png/Valentino-1.png";
 import { useNavigate } from "react-router";
 import { useTranslation } from "react-i18next";
 

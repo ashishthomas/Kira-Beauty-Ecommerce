@@ -56,7 +56,6 @@ const ShopByCategory = () => {
 
   return (
     <div className="shop-category-container">
-      {/* <h2 className="section-title">Shop By Category</h2> */}
       <h2 className="section-title">{t("shopByCategory.title")}</h2>
       <div className="carousel-wrapper">
         <div className="carousel">
@@ -70,7 +69,6 @@ const ShopByCategory = () => {
               onClick={() => handleCategoryClick(category.name)}
             >
               <img src={imageMap[category.imageKey]} alt={category.name} />
-              {/* <p>{category.name}</p> */}
               <p>{t(`shopByCategory.categories.${category.name}`)}</p>
             </div>
           ))}

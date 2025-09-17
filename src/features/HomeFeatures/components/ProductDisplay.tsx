@@ -11,8 +11,6 @@ const ProductDisplay = () => {
   return (
     <div className="product-section">
       <div className="product-text">
-        {/* <h3>{HOME_LABEL_CONSTANTS.INTRO}</h3>
-        <p>{HOME_LABEL_CONSTANTS.DESCRIPTION}</p> */}
         <h3>{t("productDisplay.intro")}</h3>
         <p>{t("productDisplay.description")}</p>
         <Button
@@ -20,7 +18,6 @@ const ProductDisplay = () => {
           size="medium"
           onClick={() => navigate("/shop")}
         >
-          {/* {HOME_LABEL_CONSTANTS.BUTTON_TEXT} */}
           {t("productDisplay.buttonText")}
         </Button>
       </div>
