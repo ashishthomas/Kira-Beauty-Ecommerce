@@ -1,4 +1,4 @@
-@use "@src/styles/styleVariables.scss" as *;
+@use "@styles/styleVariables.scss" as *;
 
 .hero-section {
   display: flex;
@@ -11,7 +11,7 @@
   flex: 1;
   padding-right: 190px;
 
-  .welcome-message{
+  .welcome-message {
     font-size: 2em;
     color: $welcome-color;
     font-weight: 700;

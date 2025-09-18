@@ -1,4 +1,4 @@
-@use "@src/styles/styleVariables.scss" as *;
+@use "@styles/styleVariables.scss" as *;
 
 .shop-category-container {
   margin-top: 100px;
@@ -66,8 +66,6 @@
   }
 }
 
-
-
 @media (max-width: 900px) {
   .shop-category-container {
     margin-top: 60px;
@@ -97,7 +95,6 @@
     }
   }
 }
-
 
 @media (max-width: 600px) {
   .shop-category-container {

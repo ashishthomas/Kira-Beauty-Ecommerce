@@ -1,4 +1,4 @@
-@use "@src/styles/styleVariables.scss" as *;
+@use "@styles/styleVariables.scss" as *;
 
 .story {
   padding: 50px 20px;
@@ -18,8 +18,6 @@
     text-align: center;
   }
 }
-
-
 
 @media (max-width: 1200px) {
   .story {
