@@ -29,7 +29,6 @@ const NavigateCategorySection: React.FC = () => {
   return (
     <div className="shop-container">
       <div className="container-notes">
-        {/* <h1>Shop By {activeCategory} Notes</h1> */}
         <h1>
           {t("shopBy")} {t(`navourProducts.categories.${activeCategory}.name`)}{" "}
           {t("notes")}
