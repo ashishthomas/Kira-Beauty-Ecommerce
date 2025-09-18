@@ -9,7 +9,6 @@ const NavigateCategorySection: React.FC = () => {
     { label: "Fragrance", path: "fragrance" },
     { label: "Makeup", path: "makeup" },
     { label: "Skincare", path: "skincare" },
-    // { label: "Men's grooming", path: "grooming" },
     { label: "mensGrooming", path: "grooming" },
     { label: "Top brands", path: "top-brands" },
   ];
@@ -49,7 +48,6 @@ const NavigateCategorySection: React.FC = () => {
             }}
           >
             <Button variant="outline" size="medium">
-              {/* {category.label} */}
               {t(`navourProducts.categories.${category.label}.name`)}
             </Button>
           </div>

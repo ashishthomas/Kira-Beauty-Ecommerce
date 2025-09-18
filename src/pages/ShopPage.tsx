@@ -1,10 +1,7 @@
-import ShopFeatures from "../features/ShopFeatures/ShopFeatures"
-
+import ShopFeatures from "@/features/ShopFeatures/ShopFeatures";
 
 const ShopPage = () => {
-  return (
-    <ShopFeatures/>
-  )
-}
+  return <ShopFeatures />;
+};
 
-export default ShopPage
+export default ShopPage;

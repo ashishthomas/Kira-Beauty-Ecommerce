@@ -1,4 +1,5 @@
-import "../styles/ShopFeatures.scss";
+// import "../styles/ShopFeatures.scss";
+import "@styles/ShopFeatures.scss";
 import Button from "@/components/common/Button/Button";
 import shopBanner from "@assets/png/Valentino-1.png";
 import { useNavigate } from "react-router";

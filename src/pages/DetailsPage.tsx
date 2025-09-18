@@ -1,4 +1,4 @@
-import DetailsFeatures from "../features/DetailsFeatures/DetailsFeatures";
+import DetailsFeatures from "@/features/DetailsFeatures/DetailsFeatures";
 
 const DetailsPage = () => {
   return <DetailsFeatures />;
