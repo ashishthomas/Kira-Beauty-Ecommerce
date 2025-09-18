@@ -25,7 +25,6 @@ const BrandCard: React.FC<BrandCardProps> = ({ brandName, brandInfo }) => {
           alt={brandName}
           className="brand-image"
         />
-        {/* <p className="brand-name">{brandName}</p> */}
         <p className="brand-name">{t(brandName)}</p>
       </Link>
       <div
@@ -38,7 +37,6 @@ const BrandCard: React.FC<BrandCardProps> = ({ brandName, brandInfo }) => {
           dropdown?.classList.remove("show");
         }}
       >
-        {/* <Button variant="text">View Products ▼</Button> */}
         <Button variant="text">{t("View Products ▼")}</Button>
         <ul className="product-dropdown">
           {brandInfo?.products?.map((product, idx) => (

@@ -87,12 +87,10 @@ const ProductGrid: React.FC<ProductGridProps> = ({ products }) => {
                 />
               </div>
               <div className="shop-info">
-                {/* Product Name — either dynamic or localized */}
                 <h3 className="shop-title">
                   {t(`products.${product.id}.name`, { defaultValue: name })}
                 </h3>
 
-                {/* Product Description */}
                 {description && (
                   <p className="shop-description">
                     {t(`products.${product.id}.description`, {
@@ -101,12 +99,10 @@ const ProductGrid: React.FC<ProductGridProps> = ({ products }) => {
                   </p>
                 )}
 
-                {/* Price */}
                 <p className="shop-price">
                   {t("price")}: ₹{price}
                 </p>
 
-                {/* Add to cart */}
                 <p
                   className="shop-cart"
                   onClick={() => handleAddToCart(product)}
@@ -115,7 +111,6 @@ const ProductGrid: React.FC<ProductGridProps> = ({ products }) => {
                   <img src={shopcart} alt="Cart" className="icon" />
                 </p>
 
-                {/* Shop Now button */}
                 <Button
                   className="shop-now-button"
                   variant="primary"

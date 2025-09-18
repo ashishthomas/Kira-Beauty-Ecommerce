@@ -1,4 +1,4 @@
-import "./BrandsDropDown.scss";
+import "@components/BrandsDropdown/BrandsDropDown.scss";
 import { useTranslation } from "react-i18next";
 
 const dropdownData = [

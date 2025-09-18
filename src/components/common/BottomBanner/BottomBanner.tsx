@@ -1,5 +1,5 @@
-import React from 'react';
-import './BottomBanner.scss';
+import React from "react";
+import "./BottomBanner.scss";
 
 interface BottomBannerProps {
   src: string;

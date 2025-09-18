@@ -10,6 +10,19 @@ import UserModal from "../UserModal/UserModal";
 import LoginModal from "../LoginModal/LoginModal";
 import { toast } from "react-toastify";
 
+type Product = {
+  id: number;
+  name: string;
+  brandName?: string;
+  imageKey?: string;
+  price?: string;
+  offerPrice?: string;
+  description?: string;
+  itemsLeft?: number;
+  category?: string;
+  details?: string;
+};
+
 const UtilitySection = () => {
   const userName = useSelector((state: RootState) => state.auth.userName);
   const isLoggedIn = useSelector((state: RootState) => state.auth.isLoggedIn);
@@ -18,8 +31,8 @@ const UtilitySection = () => {
 
   const [showSearchInput, setShowSearchInput] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
-  const [searchResults, setSearchResults] = useState<any[]>([]);
-  const [allProducts, setAllProducts] = useState<any[]>([]);
+  const [searchResults, setSearchResults] = useState<Product[]>([]);
+  const [allProducts, setAllProducts] = useState<Product[]>([]);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const searchRef = useRef<HTMLDivElement>(null);
 
@@ -32,7 +45,7 @@ const UtilitySection = () => {
         "/data/shopdata/MensgroomingData.json",
         "/data/shopdata/TopbrandsData.json",
       ];
-      let products: any[] = [];
+      let products: Product[] = [];
       for (const file of files) {
         try {
           const res = await fetch(file);
@@ -135,12 +148,24 @@ const UtilitySection = () => {
           {isDropdownOpen && searchResults.length > 0 && (
             <ul className="search-dropdown">
               {searchResults.map((item, idx) => (
-                <li
+                <button
+                  type="button"
                   key={item.id ? `${item.id}-${item.category || ""}` : idx}
-                  onMouseDown={() => handleResultClick(item.id, item.category)}
+                  className="search-result-item"
+                  onClick={() =>
+                    handleResultClick(String(item.id), item.category)
+                  }
+                  style={{
+                    width: "100%",
+                    textAlign: "left",
+                    background: "none",
+                    border: "none",
+                    padding: "8px",
+                    cursor: "pointer",
+                  }}
                 >
                   {item.name}
-                </li>
+                </button>
               ))}
             </ul>
           )}

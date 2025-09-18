@@ -2,7 +2,6 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 
-// Translation files
 import en from "./locales/en.json";
 import hi from "./locales/hi.json";
 import ta from "./locales/ta.json";
@@ -23,9 +22,8 @@ i18n
       te: { translation: te },
     },
     fallbackLng: "en",
-    lng: "en", // 👈 Force default language to English always
+    lng: "en",
     detection: {
-      // Disable cache and detection from other sources
       order: [],
       caches: [],
     },
