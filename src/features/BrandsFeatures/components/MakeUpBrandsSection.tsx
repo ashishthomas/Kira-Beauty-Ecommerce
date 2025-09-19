@@ -13,14 +13,17 @@ const MakeUpBrandsSection: React.FC = () => {
 
   return (
     <div className="brand-section">
-      {/* <h1>Makeup</h1> */}
       <h1>{t("makeup.title")}</h1>
       <div className="brand-grid">
-        {makeUpBrands.map((brandObj, idx) => {
+        {makeUpBrands.map((brandObj) => {
           const brandName = Object.keys(brandObj)[0];
           const brandInfo = brandObj[brandName];
           return (
-            <BrandCard key={idx} brandName={brandName} brandInfo={brandInfo} />
+            <BrandCard
+              key={brandName}
+              brandName={brandName}
+              brandInfo={brandInfo}
+            />
           );
         })}
       </div>

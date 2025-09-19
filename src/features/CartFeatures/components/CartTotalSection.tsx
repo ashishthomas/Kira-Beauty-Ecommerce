@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/CartTotalSection.scss";
 import Button from "../../../components/common/Button/Button";
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../../../app/Store";
 import { updateShipping } from "../slices/cartSlice";
-import { useEffect } from "react";
 
 const CartTotalSection: React.FC = () => {
   const dispatch = useDispatch();

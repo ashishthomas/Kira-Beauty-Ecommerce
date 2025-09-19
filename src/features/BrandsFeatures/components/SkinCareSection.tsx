@@ -19,11 +19,15 @@ const SkinCareBrandsSection: React.FC = () => {
       {/* <h1>Skin Care</h1> */}
       <h1>{t("skincare.title")}</h1>
       <div className="brand-grid">
-        {skinCareBrands.map((brandObj, idx) => {
+        {skinCareBrands.map((brandObj) => {
           const brandName = Object.keys(brandObj)[0];
           const brandInfo = brandObj[brandName];
           return (
-            <BrandCard key={idx} brandName={brandName} brandInfo={brandInfo} />
+            <BrandCard
+              key={brandName}
+              brandName={brandName}
+              brandInfo={brandInfo}
+            />
           );
         })}
       </div>

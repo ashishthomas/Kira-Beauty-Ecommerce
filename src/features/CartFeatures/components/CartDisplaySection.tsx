@@ -11,20 +11,17 @@ const CartDisplaySection: React.FC = () => {
   const isLoggedIn = useSelector((state: RootState) => state.auth.isLoggedIn);
   const navigate = useNavigate();
 
-
-   useEffect(() => {
+  useEffect(() => {
     if (!isLoggedIn) {
       navigate("/");
     }
   }, [isLoggedIn, navigate]);
 
   return (
-    <>
-      <div className="cart-display">
-        <ShoppingCartSection cartItems={cartItems} />
-        <CartTotalSection />
-      </div>
-    </>
+    <div className="cart-display">
+      <ShoppingCartSection cartItems={cartItems} />
+      <CartTotalSection />
+    </div>
   );
 };
 
