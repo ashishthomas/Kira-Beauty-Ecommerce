@@ -1,6 +1,5 @@
 import Button from "../../../components/common/Button/Button";
 import "../styles/ProductDisplay.scss";
-// import { HOME_LABEL_CONSTANTS } from "../constants/ui-constants";
 import display from "../../../assets/png/Display_Section_1.png";
 import { useNavigate } from "react-router";
 import { useTranslation } from "react-i18next";

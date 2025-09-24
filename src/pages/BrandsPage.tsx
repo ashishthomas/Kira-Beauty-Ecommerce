@@ -1,5 +1,4 @@
 import BrandFeatures from "../features/BrandsFeatures/BrandFeatures";
-// import BrandFeatures from "@/features/BrandsFeatures/BrandFeatures";
 
 const BrandsPage = () => {
   return <BrandFeatures />;

@@ -58,11 +58,9 @@ const BrandsDropdown = () => {
     <div className="brands-dropdown">
       {dropdownData.map((section, index) => (
         <div className="dropdown-column" key={index}>
-          {/* <h4>{section.category}</h4> */}
           <h4>{t(section.category)}</h4>
           <ul>
             {section.items.map((item, idx) => (
-              // <li key={idx}>{item}</li>
               <li key={idx}>{t(item)}</li>
             ))}
           </ul>

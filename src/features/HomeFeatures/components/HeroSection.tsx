@@ -1,6 +1,5 @@
 import Button from "../../../components/common/Button/Button";
 import "../styles/HeroSection.scss";
-// import { HERO_CONSTANTS } from "../constants/ui-constants";
 import heroOne from "../../../assets/png/Hero1.png";
 import heroTwo from "../../../assets/jpeg/Hero3.jpeg";
 import heroThree from "../../../assets/jpeg/Hero2.jpeg";
