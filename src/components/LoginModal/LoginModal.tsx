@@ -44,6 +44,9 @@ const LoginModal: React.FC<Props> = ({ onClose }) => {
     const usersStr = localStorage.getItem("users");
     const users = usersStr ? JSON.parse(usersStr) : {};
 
+    const userList = Object.values(users);
+    console.log("Registered Users:", userList);
+
     if (isRegistering) {
       if (users[email]) {
         toast.error("User already exists");

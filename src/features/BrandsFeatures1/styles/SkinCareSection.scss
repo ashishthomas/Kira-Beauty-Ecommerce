@@ -1,4 +1,5 @@
-@import "@src/styles/styleVariables.scss";
+// @import "@src/styles/styleVariables.scss";
+@use "@styles/styleVariables.scss" as *;
 
 .brand-section {
   margin-bottom: 3rem;
