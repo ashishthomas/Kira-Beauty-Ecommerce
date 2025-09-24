@@ -1,10 +1,14 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router";
+import { useParams, useNavigate } from "react-router";
 import { Product } from "../../ShopFeatures/services/fetchFragrance";
 import "../styles/DetailsFeatures.scss";
 import Button from "../../../components/common/Button/Button";
 import shopcart from "../../../assets/svg/cart.svg";
 import { imageMap } from "../constants/imageMap";
+
+import { useDispatch } from "react-redux";
+import { AppDispatch } from "../../../app/Store";
+import { addToCart } from "../../../app/Slices/CartSlices";
 
 const categoryFileMap: Record<string, string> = {
   fragrance: "/data/shopdata/FragranceData.json",
@@ -14,10 +18,13 @@ const categoryFileMap: Record<string, string> = {
   topbrands: "/data/shopdata/TopbrandsData.json",
 };
 
-const ProDetails = () => {
+const ProductDetails = () => {
   const { category, id } = useParams<{ category: string; id: string }>();
   const [product, setProduct] = useState<Product | null>(null);
   const [quantity, setQuantity] = useState<number>(1);
+  const navigate = useNavigate();
+
+  const dispatch = useDispatch<AppDispatch>();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -112,7 +119,22 @@ const ProDetails = () => {
             variant="primary"
             size="medium"
             className="custom-btn-wrapper"
-            onClick={() => {}}
+            onClick={() => {
+              if (!product) return;
+              dispatch(
+                addToCart({
+                  id: product.id,
+                  name: product.name,
+                  price: parseFloat(
+                    product.offerPrice.toString().replace(/[^0-9.]/g, "")
+                  ),
+                  quantity: quantity,
+                  image: imageMap[product.imageKey],
+                  category: category || "unknown",
+                })
+              );
+              navigate("/cart");
+            }}
           >
             Buy Now
           </Button>
@@ -121,6 +143,21 @@ const ProDetails = () => {
             variant="outline"
             size="medium"
             className="custom-btn-wrapper"
+            onClick={() => {
+              if (!product) return;
+              dispatch(
+                addToCart({
+                  id: product.id,
+                  name: product.name,
+                  price: parseFloat(
+                    product.offerPrice.toString().replace(/[^0-9.]/g, "")
+                  ),
+                  quantity: quantity,
+                  image: imageMap[product.imageKey],
+                  category: category || "unknown",
+                })
+              );
+            }}
           >
             Add to Cart <img src={shopcart} alt="Cart" className="icon" />
           </Button>
@@ -130,4 +167,4 @@ const ProDetails = () => {
   );
 };
 
-export default ProDetails;
+export default ProductDetails;
