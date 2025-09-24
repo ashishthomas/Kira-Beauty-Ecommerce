@@ -1,6 +1,6 @@
 export type BrandInfo = {
   link: string;
-  image: string;
+  imageKey: string;
   products: string[];
 };
 
