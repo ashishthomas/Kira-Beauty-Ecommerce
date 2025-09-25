@@ -1,13 +1,13 @@
-import ProDetails from './components/ProductDetails'
-import  ProductReviews  from './components/ProductReview'
+import ProductDetails from "./components/ProductDetails";
+import ProductReviews from "./components/ProductReview";
 
 function DetailsFeatures() {
   return (
     <div>
-        <ProDetails/>
-        <ProductReviews/>
+      <ProductDetails />
+      <ProductReviews />
     </div>
-  )
+  );
 }
 
 export default DetailsFeatures;

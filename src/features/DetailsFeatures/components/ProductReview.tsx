@@ -67,7 +67,7 @@ const ProductReviews: React.FC = () => {
       try {
         const res = await fetch(path);
         if (!res.ok) throw new Error("Failed to load data");
-        const data: any[] = await res.json();
+        const data: { id: number; reviews: ReviewType[] }[] = await res.json();
         const selected = data.find((item) => item.id === parseInt(id));
         if (selected && Array.isArray(selected.reviews)) {
           setReviews(selected.reviews);
