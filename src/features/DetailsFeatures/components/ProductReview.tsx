@@ -50,9 +50,7 @@ const ProductReviews: React.FC = () => {
     if (!token) return "";
     const usersStr = localStorage.getItem("users");
     const users = usersStr ? JSON.parse(usersStr) : {};
-    const email = Object.keys(users).find(
-      (key) => users[key] && users[key].name && token
-    );
+    const email = Object.keys(users).find((key) => users[key]?.name && token);
     return email && users[email] ? users[email].name : "";
   };
   const loggedInUserName = getLoggedInUserName();
@@ -95,12 +93,12 @@ const ProductReviews: React.FC = () => {
       hoveredRating && hoveredRating > 0 ? hoveredRating : rating;
     return [...Array(5)].map((_, index) => (
       <FaStar
-        key={index}
+        key={`star-${rating}-${index}`}
         className={`star ${index < displayRating ? "filled" : "empty"}`}
         onMouseEnter={() =>
-          isModal && setHoveredRating && setHoveredRating(index + 1)
+          isModal ? setHoveredRating?.(index + 1) : undefined
         }
-        onMouseLeave={() => isModal && setHoveredRating && setHoveredRating(0)}
+        onMouseLeave={() => (isModal ? setHoveredRating?.(0) : undefined)}
         onClick={() => {
           if (isModal) {
             formik.setFieldValue("rating", index + 1);
@@ -258,8 +256,8 @@ const ProductReviews: React.FC = () => {
             <p className="review-comment">{review.comment}</p>
             {review.images && review.images.length > 0 && (
               <div className="review-images">
-                {review.images.map((image, index) => (
-                  <img key={index} src={image} alt={`Review ${index + 1}`} />
+                {review.images.map((image) => (
+                  <img key={image} src={image} alt="Review" />
                 ))}
               </div>
             )}
@@ -291,9 +289,18 @@ const ProductReviews: React.FC = () => {
       </div>
 
       {isModalOpen && (
-        <div
+        <button
           className="modal"
+          type="button"
           onClick={(e) => e.target === e.currentTarget && setIsModalOpen(false)}
+          onKeyDown={(e) => {
+            if (
+              (e.key === "Enter" || e.key === " " || e.key === "Spacebar") &&
+              e.target === e.currentTarget
+            ) {
+              setIsModalOpen(false);
+            }
+          }}
         >
           <div className="modal-content">
             <h3>{isEditing ? "Edit Review" : "Add Review"}</h3>
@@ -302,8 +309,8 @@ const ProductReviews: React.FC = () => {
                 {loggedInUserName && `Username: ${loggedInUserName}`}
               </div>
               <div className="rating-stars">
-                <label>Rating:</label>
-                <div className="stars">
+                <label htmlFor="rating-stars">Rating:</label>
+                <div className="stars" id="rating-stars">
                   {renderStars(
                     formik.values.rating,
                     true,
@@ -332,7 +339,7 @@ const ProductReviews: React.FC = () => {
               </button>
             </form>
           </div>
-        </div>
+        </button>
       )}
     </div>
   );
