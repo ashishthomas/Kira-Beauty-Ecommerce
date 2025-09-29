@@ -15,7 +15,6 @@ body {
 .goog-te-banner-frame,
 iframe.goog-te-banner-frame {
   display: none !important;
-  /* visibility: hidden !important; */
   height: 0 !important;
 }
 
@@ -24,9 +23,3 @@ iframe.goog-te-banner-frame {
   display: none !important;
 }
 
-/* .VIpgJd-ZVi9od-ORHb {
-    display: none !important;
-} */
-.skiptranslate {
-    /* display: none !important; */
-}

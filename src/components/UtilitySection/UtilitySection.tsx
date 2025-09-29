@@ -126,88 +126,84 @@ const UtilitySection = () => {
   };
 
   return (
-  <div className="utility-section" style={{ position: "relative" }}>
-    {isLoggedIn && userName && (
-      <span className="user-name">Hi, {userName}</span>
-    )}
+    <div className="utility-section" style={{ position: "relative" }}>
+      {isLoggedIn && userName && (
+        <span className="user-name">Hi, {userName}</span>
+      )}
 
-    {/* Search Button */}
-    <button
-      type="button"
-      className="icon-btn"
-      onClick={handleSearchIconClick}
-      aria-label="Search"
-    >
-      <img src={search} alt="Search" className="icon" />
-    </button>
+      <button
+        type="button"
+        className="icon-btn"
+        onClick={handleSearchIconClick}
+        aria-label="Search"
+      >
+        <img src={search} alt="Search" className="icon" />
+      </button>
 
-    {showSearchInput && (
-      <div className="search-dropdown-navbar-center" ref={searchRef}>
-        <input
-          type="text"
-          value={searchQuery}
-          onChange={handleSearchChange}
-          placeholder="Search products..."
-          autoFocus
-          className="search-input"
-          onFocus={() => searchResults.length > 0 && setIsDropdownOpen(true)}
-        />
-        {isDropdownOpen && searchResults.length > 0 && (
-          <ul className="search-dropdown">
-            {searchResults.map((item, idx) => (
-              <button
-                type="button"
-                key={item.id ? `${item.id}-${item.category || ""}` : idx}
-                className="search-result-item"
-                onClick={() =>
-                  handleResultClick(String(item.id), item.category)
-                }
-                style={{
-                  width: "100%",
-                  textAlign: "left",
-                  background: "none",
-                  border: "none",
-                  padding: "8px",
-                  cursor: "pointer",
-                }}
-              >
-                {item.name}
-              </button>
-            ))}
-          </ul>
-        )}
-      </div>
-    )}
+      {showSearchInput && (
+        <div className="search-dropdown-navbar-center" ref={searchRef}>
+          <input
+            type="text"
+            value={searchQuery}
+            onChange={handleSearchChange}
+            placeholder="Search products..."
+            autoFocus
+            className="search-input"
+            onFocus={() => searchResults.length > 0 && setIsDropdownOpen(true)}
+          />
+          {isDropdownOpen && searchResults.length > 0 && (
+            <ul className="search-dropdown">
+              {searchResults.map((item, idx) => (
+                <button
+                  type="button"
+                  key={item.id ? `${item.id}-${item.category || ""}` : idx}
+                  className="search-result-item"
+                  onClick={() =>
+                    handleResultClick(String(item.id), item.category)
+                  }
+                  style={{
+                    width: "100%",
+                    textAlign: "left",
+                    background: "none",
+                    border: "none",
+                    padding: "8px",
+                    cursor: "pointer",
+                  }}
+                >
+                  {item.name}
+                </button>
+              ))}
+            </ul>
+          )}
+        </div>
+      )}
 
-    {/* Cart Button */}
-    <button
-      type="button"
-      className="icon-btn"
-      onClick={handleCartClick}
-      aria-label="Cart"
-    >
-      <img src={cart} alt="Cart" className="icon" />
-    </button>
+      <button
+        type="button"
+        className="icon-btn"
+        onClick={handleCartClick}
+        aria-label="Cart"
+      >
+        <img src={cart} alt="Cart" className="icon" />
+      </button>
 
-    {showModal &&
-      (isLoggedIn && userName ? (
-        <UserModal userName={userName} onClose={() => setShowModal(false)} />
-      ) : (
-        <LoginModal onClose={() => setShowModal(false)} />
-      ))}
+      {showModal &&
+        (isLoggedIn && userName ? (
+          <UserModal userName={userName} onClose={() => setShowModal(false)} />
+        ) : (
+          <LoginModal onClose={() => setShowModal(false)} />
+        ))}
 
-    {/* User Button */}
-    <button
-      type="button"
-      className="icon-btn"
-      onClick={handlePersonClick}
-      aria-label="User"
-    >
-      <img src={person} alt="User" className="icon" />
-    </button>
-  </div>
-);
-
+      <button
+        type="button"
+        className="icon-btn"
+        onClick={handlePersonClick}
+        aria-label="User"
+      >
+        <img src={person} alt="User" className="icon" />
+      </button>
+    </div>
+  );
 };
 
 export default UtilitySection;
