@@ -31,9 +31,9 @@ const ProductsList = () => {
     <div className="our-products-section">
       <h2 className="section-title">{t("ourProducts.title")}</h2>
       <div className="products-grid">
-        {categories.map((product, index) => {
+        {categories.map((product) => {
           return (
-            <div className="product-card" key={index}>
+            <div className="product-card" key={product.name}>
               <div className="product-image-wrapper">
                 <img
                   src={imageMap[product.imageKey]}
@@ -54,7 +54,7 @@ const ProductsList = () => {
                   className="shop-now-button"
                   variant="primary"
                   size="small"
-                  onClick={() =>
+                  onClick={() =>+
                     navigate(
                       `/shop/${product.name.toLowerCase().replace(/\s+/g, "-")}`
                     )
