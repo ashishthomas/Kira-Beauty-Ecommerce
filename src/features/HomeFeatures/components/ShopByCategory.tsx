@@ -14,9 +14,10 @@ const imageMap: { [key: string]: string } = {
   carousel_skincare,
   carousel_grooming,
 };
+
 const ShopByCategory = () => {
   const [categories, setCategories] = useState<Category[]>([]);
-  const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const cardRefs = useRef<(HTMLButtonElement | null)[]>([]);
   const navigate = useNavigate();
   const { t } = useTranslation();
 
@@ -29,48 +30,60 @@ const ShopByCategory = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        entries.forEach((entry) => {
+        for (const entry of entries) {
           if (entry.isIntersecting) {
             entry.target.classList.add("visible");
           }
-        });
+        }
       },
       { threshold: 0.3 }
     );
 
-    cardRefs?.current?.forEach((ref) => {
+    const refsSnapshot = [...cardRefs.current]; // FIX #2: Capture current ref
+
+    for (const ref of refsSnapshot) {
       if (ref) observer.observe(ref);
-    });
+    }
 
     return () => {
-      cardRefs?.current?.forEach((ref) => {
+      for (const ref of refsSnapshot) {
         if (ref) observer.unobserve(ref);
-      });
+      }
     };
   }, [categories]);
 
   const handleCategoryClick = (name: string) => {
-    const formattedName = name.toLowerCase().replace(/\s+/g, "-");
+    const formattedName = name.toLowerCase().replace(/ /g, "-"); // FIX #3
     navigate(`/shop/${formattedName}`);
+  };
+
+  const handleKeyPress = (e: React.KeyboardEvent, name: string) => {
+    if (e.key === "Enter" || e.key === " ") {
+      handleCategoryClick(name);
+    }
   };
 
   return (
     <div className="shop-category-container">
       <h2 className="section-title">{t("shopByCategory.title")}</h2>
+
       <div className="carousel-wrapper">
         <div className="carousel">
           {categories.map((category, index) => (
-            <div
+            <button
+              key={category.name} // FIXED KEY WARNING
+              type="button"
               className="category-card"
-              key={index}
               ref={(el) => {
+                // FIXED REF CALLBACK
                 cardRefs.current[index] = el;
               }}
               onClick={() => handleCategoryClick(category.name)}
+              onKeyDown={(e) => handleKeyPress(e, category.name)}
             >
               <img src={imageMap[category.imageKey]} alt={category.name} />
               <p>{t(`shopByCategory.categories.${category.name}`)}</p>
-            </div>
+            </button>
           ))}
         </div>
       </div>

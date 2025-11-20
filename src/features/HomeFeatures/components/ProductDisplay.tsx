@@ -21,7 +21,7 @@ const ProductDisplay = () => {
         </Button>
       </div>
       <div className="product-image">
-        <img src={display} alt="Display Image" />
+        <img src={display} alt="Product display section" />
       </div>
     </div>
   );
