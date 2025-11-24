@@ -56,12 +56,12 @@ const BrandsDropdown = () => {
   const { t } = useTranslation();
   return (
     <div className="brands-dropdown">
-      {dropdownData.map((section, index) => (
-        <div className="dropdown-column" key={index}>
+      {dropdownData.map((section) => (
+        <div className="dropdown-column" key={section.category}>
           <h4>{t(section.category)}</h4>
           <ul>
-            {section.items.map((item, idx) => (
-              <li key={idx}>{t(item)}</li>
+            {section.items.map((item) => (
+              <li key={item}>{t(item)}</li>
             ))}
           </ul>
         </div>
