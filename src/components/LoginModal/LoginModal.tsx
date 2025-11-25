@@ -48,7 +48,7 @@ const LoginModal: React.FC<Props> = ({ onClose }) => {
     console.log("Registered Users:", userList);
 
     if (isRegistering) {
-      if (users[email]) {
+      if (users?.[email]?.password === password) {
         toast.error("User already exists");
         return;
       }
@@ -60,7 +60,7 @@ const LoginModal: React.FC<Props> = ({ onClose }) => {
       toast.success("Signed up successfully");
       onClose();
     } else {
-      if (!users[email] || users[email].password !== password) {
+      if (!users?.[email] || users?.[email]?.password !== password) {
         toast.error("Invalid email or password");
         return;
       }
@@ -88,7 +88,11 @@ const LoginModal: React.FC<Props> = ({ onClose }) => {
           initialValues={
             isRegistering
               ? { name: "", email: "", password: "" }
-              : { name: "Invalid", email: "Invalid@gmail.com", password: "Invalid" }
+              : {
+                  name: "Invalid",
+                  email: "Invalid@gmail.com",
+                  password: "Invalid",
+                }
           }
           enableReinitialize
           validationSchema={isRegistering ? registerSchema : loginSchema}
