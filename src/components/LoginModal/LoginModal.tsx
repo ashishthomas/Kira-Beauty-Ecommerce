@@ -88,7 +88,7 @@ const LoginModal: React.FC<Props> = ({ onClose }) => {
           initialValues={
             isRegistering
               ? { name: "", email: "", password: "" }
-              : { name: "", email: "", password: "" }
+              : { name: "Invalid", email: "Invalid@gmail.com", password: "Invalid" }
           }
           enableReinitialize
           validationSchema={isRegistering ? registerSchema : loginSchema}
